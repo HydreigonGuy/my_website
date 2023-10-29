@@ -16,5 +16,10 @@ code {
   font-family: "SometypeMono";
   src: local("SometypeMono"),
    url("./assets/fonts/Sometype_Mono/SometypeMono-VariableFont_wght.ttf") format("truetype");
- }
- 
+}
+
+@font-face {
+  font-family: "NotoSansKR";
+  src: local("NotoSansKR"),
+   url("./assets/fonts/Noto_Sans_KR/NotoSansKR-VariableFont_wght.ttf") format("truetype");
+}
