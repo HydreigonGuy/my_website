@@ -23,8 +23,8 @@ EXPOSE 443
 
 COPY ./conf/ssl.conf /tmp/ssl.conf
 
-COPY ./setup_ssh.sh /
-RUN chmod +x /setup_ssh.sh
+COPY ./setup_ssl.sh /
+RUN chmod +x /setup_ssl.sh
 
 
 
