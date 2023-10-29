@@ -1,4 +1,4 @@
-import picture_of_me from './me.png';
+import picture_of_me from './assets/images/me.png';
 import './App.css';
 
 function App() {
