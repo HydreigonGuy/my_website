@@ -12,3 +12,8 @@
 .picture_of_me {
   width: 200px;
 }
+
+.home_header span {
+  margin-left: 50px;
+  position: absolute;
+}
