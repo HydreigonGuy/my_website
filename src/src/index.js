@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import './assets/fonts/Sometype_Mono/SometypeMono-VariableFont_wght.ttf';
+import './assets/fonts/Noto_Sans_KR/NotoSansKR-VariableFont_wght.ttf';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

@@ -5,15 +5,21 @@
   flex-direction: column;
   font-size: calc(10px + 2vmin);
   color: white;
-  padding: 50px;
+  padding: min(50px, 10%);
   font-family: "SometypeMono";
 }
 
 .picture_of_me {
   width: 200px;
+  max-width: 50%;
 }
 
 .home_header span {
-  margin-left: 50px;
+  margin-left: min(50px, 10%);
+  margin-right: min(50px, 10%);
   position: absolute;
+}
+
+.korean {
+  font-family: "NotoSansKR";
 }
