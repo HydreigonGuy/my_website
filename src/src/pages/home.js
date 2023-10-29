@@ -10,6 +10,14 @@ function Home() {
           <br/>
           <p className='korean'>
             안녕하십니까?
+            <br/>
+            제이름은 아드리엥입니다.
+            <br/>
+            제국적은 프랑스 사람입니다.
+            <br/>
+            제직업은 학생입니다.
+            <br/>
+            만나서 반갑습니다.
           </p>
         </span>
       </div>
