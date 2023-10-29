@@ -1,0 +1,13 @@
+version: '3'
+services:
+  front-web:
+    image: autoneeip/adrien_website:latest
+    restart: always
+    ports:
+      - 80:80
+      - 443:443
+    volumes:
+      - certs:/etc/letsencrypt/
+
+volumes:
+  certs:
