@@ -9,7 +9,7 @@ function Home() {
           Welcome to my website!
           <br/>
           <p className='korean'>
-            안녕 하십니까?
+            안녕하십니까?
           </p>
         </span>
       </div>
