@@ -7,7 +7,7 @@ on:
 env:
   DOCKER_USERNAME: ${{ secrets.DOCKER_USER }}
   DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
-  DOCKER_REGISTRY: autoneeip/name:latest
+  DOCKER_REGISTRY: autoneeip/adrien_website:latest
 
 jobs:
   build:
