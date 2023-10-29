@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import './assets/fonts/Sometype_Mono/SometypeMono-VariableFont_wght.ttf';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
