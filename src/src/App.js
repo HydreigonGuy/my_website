@@ -9,7 +9,6 @@ const BlankPage = React.lazy(() => import("./pages/blank"));
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
 
       <BrowserRouter>
         <Routes>
@@ -17,7 +16,6 @@ function App() {
           <Route path="/test" element={<BlankPage />} />
         </Routes>
       </BrowserRouter>
-      </header>
     </div>
   );
 }
