@@ -23,3 +23,9 @@ code {
   src: local("NotoSansKR"),
    url("./assets/fonts/Noto_Sans_KR/NotoSansKR-VariableFont_wght.ttf") format("truetype");
 }
+
+@font-face {
+  font-family: "NotoSerifKR";
+  src: local("NotoSerifKR"),
+   url("./assets/fonts/Noto_Serif_KR/NotoSerifKR-Regular.otf") format("truetype");
+}
