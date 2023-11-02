@@ -5,7 +5,7 @@
     flex-direction: column;
     font-size: min(calc(10px + 2vmin), 32px);
     color: #541f06;
-    padding: min(50px, 10%);
+    padding: min(50px, 20%);
     font-family: "SometypeMono";
     position: absolute;
     top: 0;
@@ -14,8 +14,7 @@
 }
 
 .korean_page span {
-    margin-left: min(50px, 10%);
-    margin-right: min(50px, 10%);
+    margin-left: max(calc(10px + 2vmin), 32px);
     position: absolute;
 }
 
