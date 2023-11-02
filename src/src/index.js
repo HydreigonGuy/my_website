@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+import './assets/css/index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import './assets/fonts/Sometype_Mono/SometypeMono-VariableFont_wght.ttf';
