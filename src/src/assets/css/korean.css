@@ -1,7 +1,7 @@
 
 .korean_page {
     background-color: #ddd;
-    min-height: 100vh;
+    min-height: 120vh;
     flex-direction: column;
     font-size: min(calc(10px + 2vmin), 32px);
     color: #541f06;
@@ -10,7 +10,6 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
 }
 
 .korean_page span {
@@ -28,5 +27,5 @@
 }
 
 .picture {
-    max-width: 30%;
+    max-width: 32%;
 }
