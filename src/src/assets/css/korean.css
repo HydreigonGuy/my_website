@@ -1,7 +1,7 @@
 
 .korean_page {
     background-color: #ddd;
-    min-height: 100vh;
+    min-height: 120vh;
     flex-direction: column;
     font-size: min(calc(10px + 2vmin), 32px);
     color: #541f06;

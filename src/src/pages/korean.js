@@ -25,12 +25,25 @@ function Korean() {
             만나서 반갑습니다.
         </span>
         <br/>
-        <img src={korea_picture_1} className="picture" />
-        <img src={korea_picture_2} className="picture" />
-        <img src={korea_picture_6} className="picture" />
         <img src={korea_picture_3} className="picture" />
         <img src={korea_picture_4} className="picture" />
         <img src={korea_picture_5} className="picture" />
+        <p className='korean'>
+          My korean cheat sheet:
+          <br/>
+          wait - 기다려
+          <br/>
+          careful - 조심 -- caution - 손조심
+          <br/>
+          dangerous - 위험
+          <br/>
+          delicious - 맛있어 - or more formal - 맛있어요
+          <br/>
+          long time no see - 오랜만이네요
+        </p>
+        <img src={korea_picture_1} className="picture" />
+        <img src={korea_picture_2} className="picture" />
+        <img src={korea_picture_6} className="picture" />
       </div>
     </>
   );
