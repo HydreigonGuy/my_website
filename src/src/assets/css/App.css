@@ -20,6 +20,10 @@
   position: absolute;
 }
 
-.home_category_element {
+.home_category_element a {
   color: white;
+}
+
+.home_category_element {
+  position: relative !important;
 }
