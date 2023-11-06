@@ -8,6 +8,15 @@ function Home() {
         <span>
           Welcome to my website!
         </span>
+        <p>
+          My travels
+          <hr/>
+          <span>
+            <a href="/korean" className="home_category_element">
+              Korea
+            </a>
+          </span>
+        </p>
       </div>
     </>
   );
