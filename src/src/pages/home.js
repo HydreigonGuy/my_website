@@ -1,5 +1,7 @@
 import picture_of_me from '../assets/images/me.png';
 
+import HomeCategory from '../components/home_category';
+
 function Home() {
   return (
     <>
@@ -8,6 +10,11 @@ function Home() {
         <span>
           Welcome to my website!
         </span>
+        <p>
+        <HomeCategory title="My travels" items={[
+          {"href":"/korea", "name":"Korea"}
+        ]}/>
+        </p>
       </div>
     </>
   );
