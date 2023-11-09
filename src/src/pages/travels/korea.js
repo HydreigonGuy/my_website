@@ -17,7 +17,7 @@ function Korea() {
         <img src={picture_of_me} className="picture" />
         <span>Here you can find pictures and information about my travels accross Korea!</span>
         <br/>
-        <TravelCityUrl name="Suwon" img={Suwon_img} comment="수원" />
+        <TravelCityUrl name="Suwon" img={Suwon_img} comment="수원" url="/korea/suwon" />
         <TravelCityUrl name="Daegu" img={Daegu_img} comment="대구" />
         <TravelCityUrl name="Sejong" img={Sejong_img} comment="세종" />
         <TravelCityUrl name="Busan" img={Busan_img} comment="부산" />
