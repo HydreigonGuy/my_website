@@ -3,7 +3,7 @@
     background-color: #ddd;
     min-height: 120vh;
     flex-direction: column;
-    font-size: min(calc(10px + 2vmin), 32px);
+    font-size: min(calc(4px + 3vmin), 32px);
     color: #541f06;
     padding: max(20px, calc(10px + 2vmin));
     font-family: "SometypeMono";
