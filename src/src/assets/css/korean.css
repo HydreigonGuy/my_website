@@ -24,6 +24,10 @@
   left: 0;
 }
 
+.korean_city_page p {
+  margin-left: max(20px, calc(10px + 4vmin));
+}
+
 .korean_page span {
     margin-left: max(calc(10px + 2vmin), 20px);
     margin-right: max(calc(10px + 2vmin), 20px);
@@ -51,5 +55,4 @@
   position: absolute;
   background-color: beige;
   padding: 20px;
-  margin-left: max(20px, calc(10px + 4vmin));
 }
