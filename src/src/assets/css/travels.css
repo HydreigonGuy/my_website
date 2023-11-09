@@ -14,6 +14,15 @@
     width: 100%;
 }
 
+.half_image {
+    width: 50%;
+}
+
+.third_image {
+    width: 31%;
+    padding: 1%;
+}
+
 .city_comment {
     font-size: min(calc(8px + 2vmin), 28px);
     padding: 0;
@@ -26,4 +35,9 @@
 
 .city_url a, a:visited, a:hover, a:active {
     color: inherit;
+}
+
+.image_comment {
+    position: absolute;
+    margin-left: max(20px, calc(10px + 4vmin));
 }

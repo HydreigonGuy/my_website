@@ -13,7 +13,11 @@ function Jochiwon() {
         <div className='korean_city_page korean'>
             <p className='jochiwon_title'>Jochiwon - 조치원</p>
             <img src={school_mountain_lake1} className='jochiwon_header_img'/>
-            <img src={nigh_school_library_photo} className='big_image'/>
+            <p>
+                Jochiwon is where I go to school, at Korea University Sejong Campus!
+            </p>
+            <img src={nigh_school_library_photo} className='half_image'/>
+            <span className='image_comment'>This is the school library.</span>
             <img src={rainy_festival_photo} className='big_image'/>
             <img src={foggy_gobok_reservoire_photo} className='big_image'/>
             <img src={nigh_gobok_reservoire_photo} className='big_image'/>
