@@ -9,3 +9,21 @@
 .city_url img {
     width: 100%;
 }
+
+.big_image {
+    width: 100%;
+}
+
+.city_comment {
+    font-size: min(calc(8px + 2vmin), 28px);
+    padding: 0;
+    margin: 0;
+}
+
+.city_url a {
+    text-decoration: none;
+}
+
+.city_url a, a:visited, a:hover, a:active {
+    color: inherit;
+}
