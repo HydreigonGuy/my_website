@@ -7,6 +7,7 @@ const HomePage = React.lazy(() => import("./pages/home"));
 const BlankPage = React.lazy(() => import("./pages/blank"));
 const KoreanPage = React.lazy(() => import("./pages/korean"));
 const KoreaPage = React.lazy(() => import("./pages/travels/korea"));
+const KoreaJochiwonPage = React.lazy(() => import("./pages/travels/korea_cities/jochiwon"));
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/test" element={<BlankPage />} />
           <Route path="/korean" element={<KoreanPage />} />
           <Route path="/korea" element={<KoreaPage />} />
+          <Route path="/korea/jochiwon" element={<KoreaJochiwonPage />} />
         </Routes>
       </BrowserRouter>
     </div>
