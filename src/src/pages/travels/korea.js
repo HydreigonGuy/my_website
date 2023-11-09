@@ -1,9 +1,9 @@
-import picture_of_me from '../../assets/images/IMG20231014143340.jpg';
-import Busan_img from '../../assets/images/IMG20230821114142.jpg';
-import Daegu_img from '../../assets/images/IMG20230822174437.jpg';
-import Suwon_img from '../../assets/images/IMG20231104124118.jpg';
-import Sejong_img from '../../assets/images/IMG20231013141325.jpg';
-import Jochiwon_img from '../../assets/images/IMG20230926185028.jpg';
+import picture_of_me from '../../assets/images/korea/IMG20231014143340.jpg';
+import Busan_img from '../../assets/images/korea/busan/IMG20230821114142.jpg';
+import Daegu_img from '../../assets/images/korea/daegu/IMG20230822174437.jpg';
+import Suwon_img from '../../assets/images/korea/suwon/IMG20231104124118.jpg';
+import Sejong_img from '../../assets/images/korea/sejong/IMG20231013141325.jpg';
+import Jochiwon_img from '../../assets/images/korea/jochiwon/IMG20230926185028.jpg';
 
 import '../../assets/css/korean.css';
 import '../../assets/css/travels.css';

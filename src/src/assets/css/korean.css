@@ -12,6 +12,18 @@
     left: 0;
 }
 
+.korean_city_page {
+  background-color: #ddd;
+  min-height: 120vh;
+  flex-direction: column;
+  font-size: min(calc(10px + 2vmin), 32px);
+  color: #541f06;
+  font-family: "SometypeMono";
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .korean_page span {
     margin-left: max(calc(10px + 2vmin), 20px);
     margin-right: max(calc(10px + 2vmin), 20px);
@@ -28,4 +40,16 @@
 
 .picture {
     max-width: 32%;
+}
+
+.jochiwon_header_img {
+    width: 100%;
+    margin-top: -20%;
+}
+
+.jochiwon_title {
+  position: absolute;
+  background-color: beige;
+  padding: 20px;
+  margin-left: max(20px, calc(10px + 4vmin));
 }
