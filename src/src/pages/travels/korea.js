@@ -20,7 +20,7 @@ function Korea() {
         <TravelCityUrl name="Suwon" img={Suwon_img} comment="수원" url="/korea/suwon" />
         <TravelCityUrl name="Daegu" img={Daegu_img} comment="대구" url='/korea/daegu' />
         <TravelCityUrl name="Sejong" img={Sejong_img} comment="세종" url="/korea/sejong" />
-        <TravelCityUrl name="Busan" img={Busan_img} comment="부산" />
+        <TravelCityUrl name="Busan" img={Busan_img} comment="부산" url="/korea/busan" />
         <TravelCityUrl name="Jochiwon" img={Jochiwon_img} comment="조치원" url="/korea/jochiwon" />
       </div>
     </>

@@ -91,3 +91,14 @@ position: absolute;
 background-color: beige;
 padding: 20px;
 }
+
+.busan_header_img {
+  width: 100%;
+  margin-top: -23%;
+}
+
+.busan_title {
+position: absolute;
+background-color: beige;
+padding: 20px;
+}
