@@ -26,6 +26,7 @@
 
 .korean_city_page p {
   margin-left: max(20px, calc(10px + 4vmin));
+  margin-right: max(20px, calc(10px + 4vmin));
 }
 
 .korean_page span {

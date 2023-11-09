@@ -18,7 +18,15 @@ function Jochiwon() {
             </p>
             <img src={nigh_school_library_photo} className='half_image'/>
             <span className='image_comment'>This is the school library.</span>
-            <img src={rainy_festival_photo} className='big_image'/>
+            <br/>
+            <span className='image_comment_left_half'>
+                The school hosted several Festivals, when they do this, food trucs come and there is a stage where the school clubs can perform, there is singing, playing music, and dancing.
+            </span>
+            <img src={rainy_festival_photo} className='half_image'/>
+            <p>
+                Jochiwon has a reservoire surrounded by mountains.
+                Hiking there is quite nice, and the reservoire is surrounded by cafés, so once you get there you have a place to take a break!
+            </p>
             <img src={foggy_gobok_reservoire_photo} className='big_image'/>
             <img src={nigh_gobok_reservoire_photo} className='big_image'/>
         </div>

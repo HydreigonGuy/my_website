@@ -16,6 +16,7 @@
 
 .half_image {
     width: 50%;
+    display: inline;
 }
 
 .third_image {
@@ -40,4 +41,10 @@
 .image_comment {
     position: absolute;
     margin-left: max(20px, calc(10px + 4vmin));
+}
+
+.image_comment_left_half {
+    width: 46%;
+    display: inline-block;
+    margin: 2%;
 }
