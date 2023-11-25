@@ -1,5 +1,5 @@
 
-import ProgressiveImg from 'image_loading';
+import ProgressiveImg from './image_loading';
 
 function TravelCityUrl(props) {
     return (
