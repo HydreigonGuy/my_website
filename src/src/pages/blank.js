@@ -1,5 +1,5 @@
 function BlankPage() {
-    return <div>BlankPage</div>;
+    return <div className="App">BlankPage</div>;
   }
   
   export default BlankPage;

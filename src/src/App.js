@@ -15,7 +15,7 @@ const KoreaBusanPage = React.lazy(() => import("./pages/travels/korea_cities/bus
 
 function App() {
   return (
-    <div className="App">
+    <div>
 
       <BrowserRouter>
         <Routes>

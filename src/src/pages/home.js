@@ -4,7 +4,7 @@ import HomeCategory from '../components/home_category';
 
 function Home() {
   return (
-    <>
+    <div className="App">
       <div className='home_header'>
         <img src={picture_of_me} className="picture_of_me" alt="me" />
         <span>
@@ -16,7 +16,7 @@ function Home() {
         ]}/>
         </p>
       </div>
-    </>
+    </div>
   );
 }
 
