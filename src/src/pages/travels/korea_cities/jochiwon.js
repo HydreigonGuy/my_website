@@ -4,6 +4,9 @@ import foggy_gobok_reservoire_photo from '../../../assets/images/korea/jochiwon/
 import nigh_school_library_photo from '../../../assets/images/korea/jochiwon/IMG20230930193817.jpg';
 import nigh_gobok_reservoire_photo from '../../../assets/images/korea/jochiwon/IMG20231022181150.jpg';
 import school_mountain_lake1 from '../../../assets/images/korea/jochiwon/IMG20230902120218.jpg';
+import festival_stands1 from '../../../assets/images/korea/jochiwon/IMG20231107134614.jpg';
+import festival_stands2 from '../../../assets/images/korea/jochiwon/IMG20231108183101.jpg';
+// import festival_stands3 from '../../../assets/images/korea/jochiwon/IMG20230913181928.jpg';
 
 import '../../../assets/css/korean.css';
 import '../../../assets/css/travels.css';
@@ -23,6 +26,8 @@ function Jochiwon() {
                 The school hosted several Festivals, when they do this, food trucs come and there is a stage where the school clubs can perform, there is singing, playing music, and dancing.
             </span>
             <img src={rainy_festival_photo} className='half_image'/>
+            <img src={festival_stands1} className='half_image'/>
+            <img src={festival_stands2} className='half_image'/>
             <p>
                 Jochiwon has a reservoire surrounded by mountains.
                 Hiking there is quite nice, and the reservoire is surrounded by cafés, so once you get there you have a place to take a break!
