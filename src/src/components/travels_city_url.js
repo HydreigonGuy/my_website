@@ -1,26 +1,5 @@
 
-
-import { useState, useEffect } from "react";
-
-const ProgressiveImg = ({ placeholderSrc, src, ...props }) => {
-  const [imgSrc, setImgSrc] = useState(placeholderSrc || src);
-
-  useEffect(() => {
-    const img = new Image();
-    img.src = src;
-    img.onload = () => {
-      setImgSrc(src);
-    };
-  }, [src]);
-
-  return (
-    <img
-      {...{ src: imgSrc, ...props }}
-      alt={props.alt || ""}
-      className="image"
-    />
-  );
-};
+import ProgressiveImg from 'image_loading';
 
 function TravelCityUrl(props) {
     return (
@@ -28,8 +7,8 @@ function TravelCityUrl(props) {
         <a href={props.url}>
           <div>
             <ProgressiveImg
-      src={props.img}
-      placeholderSrc={props.small_img}
+              src={props.img}
+              placeholderSrc={props.small_img}
             />
             <br/>
             {props.name}
