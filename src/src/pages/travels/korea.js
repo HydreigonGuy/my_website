@@ -5,6 +5,8 @@ import Suwon_img from '../../assets/images/korea/suwon/IMG20231104124118.jpg';
 import Sejong_img from '../../assets/images/korea/sejong/IMG20231013141325.jpg';
 import Jochiwon_img from '../../assets/images/korea/jochiwon/IMG20230926185028.jpg';
 
+import Suwon_img_small from '../../assets/images/korea/suwon/small/IMG20231104124118.jpg';
+
 import '../../assets/css/korean.css';
 import '../../assets/css/travels.css';
 
@@ -17,7 +19,7 @@ function Korea() {
         <img src={picture_of_me} className="picture" />
         <span>Here you can find pictures and information about my travels accross Korea!</span>
         <br/>
-        <TravelCityUrl name="Suwon" img={Suwon_img} comment="수원" url="/korea/suwon" />
+        <TravelCityUrl name="Suwon" img={Suwon_img} comment="수원" url="/korea/suwon" small_img={Suwon_img_small} />
         <TravelCityUrl name="Daegu" img={Daegu_img} comment="대구" url='/korea/daegu' />
         <TravelCityUrl name="Sejong" img={Sejong_img} comment="세종" url="/korea/sejong" />
         <TravelCityUrl name="Busan" img={Busan_img} comment="부산" url="/korea/busan" />
