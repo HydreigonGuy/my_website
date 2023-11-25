@@ -15,7 +15,7 @@ const ProgressiveImg = ({ placeholderSrc, src, ...props }) => {
     <img
       {...{ src: imgSrc, ...props }}
       alt={props.alt || ""}
-      className="image"
+      className={props.className}
     />
   );
 };
