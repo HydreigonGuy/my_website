@@ -1,0 +1,35 @@
+
+.picture {
+    width: 33.33%;
+}
+
+.picture_fourth {
+    width: 25%;
+}
+
+.picture_half {
+    width: 50%;
+}
+
+.picture_full {
+    width: 100%;
+}
+
+.exact_third {
+    width: 33.33%;
+}
+
+.uk_title_span {
+    margin-left: 1%;
+    width: 100%;
+    margin-right: 1%;
+    display: inline-block;
+}
+
+.content {
+    padding: max(20px, calc(10px + 2vmin));
+}
+
+.content p {
+    text-align: center;
+}
