@@ -102,3 +102,14 @@ position: absolute;
 background-color: beige;
 padding: 20px;
 }
+
+.gwangju_header_img {
+  width: 100%;
+  margin-top: -33%;
+}
+
+.gwangju_title {
+position: absolute;
+background-color: beige;
+padding: 20px;
+}
