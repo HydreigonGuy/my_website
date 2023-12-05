@@ -4,6 +4,7 @@ import Daegu_img from '../../assets/images/korea/daegu/IMG20230822174437.jpg';
 import Suwon_img from '../../assets/images/korea/suwon/IMG20231104124118.jpg';
 import Sejong_img from '../../assets/images/korea/sejong/IMG20231013141325.jpg';
 import Jochiwon_img from '../../assets/images/korea/jochiwon/IMG20230926185028.jpg';
+import Gwangju_img from '../../assets/images/korea/gwangju/IMG20231202122651.jpg';
 
 import picture_of_me_small from '../../assets/images/korea/small/IMG20231014143340.jpg';
 import Busan_img_small from '../../assets/images/korea/busan/small/IMG20230821114142.jpg';
@@ -11,6 +12,7 @@ import Daegu_img_small from '../../assets/images/korea/daegu/small/IMG2023082217
 import Suwon_img_small from '../../assets/images/korea/suwon/small/IMG20231104124118.jpg';
 import Sejong_img_small from '../../assets/images/korea/sejong/small/IMG20231013141325.jpg';
 import Jochiwon_img_small from '../../assets/images/korea/jochiwon/small/IMG20230926185028.jpg';
+import Gwangju_img_small from '../../assets/images/korea/gwangju/small/IMG20231202122651.jpg';
 
 import '../../assets/css/korean.css';
 import '../../assets/css/travels.css';
@@ -30,6 +32,7 @@ function Korea() {
         <TravelCityUrl name="Sejong" img={Sejong_img} comment="세종" url="/korea/sejong" small_img={Sejong_img_small} />
         <TravelCityUrl name="Busan" img={Busan_img} comment="부산" url="/korea/busan" small_img={Busan_img_small} />
         <TravelCityUrl name="Jochiwon" img={Jochiwon_img} comment="조치원" url="/korea/jochiwon" small_img={Jochiwon_img_small} />
+        <TravelCityUrl name="Gwangju" img={Gwangju_img} comment="광주" url="/korea/gwangju" small_img={Gwangju_img_small} />
       </div>
     </>
   );
