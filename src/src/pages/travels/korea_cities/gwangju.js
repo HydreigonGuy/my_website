@@ -73,11 +73,28 @@ function Gwangju() {
             <ProgressiveImg src={sajik_parc_color_path} placeholderSrc={sajik_parc_color_path_small} className='fourth_image'/>
             <ProgressiveImg src={sajik_parc_entry} placeholderSrc={sajik_parc_entry_small} className='big_image'/>
             <p>Then, it was time for Gwangju Parc.</p>
-            <ProgressiveImg src={gwangju_parc_temple_2} placeholderSrc={gwangju_parc_temple_2_small} className='third_image'/>
-            <ProgressiveImg src={gwangju_parc_rock} placeholderSrc={gwangju_parc_rock_small} className='third_image'/>
-            <ProgressiveImg src={gwangju_parc_memorial} placeholderSrc={gwangju_parc_memorial_small} className='third_image'/>
-            <ProgressiveImg src={gwangju_parc_temple_1} placeholderSrc={gwangju_parc_temple_1_small} className='half_image'/>
-            <ProgressiveImg src={night_skyline} placeholderSrc={night_skyline_small} className='half_image'/>
+            <ProgressiveImg src={gwangju_parc_temple_2} placeholderSrc={gwangju_parc_temple_2_small} className='true_third_image'/>
+            <ProgressiveImg src={gwangju_parc_rock} placeholderSrc={gwangju_parc_rock_small} className='true_third_image'/>
+            <ProgressiveImg src={gwangju_parc_memorial} placeholderSrc={gwangju_parc_memorial_small} className='true_third_image'/>
+            <ProgressiveImg src={gwangju_parc_temple_1} placeholderSrc={gwangju_parc_temple_1_small} className='true_third_image'/>
+            <ProgressiveImg src={night_skyline} placeholderSrc={night_skyline_small} className='true_third_image'/>
+            <ProgressiveImg src={day_skyline} placeholderSrc={day_skyline_small} className='true_third_image'/>
+            <p>And then I climbed Mudeungsan!</p>
+            <ProgressiveImg src={mountain_moss_and_ice} placeholderSrc={mountain_moss_and_ice_small} className='true_third_image'/>
+            <ProgressiveImg src={mountain_icy_rocks} placeholderSrc={mountain_icy_rocks_small} className='true_third_image'/>
+            <ProgressiveImg src={mountain_river} placeholderSrc={mountain_river_small} className='true_third_image'/>
+            <ProgressiveImg src={mountain_view_of_mudeungsan} placeholderSrc={mountain_view_of_mudeungsan_small} className='true_third_image'/>
+            <ProgressiveImg src={mountain_rock_formations} placeholderSrc={mountain_rock_formations_small} className='true_third_image'/>
+            <ProgressiveImg src={mountain_view_2} placeholderSrc={mountain_view_2_small} className='true_third_image'/>
+            <ProgressiveImg src={mountain_view_1} placeholderSrc={mountain_view_1_small} className='fourth_image'/>
+            <ProgressiveImg src={mountain_view_of_mudeungsan_4} placeholderSrc={mountain_view_of_mudeungsan_4_small} className='fourth_image'/>
+            <ProgressiveImg src={mountain_rock} placeholderSrc={mountain_rock_small} className='fourth_image'/>
+            <ProgressiveImg src={mountain_snow_trees} placeholderSrc={mountain_snow_trees_small} className='fourth_image'/>
+            <ProgressiveImg src={mountain_view_of_mudeungsan_3} placeholderSrc={mountain_view_of_mudeungsan_3_small} className='true_third_image'/>
+            <ProgressiveImg src={mountain_view_of_mudeungsan_2} placeholderSrc={mountain_view_of_mudeungsan_2_small} className='true_third_image'/>
+            <ProgressiveImg src={mountain_view_3} placeholderSrc={mountain_view_3_small} className='true_third_image'/>
+            <ProgressiveImg src={mountain_view_4} placeholderSrc={mountain_view_4_small} className='half_image'/>
+            <ProgressiveImg src={mountain_snowy_view_of_mudeungsan} placeholderSrc={mountain_snowy_view_of_mudeungsan_small} className='half_image'/>
         </div>
     );
 }
