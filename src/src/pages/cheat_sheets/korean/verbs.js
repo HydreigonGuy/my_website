@@ -1,5 +1,5 @@
 
-function korean_dates() {
+function korean_verbs() {
     return (
         <div>
             <h1>Korean - Verbs</h1>
@@ -64,4 +64,4 @@ function korean_dates() {
     );
 }
 
-export default korean_dates;
+export default korean_verbs;

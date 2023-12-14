@@ -7,8 +7,8 @@ function Korean() {
         <a href="/korean/verbs">Learn verbs</a>
         <br/>
         <a href="/korean/dates">Learn dates</a>
-        <p>Learn questions</p>
-        <p>Learn animals</p>
+        <br/>
+        <a href="/korean/animals">Learn animals</a>
       </div>
     </>
   );
