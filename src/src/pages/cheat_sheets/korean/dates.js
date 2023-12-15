@@ -1,27 +1,26 @@
 
+import '../../../assets/css/korean.css';
+
+import KoreanWord from "../../../components/korean_word";
+
 function korean_dates() {
     return (
-        <div>
-            <h1>Korean - Dates</h1>
-            <h3>Days of the week</h3>
-            <p>
-                Monday - 월요일
-                <br/>
-                Tuesday - 화요일
-                <br/>
-                Wednesday - 수요일
-                <br/>
-                Thursday - 목요일
-                <br/>
-                Friday - 금요일
-                <br/>
-                Saturday - 토요일
-                <br/>
-                Sunday - 일요일
-                <br/>
-                <br/>
-                a week - 일주일
-            </p>
+        <div className='korean_cheatsheet_body'>
+            <h1 className='korean_cheatsheet_title'>Korean - Dates</h1>
+            <h3 className='korean_cheatsheet_subtitle'>Days of the week</h3>
+            <KoreanWord items={[
+              {"english":"Monday", "korean":"월요일"},
+              {"english":"Tuesday", "korean":"화요일"},
+              {"english":"Wednesday", "korean":"수요일"},
+              {"english":"Thursday", "korean":"목요일"},
+              {"english":"Friday", "korean":"금요일"},
+              {"english":"Saturday", "korean":"토요일"},
+              {"english":"Sunday", "korean":"일요일"}
+            ]}/>
+            <br/>
+            <KoreanWord items={[
+              {"english":"A week", "korean":"일주일"}
+            ]}/>
         </div>
     );
 }

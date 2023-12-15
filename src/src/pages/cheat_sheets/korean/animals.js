@@ -1,53 +1,36 @@
 
+import '../../../assets/css/korean.css';
+
+import KoreanWord from "../../../components/korean_word";
+
 function korean_animals() {
     return (
-        <div>
-            <h1>Korean - Animals</h1>
-            <p>
-                Animal - 동물
-                <br/>
-                Cat - 고양이
-                <br/>
-                Dog - 개
-                <br/>
-                Turtle - 고북이
-                <br/>
-                Tiger - 호랑이
-                <br/>
-                Bird - 새
-                <br/>
-                Fish - 물고기
-                <br/>
-                Rabbit - 토끼
-                <br/>
-                Duck - 오리
-                <br/>
-                Chicken - 닭
-                <br/>
-                Wolf - 늑대
-                <br/>
-                Spider - 거미
-                <br/>
-                Mouse - 쥐
-                <br/>
-                Sheep - 양
-                <br/>
-                Cow - 소
-                <br/>
-                Horse - 말
-                <br/>
-                Pig - 돼지
-                <br/>
-                Whale - 고래
-                <br/>
-                Butterfly - 나비
-                <br/>
-                Bear - 곰
-                <br/>
-                Elephant - 코끼리
-                <br/>
-                Shark - 상어
-            </p>
+        <div className='korean_cheatsheet_body'>
+            <h1 className='korean_cheatsheet_title'>Korean - Animals</h1>
+            <KoreanWord items={[
+              {"english":"Animal", "korean":"동물"},
+              {"english":"Cat", "korean":"고양이"},
+              {"english":"Dog", "korean":"개"},
+              {"english":"Turtle", "korean":"고북이"},
+              {"english":"Tiger", "korean":"호랑이"},
+              {"english":"Bird", "korean":"새"},
+              {"english":"Fish", "korean":"물고기"},
+              {"english":"Rabbit", "korean":"토끼"},
+              {"english":"Duck", "korean":"오리"},
+              {"english":"Chicken", "korean":"닭"},
+              {"english":"Wolf", "korean":"늑대"},
+              {"english":"Spider", "korean":"거미"},
+              {"english":"Mouse", "korean":"쥐"},
+              {"english":"Sheep", "korean":"양"},
+              {"english":"Cow", "korean":"소"},
+              {"english":"Horse", "korean":"말"},
+              {"english":"Pig", "korean":"돼지"},
+              {"english":"Whale", "korean":"고래"},
+              {"english":"Butterfly", "korean":"나비"},
+              {"english":"Bear", "korean":"곰"},
+              {"english":"Elephant", "korean":"코끼리"},
+              {"english":"Shark", "korean":"상어"}
+            ]}/>
         </div>
     );
 }
