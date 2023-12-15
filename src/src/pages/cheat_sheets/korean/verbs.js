@@ -35,7 +35,10 @@ function korean_verbs() {
               {"english":"To be hot", "korean":"덥다"},
               {"english":"To be easy", "korean":"쉽다"},
               {"english":"To be difficult", "korean":"어렵다"},
-              {"english":"To touch", "korean":"만지다"}
+              {"english":"To touch", "korean":"만지다"},
+              {"english":"To stand", "korean":"서다"},
+              {"english":"To lie down", "korean":"눕다"},
+              {"english":"To swim", "korean":"수영하다"}
             ]}/>
         </div>
     );
