@@ -11,7 +11,9 @@ function Korean() {
         <KoreanCategoryLink items={[
           {"url":"/korean/verbs", "title":"Learn verbs"},
           {"url":"/korean/dates", "title":"Learn dates"},
-          {"url":"/korean/animals", "title":"Learn animals"}
+          {"url":"/korean/animals", "title":"Learn animals"},
+          {"url":"/korean/questions", "title":"Learn questions"},
+          {"url":"/korean/places", "title":"Learn places"}
         ]}/>
       </div>
     </>

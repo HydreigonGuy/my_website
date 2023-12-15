@@ -18,8 +18,16 @@ function korean_dates() {
               {"english":"Sunday", "korean":"일요일"}
             ]}/>
             <br/>
+            <h3 className='korean_cheatsheet_subtitle'>Time units</h3>
             <KoreanWord items={[
+              {"english":"Minute", "korean":"분"},
               {"english":"A week", "korean":"일주일"}
+            ]}/>
+            <br/>
+            <h3 className='korean_cheatsheet_subtitle'>Moments in time</h3>
+            <KoreanWord items={[
+              {"english":"Now", "korean":"지금"},
+              {"english":"Today", "korean":"오늘"}
             ]}/>
         </div>
     );
