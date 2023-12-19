@@ -31,6 +31,10 @@ function korean_dates() {
               {"english":"Now", "korean":"지금"},
               {"english":"Today", "korean":"오늘"}
             ]}/>
+            <h3 className='korean_cheatsheet_subtitle'>Frequency</h3>
+            <KoreanWord items={[
+              {"english":"Every day", "korean":"매일"}
+            ]}/>
         </div>
     );
 }
