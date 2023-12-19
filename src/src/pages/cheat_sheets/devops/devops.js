@@ -10,6 +10,7 @@ function DevOps() {
         <h1 className='devops_cheatsheet_title'>My DevOps Cheat Sheet</h1>
         <DevOpsCategoryLink items={[
           {"url":"/devops/docker", "title":"Docker"},
+          {"url":"/devops/traefik", "title":"Traefik"},
         ]}/>
       </div>
     </>

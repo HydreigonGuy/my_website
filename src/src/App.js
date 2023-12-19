@@ -14,6 +14,7 @@ const KoreanSchoolPage = React.lazy(() => import("./pages/cheat_sheets/korean/sc
 const KoreanPlacesPage = React.lazy(() => import("./pages/cheat_sheets/korean/places"));
 const DevOpsPage = React.lazy(() => import("./pages/cheat_sheets/devops/devops"));
 const DevOpsDockerPage = React.lazy(() => import("./pages/cheat_sheets/devops/docker"));
+const DevOpsTraefikPage = React.lazy(() => import("./pages/cheat_sheets/devops/traefik"));
 const UKPage = React.lazy(() => import("./pages/travels/uk"));
 const KoreaPage = React.lazy(() => import("./pages/travels/korea"));
 const KoreaJochiwonPage = React.lazy(() => import("./pages/travels/korea_cities/jochiwon"));
@@ -40,6 +41,7 @@ function App() {
           <Route path="/korean/places" element={<KoreanPlacesPage />} />
           <Route path="/devops" element={<DevOpsPage />} />
           <Route path="/devops/docker" element={<DevOpsDockerPage />} />
+          <Route path="/devops/traefik" element={<DevOpsTraefikPage />} />
           <Route path="/uk" element={<UKPage />} />
           <Route path="/korea" element={<KoreaPage />} />
           <Route path="/korea/jochiwon" element={<KoreaJochiwonPage />} />
