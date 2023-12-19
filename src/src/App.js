@@ -10,6 +10,7 @@ const KoreanDatesPage = React.lazy(() => import("./pages/cheat_sheets/korean/dat
 const KoreanVerbsPage = React.lazy(() => import("./pages/cheat_sheets/korean/verbs"));
 const KoreanAnimalsPage = React.lazy(() => import("./pages/cheat_sheets/korean/animals"));
 const KoreanQuestionsPage = React.lazy(() => import("./pages/cheat_sheets/korean/questions"));
+const KoreanSchoolPage = React.lazy(() => import("./pages/cheat_sheets/korean/school"));
 const KoreanPlacesPage = React.lazy(() => import("./pages/cheat_sheets/korean/places"));
 const UKPage = React.lazy(() => import("./pages/travels/uk"));
 const KoreaPage = React.lazy(() => import("./pages/travels/korea"));
@@ -33,6 +34,7 @@ function App() {
           <Route path="/korean/verbs" element={<KoreanVerbsPage />} />
           <Route path="/korean/animals" element={<KoreanAnimalsPage />} />
           <Route path="/korean/questions" element={<KoreanQuestionsPage />} />
+          <Route path="/korean/school" element={<KoreanSchoolPage />} />
           <Route path="/korean/places" element={<KoreanPlacesPage />} />
           <Route path="/uk" element={<UKPage />} />
           <Route path="/korea" element={<KoreaPage />} />
