@@ -20,7 +20,9 @@ function korean_dates() {
             <br/>
             <h3 className='korean_cheatsheet_subtitle'>Time units</h3>
             <KoreanWord items={[
+              {"english":"Second", "korean":"초"},
               {"english":"Minute", "korean":"분"},
+              {"english":"Hour", "korean":"시간"},
               {"english":"A week", "korean":"일주일"}
             ]}/>
             <br/>
@@ -28,6 +30,10 @@ function korean_dates() {
             <KoreanWord items={[
               {"english":"Now", "korean":"지금"},
               {"english":"Today", "korean":"오늘"}
+            ]}/>
+            <h3 className='korean_cheatsheet_subtitle'>Frequency</h3>
+            <KoreanWord items={[
+              {"english":"Every day", "korean":"매일"}
             ]}/>
         </div>
     );
