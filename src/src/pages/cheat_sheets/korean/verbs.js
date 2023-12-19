@@ -38,7 +38,9 @@ function korean_verbs() {
               {"english":"To touch", "korean":"만지다"},
               {"english":"To stand", "korean":"서다"},
               {"english":"To lie down", "korean":"눕다"},
-              {"english":"To swim", "korean":"수영하다"}
+              {"english":"To swim", "korean":"수영하다"},
+              {"english":"To dream", "korean":"꿈을 꾸다"},
+              {"english":"To dance", "korean":"춤을 추다"}
             ]}/>
         </div>
     );
