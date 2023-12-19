@@ -16,7 +16,8 @@ function Home() {
           {"href":"/uk", "name":"UK"}
         ]}/>
         <HomeCategory title="My cheat sheets" items={[
-          {"href":"/korean", "name":"Korean"}
+          {"href":"/korean", "name":"Korean"},
+          {"href":"/devops", "name":"DevOps"}
         ]}/>
         </p>
       </div>
