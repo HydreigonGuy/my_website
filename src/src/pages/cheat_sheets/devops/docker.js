@@ -63,6 +63,45 @@ function devops_docker() {
                 volumes:<br/>
                 &emsp;certs:
             </p>
+            <h3>Docker</h3>
+            <p>
+                To build a docker image:
+            </p>
+            <p className='bash_code'>
+                sudo docker build .
+            </p>
+            <p>
+                In the command above, <b>.</b> is the path to the dockerfile.
+                Once built, docker will give you the image's ID that you can then run in a container with:
+            </p>
+            <p className='bash_code'>
+                sudo docker run IMAGE_ID
+            </p>
+            <p>
+                You can also get the ID and a lot more info running:
+            </p>
+            <p className='bash_code'>
+                sudo docker image ls
+            </p>
+            <p>
+                To kill a docker container, get it's container ID with:
+            </p>
+            <p className='bash_code'>
+                sudo docker ps
+            </p>
+            <p>
+                Then you can kill it with:
+            </p>
+            <p className='bash_code'>
+                sudo docker kill CONTAINER_ID
+            </p>
+            <h3>Cleaning Up</h3>
+            <p>
+                Docker Images can take up a lot of space on a server, make sure you regularly remove unused images with:
+            </p>
+            <p className='bash_code'>
+                sudo docker image prune
+            </p>
         </div>
     );
 }
