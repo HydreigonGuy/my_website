@@ -33,7 +33,6 @@ function korean_verbs() {
               {"english":"To count", "korean":"세다"},
               {"english":"To have to", "korean":"되다"},
               {"english":"To go", "korean":"가다"},
-              {"english":"To ", "korean":""},
             ]}/>
             <h3 className='korean_cheatsheet_subtitle'>Work</h3>
             <KoreanWord items={[
@@ -70,6 +69,7 @@ function korean_verbs() {
               {"english":"To be dirty", "korean":"더럽다"},
               {"english":"To be perfect", "korean":"완벽하다"},
               {"english":"To be spicy", "korean":"맵다"},
+              {"english":"To be big", "korean":"크다"},
             ]}/>
         </div>
     );
