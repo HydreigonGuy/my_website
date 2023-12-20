@@ -103,6 +103,10 @@ function devops_docker() {
                 &emsp;web:<br/>
                 &emsp;&emsp;external: true
             </p>
+            <h3>Useful links</h3>
+            <a className="url" href="https://traefik.io/traefik/" target="_blank">Traefik Website</a>
+            <a className="url" href="https://github.com/traefik/traefik" target="_blank">Traefik Github</a>
+            <a className="url" href="https://www.youtube.com/watch?v=wLrmmh1eI94&ab_channel=ChristianLempa" target="_blank">Youtube Traefik Tutorial I like</a>
         </div>
     );
 }

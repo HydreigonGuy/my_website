@@ -102,6 +102,9 @@ function devops_docker() {
             <p className='bash_code'>
                 sudo docker image prune
             </p>
+            <h3>Useful links</h3>
+            <a className="url" href="https://www.docker.com/" target="_blank">Docker Website</a>
+            <a className="url" href="https://hub.docker.com/" target="_blank">Docker Hub</a>
         </div>
     );
 }
