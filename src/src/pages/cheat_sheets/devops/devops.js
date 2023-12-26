@@ -11,6 +11,7 @@ function DevOps() {
         <DevOpsCategoryLink items={[
           {"url":"/devops/docker", "title":"Docker"},
           {"url":"/devops/traefik", "title":"Traefik"},
+          {"url":"/devops/prometheus", "title":"Prometheus"},
         ]}/>
       </div>
     </>
