@@ -12,6 +12,7 @@ function DevOps() {
           {"url":"/devops/docker", "title":"Docker"},
           {"url":"/devops/traefik", "title":"Traefik"},
           {"url":"/devops/prometheus", "title":"Prometheus"},
+          {"url":"/devops/certbot", "title":"Certbot"},
         ]}/>
       </div>
     </>

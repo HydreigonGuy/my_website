@@ -30,3 +30,7 @@
   display: block;
   color: darkblue;
 }
+
+.inline {
+  display: inline;
+}
