@@ -28,6 +28,9 @@ function korean_verbs() {
               {"english":"To have to", "korean":"되다"},
               {"english":"To begin", "korean":"시작하다"},
               {"english":"To not be able to", "korean":"못하다"},
+              {"english":"To send", "korean":"보내다"},
+              {"english":"To give", "korean":"주다"},
+              {"english":"To recieve", "korean":"받다"},
             ]}/>
             <h3 className='korean_cheatsheet_subtitle'>Mooving</h3>
             <KoreanWord items={[
@@ -80,6 +83,7 @@ function korean_verbs() {
               {"english":"To be spicy", "korean":"맵다"},
               {"english":"To be big", "korean":"크다"},
               {"english":"To be okay", "korean":"괜찮다"},
+              {"english":"To be careful", "korean":"조심하다"},
             ]}/>
         </div>
     );
