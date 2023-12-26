@@ -38,7 +38,6 @@ function korean_animals() {
               {"english":"Rhinoceros", "korean":"코뿔소"},
               {"english":"Bat", "korean":"박쥐"},
               {"english":"Boar", "korean":"멧돼지"},
-              {"english":"Crane", "korean":"두루미"},
             ]}/>
             <h3 className='korean_cheatsheet_subtitle'>Birds</h3>
             <KoreanWord items={[
@@ -46,7 +45,9 @@ function korean_animals() {
               {"english":"Duck", "korean":"오리"},
               {"english":"Chicken", "korean":"닭"},
               {"english":"Owl", "korean":"부엉이"},
-              {"english":"Eagle", "korean":"독수리"}
+              {"english":"Eagle", "korean":"독수리"},
+              {"english":"Crane", "korean":"두루미"},
+              {"english":"Crow", "korean":"까마귀"}
             ]}/>
             <h3 className='korean_cheatsheet_subtitle'>Fish / Water Animals</h3>
             <KoreanWord items={[
