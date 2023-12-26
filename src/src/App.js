@@ -12,6 +12,8 @@ const KoreanAnimalsPage = React.lazy(() => import("./pages/cheat_sheets/korean/a
 const KoreanQuestionsPage = React.lazy(() => import("./pages/cheat_sheets/korean/questions"));
 const KoreanSchoolPage = React.lazy(() => import("./pages/cheat_sheets/korean/school"));
 const KoreanPlacesPage = React.lazy(() => import("./pages/cheat_sheets/korean/places"));
+const KoreanAdjectivesPage = React.lazy(() => import("./pages/cheat_sheets/korean/adjectives"));
+const KoreanVocabularyPage = React.lazy(() => import("./pages/cheat_sheets/korean/vocabulary"));
 const DevOpsPage = React.lazy(() => import("./pages/cheat_sheets/devops/devops"));
 const DevOpsDockerPage = React.lazy(() => import("./pages/cheat_sheets/devops/docker"));
 const DevOpsTraefikPage = React.lazy(() => import("./pages/cheat_sheets/devops/traefik"));
@@ -42,6 +44,8 @@ function App() {
           <Route path="/korean/questions" element={<KoreanQuestionsPage />} />
           <Route path="/korean/school" element={<KoreanSchoolPage />} />
           <Route path="/korean/places" element={<KoreanPlacesPage />} />
+          <Route path="/korean/adjectives" element={<KoreanAdjectivesPage />} />
+          <Route path="/korean/vocabulary" element={<KoreanVocabularyPage />} />
           <Route path="/devops" element={<DevOpsPage />} />
           <Route path="/devops/docker" element={<DevOpsDockerPage />} />
           <Route path="/devops/traefik" element={<DevOpsTraefikPage />} />

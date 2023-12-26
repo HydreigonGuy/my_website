@@ -14,7 +14,9 @@ function Korean() {
           {"url":"/korean/school", "title":"Learn school vocabulary"},
           {"url":"/korean/animals", "title":"Learn animals"},
           {"url":"/korean/questions", "title":"Learn questions"},
-          {"url":"/korean/places", "title":"Learn places"}
+          {"url":"/korean/places", "title":"Learn places"},
+          {"url":"/korean/adjectives", "title":"Learn to describe"},
+          {"url":"/korean/vocabulary", "title":"Learn various words"},
         ]}/>
       </div>
     </>
