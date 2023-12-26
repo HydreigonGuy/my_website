@@ -1,0 +1,36 @@
+
+.devops_cheatsheet_body {
+  padding: max(20px, calc(10px + 2vmin));
+  font-family: "SometypeMono";
+}
+  
+.devops_cheat_sheet_category_url {
+  font-size: min(calc(4px + 3vmin), 32px);
+  display: block;
+  color: darkblue;
+}
+
+.devops_cheatsheet_title {
+  font-size: min(calc(8px + 3vmin), 54px);
+  margin-top: 0;
+}
+
+.bash_code {
+    background-color: black;
+    padding: 20px;
+    color: white;
+}
+
+.file_contents {
+    padding: 20px;
+    background-color: #ddd;
+}
+
+.url {
+  display: block;
+  color: darkblue;
+}
+
+.inline {
+  display: inline;
+}
