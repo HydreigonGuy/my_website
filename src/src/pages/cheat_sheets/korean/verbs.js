@@ -38,6 +38,7 @@ function korean_verbs() {
               {"english":"To enter / go into", "korean":"들다"},
               {"english":"To drive", "korean":"운전하다"},
               {"english":"To fly", "korean":"날다"},
+              {"english":"To visit", "korean":"방문하다"},
             ]}/>
             <h3 className='korean_cheatsheet_subtitle'>Comunication</h3>
             <KoreanWord items={[
@@ -71,6 +72,7 @@ function korean_verbs() {
             <KoreanWord items={[
               {"english":"To be easy", "korean":"쉽다"},
               {"english":"To be difficult", "korean":"어렵다"},
+              {"english":"To be bad", "korean":"나쁘다"},
               {"english":"To be cold", "korean":"춥다"},
               {"english":"To be hot", "korean":"덥다"},
               {"english":"To be heavy", "korean":"무겁다"},
@@ -84,6 +86,11 @@ function korean_verbs() {
               {"english":"To be big", "korean":"크다"},
               {"english":"To be okay", "korean":"괜찮다"},
               {"english":"To be careful", "korean":"조심하다"},
+              {"english":"To be short", "korean":"짧다"},
+              {"english":"To be long", "korean":"길다"},
+              {"english":"To be in pain / to hurt", "korean":"아프다"},
+              {"english":"To be low", "korean":"낮다"},
+              {"english":"To be narrow / small", "korean":"좁다"},
             ]}/>
         </div>
     );

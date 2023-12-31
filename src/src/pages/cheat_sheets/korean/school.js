@@ -24,7 +24,10 @@ function korean_school() {
               {"english":"Glasses", "korean":"안경"},
               {"english":"Ruler", "korean":"자"},
               {"english":"Pencil Case", "korean":"필통"},
-              {"english":"Computer", "korean":"컴퓨터"}
+              {"english":"Computer", "korean":"컴퓨터"},
+              {"english":"Paper", "korean":"종이"},
+              {"english":"Folder", "korean":"폴더"},
+              {"english":"textbook", "korean":"교과서"},
             ]}/>
         </div>
     );

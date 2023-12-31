@@ -11,6 +11,7 @@ function korean_adjectives() {
               {"english":"a lot", "korean":"많"},
               {"english":"a little", "korean":"조금"},
               {"english":"can't", "korean":"못"},
+              {"english":"bad", "korean":"나쁜"},
             ]}/>
         </div>
     );
