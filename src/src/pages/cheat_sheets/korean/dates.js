@@ -29,7 +29,10 @@ function korean_dates() {
             <h3 className='korean_cheatsheet_subtitle'>Moments in time</h3>
             <KoreanWord items={[
               {"english":"Now", "korean":"지금"},
+              {"english":"Yet", "korean":"아직"},
               {"english":"Today", "korean":"오늘"},
+              {"english":"Yesterday", "korean":"어제"},
+              {"english":"Tomorow", "korean":"내일"},
               {"english":"Recently", "korean":"요즘"}
             ]}/>
             <h3 className='korean_cheatsheet_subtitle'>Frequency</h3>
