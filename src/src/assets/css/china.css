@@ -1,0 +1,24 @@
+
+.china_header_image {
+    width: 100%;
+    margin-top: -30%;
+    margin-bottom: -15%;
+}
+
+.china_header_image_container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.china_body {
+    padding: 20px;
+    min-height: 120vh;
+    background-color: darkred;
+    color: white;
+}
+
+h1 {
+    font-size: 8vmin;
+    margin: 0;
+    text-align: center;
+}

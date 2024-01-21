@@ -52,7 +52,7 @@ import '../../assets/css/travels.css';
 
 import ProgressiveImg from '../../components/image_loading';
 
-function Korea() {
+function UK() {
   return (
     <>
       <div className='korean_page korean'>
@@ -93,4 +93,4 @@ function Korea() {
   );
 }
 
-export default Korea;
+export default UK;
