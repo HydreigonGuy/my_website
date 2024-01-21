@@ -1,0 +1,45 @@
+
+.china_header_image {
+    width: 100%;
+    margin-top: -30%;
+    margin-bottom: -15%;
+}
+
+.china_header_image_container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.china_body {
+    padding: 2%;
+    min-height: 120vh;
+    background-color: darkred;
+    color: white;
+}
+
+h1 {
+    font-size: 8vmin;
+    margin: 0;
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+.place_url_link {
+    width: 40%;
+    display: inline-block;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.place_url_link img {
+    width: 100%;
+}
+
+.place_url_link h2 {
+    text-align: center;
+    font-size: 3Vmin;
+}
+
+h3 {
+    font-size: 3Vmin;
+}
