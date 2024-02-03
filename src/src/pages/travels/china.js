@@ -12,6 +12,20 @@ import temple_1_img from '../../assets/images/china/IMG20240107140207.jpg';
 import stucture_1_img from '../../assets/images/china/IMG20240107161915.jpg';
 import cool_building_1_img from '../../assets/images/china/IMG20240108111139.jpg';
 import pearl_market_img from '../../assets/images/china/IMG20240108140221.jpg';
+import huairou_reservoir_1_img from '../../assets/images/china/IMG20240128153509.jpg';
+import huairou_reservoir_2_img from '../../assets/images/china/IMG20240128153513.jpg';
+import yanqi_lake_1_img from '../../assets/images/china/IMG20240129134049.jpg';
+import yanqi_lake_2_img from '../../assets/images/china/IMG20240129141855.jpg';
+import yanqi_lake_3_img from '../../assets/images/china/IMG20240129141907.jpg';
+import hongluo_temple_1_img from '../../assets/images/china/IMG20240130125229.jpg';
+import hongluo_temple_2_img from '../../assets/images/china/IMG20240130125415.jpg';
+import hongluo_temple_3_img from '../../assets/images/china/IMG20240130125608.jpg';
+import hongluo_temple_4_img from '../../assets/images/china/IMG20240130125638.jpg';
+import hongluo_temple_5_img from '../../assets/images/china/IMG20240130130003.jpg';
+import hongluo_temple_6_img from '../../assets/images/china/IMG20240130130123.jpg';
+import old_summer_palace_1_img from '../../assets/images/china/IMG20240201142421.jpg';
+import old_summer_palace_2_img from '../../assets/images/china/IMG20240201142447.jpg';
+import old_summer_palace_3_img from '../../assets/images/china/IMG20240201160507.jpg';
 
 
 import '../../assets/css/china.css';
@@ -61,6 +75,24 @@ function China() {
             <img src={beijing_night_one_img} className="big_image" />
             <img src={beijing_night_two_img} className="half_image" />
             <img src={beijing_night_three_img} className="half_image" />
+            <h3>Huairou Reservoir</h3>
+            <img src={huairou_reservoir_1_img} className="half_image" />
+            <img src={huairou_reservoir_2_img} className="half_image" />
+            <h3>Yanqi Lake</h3>
+            <img src={yanqi_lake_1_img} className="true_third_image" />
+            <img src={yanqi_lake_2_img} className="true_third_image" />
+            <img src={yanqi_lake_3_img} className="true_third_image" />
+            <h3>Hongluo Temple</h3>
+            <img src={hongluo_temple_1_img} className="big_image" />
+            <img src={hongluo_temple_2_img} className="fourth_image" />
+            <img src={hongluo_temple_3_img} className="fourth_image" />
+            <img src={hongluo_temple_5_img} className="fourth_image" />
+            <img src={hongluo_temple_6_img} className="fourth_image" />
+            <img src={hongluo_temple_4_img} className="big_image" />
+            <h3>Old Summer Palace</h3>
+            <img src={old_summer_palace_1_img} className="half_image" />
+            <img src={old_summer_palace_3_img} className="half_image" />
+            <img src={old_summer_palace_2_img} className="big_image" />
         </div>
         </>
     );
