@@ -36,6 +36,10 @@ function korean_vocabulary() {
               {"english":"Present", "korean":"선물"},
               {"english":"Toy", "korean":"장난감"},
             ]}/>
+            <h3 className='korean_cheatsheet_subtitle'>Other</h3>
+            <KoreanWord items={[
+              {"english":"Police", "korean":"경찰"},
+            ]}/>
         </div>
     );
 }

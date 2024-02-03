@@ -35,11 +35,17 @@ function korean_food() {
               {"english":"Lunch", "korean":"점심"},
               {"english":"Dinner", "korean":"저녁"},
               {"english":"Snack", "korean":"과자"},
+              {"english":"Dessert", "korean":"후식"},
             ]}/>
             <h3 className='korean_cheatsheet_subtitle'>Utensils</h3>
             <KoreanWord items={[
               {"english":"Plate", "korean":"접시"},
               {"english":"Bowl", "korean":"그릇"},
+              {"english":"Fork", "korean":"포크"},
+              {"english":"Spoon", "korean":"숟가락"},
+              {"english":"Chopsticks", "korean":"젓가락"},
+              {"english":"Knife", "korean":"칼"},
+              {"english":"Cup", "korean":"컵"},
             ]}/>
         </div>
     );
