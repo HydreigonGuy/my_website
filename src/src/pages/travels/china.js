@@ -47,7 +47,7 @@ function China() {
                 </a>
             </div>
             <div className='place_url_link'>
-                <a>
+                <a href='/china/summerpalace'>
                     <img src={summer_palace_img}/>
                     <h2>Summer Palace</h2>
                 </a>
