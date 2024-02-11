@@ -41,7 +41,7 @@ function China() {
         <div className='china_body'>
             <h1>China</h1>
             <div className='place_url_link'>
-                <a>
+                <a href='/china/baladingwall'>
                     <img src={great_wall_of_badaling_img}/>
                     <h2>Great Wall of Balading</h2>
                 </a>
