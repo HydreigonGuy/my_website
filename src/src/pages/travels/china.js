@@ -41,25 +41,25 @@ function China() {
         <div className='china_body'>
             <h1>China</h1>
             <div className='place_url_link'>
-                <a>
+                <a href='/china/baladingwall'>
                     <img src={great_wall_of_badaling_img}/>
                     <h2>Great Wall of Balading</h2>
                 </a>
             </div>
             <div className='place_url_link'>
-                <a>
+                <a href='/china/summerpalace'>
                     <img src={summer_palace_img}/>
                     <h2>Summer Palace</h2>
                 </a>
             </div>
             <div className='place_url_link'>
-                <a>
+                <a href='/china/forbiddencity'>
                     <img src={forbidden_city_img}/>
                     <h2>Forbidden City</h2>
                 </a>
             </div>
             <div className='place_url_link'>
-                <a>
+                <a href='/china/beihaiparc'>
                     <img src={beihai_park_img}/>
                     <h2>Beihai Park</h2>
                 </a>
