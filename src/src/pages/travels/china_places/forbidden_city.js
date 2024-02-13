@@ -15,6 +15,7 @@ import dragon_roof_img from '../../../assets/images/china/IMG20240110135447.jpg'
 import painting_img from '../../../assets/images/china/IMG20240110150458.jpg';
 import dragon_wall_img from '../../../assets/images/china/IMG20240110153646.jpg';
 import exit_building_img from '../../../assets/images/china/IMG20240110162342.jpg';
+import tower_2_img from '../../../assets/images/china/IMG20240106100457.jpg';
 
 import '../../../assets/css/china.css';
 import '../../../assets/css/travels.css';
@@ -39,6 +40,7 @@ function ForbiddenCity() {
                 <img src={entry_2_img} className="half_image" />
                 <img src={tower_1_img} className="half_image" />
                 <img src={dragon_roof_img} className="half_image" />
+                <img src={tower_2_img} className="big_image" />
             </div>
         </>
     );
