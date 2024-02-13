@@ -13,8 +13,10 @@ function Korean() {
           <KoreanCategoryLink items={[
             {"url":"/korean/verbs", "title":"List of verbs"},
             {"url":"/korean/food", "title":"Food"},
+            {"url":"/korean/people", "title":"People"},
             {"url":"/korean/animals", "title":"Animals"},
             {"url":"/korean/color", "title":"Colors"},
+            {"url":"/korean/clothes", "title":"Clothes"},
             {"url":"/korean/numbers", "title":"Numbers"},
             {"url":"/korean/places", "title":"Places"},
             {"url":"/korean/dates", "title":"Dates"},
