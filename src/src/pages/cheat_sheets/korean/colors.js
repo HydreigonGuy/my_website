@@ -1,17 +1,17 @@
 
 import '../../../assets/css/korean.css';
 
-import vocab from './korean/vocab/animal.json';
+import vocab from './korean/vocab/colors.json';
 
 import KoreanWord from "../../../components/korean_word";
 
-function korean_animals() {
+function korean_colors() {
     return (
         <div className='korean_cheatsheet_body'>
-            <h1 className='korean_cheatsheet_title'>Korean - Animals</h1>
+            <h1 className='korean_cheatsheet_title'>Korean - Colors</h1>
             <KoreanWord items={vocab}/>
         </div>
     );
 }
 
-export default korean_animals;
+export default korean_colors;
