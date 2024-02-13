@@ -137,3 +137,9 @@ position: absolute;
 background-color: beige;
 padding: 20px;
 }
+
+.half_screen {
+  width: 50%;
+  display: inline-block;
+  vertical-align: top;
+}
