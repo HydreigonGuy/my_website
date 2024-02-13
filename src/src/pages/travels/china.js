@@ -26,6 +26,17 @@ import hongluo_temple_6_img from '../../assets/images/china/IMG20240130130123.jp
 import old_summer_palace_1_img from '../../assets/images/china/IMG20240201142421.jpg';
 import old_summer_palace_2_img from '../../assets/images/china/IMG20240201142447.jpg';
 import old_summer_palace_3_img from '../../assets/images/china/IMG20240201160507.jpg';
+import tianamen_pillar_img from '../../assets/images/china/IMG20240107135606.jpg';
+import tianamen_1_img from '../../assets/images/china/IMG20240107141620.jpg';
+import tianamen_2_img from '../../assets/images/china/IMG20240107142252.jpg';
+import zhongshan_parc_1_img from '../../assets/images/china/IMG20240107144010.jpg';
+import zhongshan_parc_2_img from '../../assets/images/china/IMG20240107144032.jpg';
+import zhongshan_parc_3_img from '../../assets/images/china/IMG20240107144512.jpg';
+import zhongshan_parc_4_img from '../../assets/images/china/IMG20240107144723.jpg';
+import temple_of_heaven_1_img from '../../assets/images/china/IMG20240108120051.jpg';
+import temple_of_heaven_2_img from '../../assets/images/china/IMG20240108121214.jpg';
+import temple_of_heaven_3_img from '../../assets/images/china/IMG20240108122036.jpg';
+import temple_of_heaven_4_img from '../../assets/images/china/IMG20240108122912.jpg';
 
 
 import '../../assets/css/china.css';
