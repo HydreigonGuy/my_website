@@ -3,15 +3,11 @@ function KoreanWord(props) {
   return (
       <>
       {
-          props.items.map(
-              function (item) {
-                  return (
-                      <p className="korean_word">
-                          {item.english} - {item.korean}
-                      </p>
-                  );
-              }
-          )
+        Object.keys(props.items).map((english, _) => (
+          <p className="korean_word">
+              {english} - {props.items[english]}
+          </p>
+        ))
       }
       </>
   );
