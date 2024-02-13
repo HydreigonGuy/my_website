@@ -13,12 +13,15 @@ function Korean() {
           <KoreanCategoryLink items={[
             {"url":"/korean/verbs", "title":"List of verbs"},
             {"url":"/korean/food", "title":"Food"},
+            {"url":"/korean/people", "title":"People"},
             {"url":"/korean/animals", "title":"Animals"},
             {"url":"/korean/color", "title":"Colors"},
-            {"url":"/korean/places", "title":"Learn places"},
-            {"url":"/korean/dates", "title":"Learn dates"},
+            {"url":"/korean/clothes", "title":"Clothes"},
+            {"url":"/korean/numbers", "title":"Numbers"},
+            {"url":"/korean/places", "title":"Places"},
+            {"url":"/korean/dates", "title":"Dates"},
             {"url":"/korean/adjectives", "title":"Adjectives"},
-            {"url":"/korean/vocabulary", "title":"Learn various words"},
+            {"url":"/korean/vocabulary", "title":"Various words"},
           ]}/>
         </div>
         <div className='half_screen'>
@@ -27,6 +30,7 @@ function Korean() {
             {"url":"/korean/time", "title":"Time"},
             {"url":"/korean/position", "title":"Position"},
             {"url":"/korean/questions", "title":"Questions"},
+            {"url":"/korean/adverb", "title":"Adverbs"},
           ]}/>
         </div>
       </div>
