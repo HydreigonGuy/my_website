@@ -27,6 +27,7 @@ function Korean() {
             {"url":"/korean/time", "title":"Time"},
             {"url":"/korean/position", "title":"Position"},
             {"url":"/korean/questions", "title":"Questions"},
+            {"url":"/korean/adverb", "title":"Adverbs"},
           ]}/>
         </div>
       </div>

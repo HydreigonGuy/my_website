@@ -17,6 +17,7 @@ const KoreanVocabularyPage = React.lazy(() => import("./pages/cheat_sheets/korea
 const KoreanColorPage = React.lazy(() => import("./pages/cheat_sheets/korean/colors"));
 const KoreanPositionPage = React.lazy(() => import("./pages/cheat_sheets/korean/position"));
 const KoreanTimePage = React.lazy(() => import("./pages/cheat_sheets/korean/time"));
+const KoreanAdverbPage = React.lazy(() => import("./pages/cheat_sheets/korean/adverb"));
 const DevOpsPage = React.lazy(() => import("./pages/cheat_sheets/devops/devops"));
 const DevOpsDockerPage = React.lazy(() => import("./pages/cheat_sheets/devops/docker"));
 const DevOpsTraefikPage = React.lazy(() => import("./pages/cheat_sheets/devops/traefik"));
@@ -57,6 +58,7 @@ function App() {
           <Route path="/korean/color" element={<KoreanColorPage />} />
           <Route path="/korean/position" element={<KoreanPositionPage />} />
           <Route path="/korean/time" element={<KoreanTimePage />} />
+          <Route path="/korean/adverb" element={<KoreanAdverbPage />} />
           <Route path="/devops" element={<DevOpsPage />} />
           <Route path="/devops/docker" element={<DevOpsDockerPage />} />
           <Route path="/devops/traefik" element={<DevOpsTraefikPage />} />
