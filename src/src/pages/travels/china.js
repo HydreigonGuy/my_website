@@ -26,7 +26,7 @@ import hongluo_temple_6_img from '../../assets/images/china/IMG20240130130123.jp
 import old_summer_palace_1_img from '../../assets/images/china/IMG20240201142421.jpg';
 import old_summer_palace_2_img from '../../assets/images/china/IMG20240201142447.jpg';
 import old_summer_palace_3_img from '../../assets/images/china/IMG20240201160507.jpg';
-import tianamen_pillar_img from '../../assets/images/china/IMG20240107135606.jpg';
+// import tianamen_pillar_img from '../../assets/images/china/IMG20240107135606.jpg';
 import tianamen_1_img from '../../assets/images/china/IMG20240107141620.jpg';
 import tianamen_2_img from '../../assets/images/china/IMG20240107142252.jpg';
 import zhongshan_parc_1_img from '../../assets/images/china/IMG20240107144010.jpg';
@@ -104,6 +104,21 @@ function China() {
             <img src={old_summer_palace_1_img} className="half_image" />
             <img src={old_summer_palace_3_img} className="half_image" />
             <img src={old_summer_palace_2_img} className="big_image" />
+            <h3>Tianamen</h3>
+            <img src={tianamen_square_img} className="big_image" />
+            <img src={tianamen_1_img} className="half_image" />
+            <img src={tianamen_2_img} className="half_image" />
+            {/*<img src={tianamen_pillar_img} className="half_image" />*/}
+            <h3>Zhongshan Parc</h3>
+            <img src={zhongshan_parc_1_img} className="half_image" />
+            <img src={zhongshan_parc_3_img} className="half_image" />
+            <img src={zhongshan_parc_2_img} className="half_image" />
+            <img src={zhongshan_parc_4_img} className="half_image" />
+            <h3>Temple of Heaven</h3>
+            <img src={temple_of_heaven_1_img} className="half_image" />
+            <img src={temple_of_heaven_2_img} className="half_image" />
+            <img src={temple_of_heaven_3_img} className="big_image" />
+            <img src={temple_of_heaven_4_img} className="big_image" />
         </div>
         </>
     );
