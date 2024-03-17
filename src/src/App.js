@@ -28,6 +28,7 @@ const DevOpsPrometheusPage = React.lazy(() => import("./pages/cheat_sheets/devop
 const DevOpsCertbotPage = React.lazy(() => import("./pages/cheat_sheets/devops/certbot"));
 const DevOpsDatabasesPage = React.lazy(() => import("./pages/cheat_sheets/devops/databases"));
 const UKPage = React.lazy(() => import("./pages/travels/uk"));
+const JapanPage = React.lazy(() => import("./pages/travels/japan"));
 const ChinaPage = React.lazy(() => import("./pages/travels/china"));
 const ChinaBaladingWallPage = React.lazy(() => import("./pages/travels/china_places/wall_of_balading"));
 const ChinaSummerPalacePage = React.lazy(() => import("./pages/travels/china_places/summer_palace"));
@@ -72,6 +73,7 @@ function App() {
           <Route path="/devops/certbot" element={<DevOpsCertbotPage />} />
           <Route path="/devops/databases" element={<DevOpsDatabasesPage />} />
           <Route path="/uk" element={<UKPage />} />
+          <Route path="/japan" element={<JapanPage />} />
           <Route path="/china" element={<ChinaPage />} />
           <Route path="/china/baladingwall" element={<ChinaBaladingWallPage />} />
           <Route path="/china/summerpalace" element={<ChinaSummerPalacePage />} />
