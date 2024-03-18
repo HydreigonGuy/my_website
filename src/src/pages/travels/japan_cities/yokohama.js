@@ -31,3 +31,12 @@ import port_view_2_img_v from '../../../assets/images/japan/yokohama/IMG20240220
 import evening_skyline_img_h from '../../../assets/images/japan/yokohama/IMG20240220164826.jpg';
 import city_evening_view_img_h from '../../../assets/images/japan/yokohama/IMG20240220174640.jpg';
 import city_sunset_view_img_h from '../../../assets/images/japan/yokohama/IMG20240220174932.jpg';
+
+
+function Yokohama() {
+    return (
+            <p>Yokohama</p>
+    );
+}
+
+export default Yokohama;

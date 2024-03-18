@@ -18,3 +18,11 @@ import street_night_img_v from '../../../assets/images/japan/osaka/IMG2024022420
 import osaka_castle_1_img_v from '../../../assets/images/japan/osaka/IMG20240225102507.jpg';
 import osaka_castle_2_img_v from '../../../assets/images/japan/osaka/IMG20240225102650.jpg';
 import osaka_castle_plum_garden_img_h from '../../../assets/images/japan/osaka/IMG20240225103840.jpg';
+
+function Osaka() {
+    return (
+            <p>Osaka</p>
+    );
+}
+
+export default Osaka;

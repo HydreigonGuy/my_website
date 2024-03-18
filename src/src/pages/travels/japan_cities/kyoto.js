@@ -45,3 +45,11 @@ import higashi_honganji_temple_2_img_v from '../../../assets/images/japan/kyoto/
 import higashi_honganji_temple_3_img_h from '../../../assets/images/japan/kyoto/IMG20240223154655.jpg';
 import higashi_honganji_temple_4_img_v from '../../../assets/images/japan/kyoto/IMG20240223155109.jpg';
 import higashi_honganji_temple_5_img_h from '../../../assets/images/japan/kyoto/IMG20240223160111.jpg';
+
+function Kyoto() {
+    return (
+            <p>Kyoto</p>
+    );
+}
+
+export default Kyoto;

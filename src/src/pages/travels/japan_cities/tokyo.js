@@ -42,3 +42,11 @@ import tokyo_imperial_palace_1_img from '../../../assets/images/japan/tokyo/IMG2
 import shinjuku_1_img_h from '../../../assets/images/japan/tokyo/IMG20240218213702.jpg';
 import shinjuku_2_godzilla_head_img_v from '../../../assets/images/japan/tokyo/IMG20240218214524.jpg';
 import shibuya_img from '../../../assets/images/japan/tokyo/IMG20240220184955.jpg';
+
+function Tokyo() {
+    return (
+            <p>Tokyo</p>
+    );
+}
+
+export default Tokyo;
