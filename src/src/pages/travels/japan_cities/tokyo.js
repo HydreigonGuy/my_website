@@ -38,10 +38,10 @@ import hamarikyu_gardens_2_city_view_img_h from '../../../assets/images/japan/to
 import hamarikyu_gardens_3_garden_and_tokyo_tower_img_v from '../../../assets/images/japan/tokyo/IMG20240218140747.jpg';
 import hamarikyu_gardens_4_city_skyline_img_h from '../../../assets/images/japan/tokyo/IMG20240218141143.jpg';
 import hamarikyu_gardens_5_traditional_house_insides_img_v from '../../../assets/images/japan/tokyo/IMG20240218142936.jpg';
-import tokyo_imperial_palace_1_img from '../../../assets/images/japan/tokyo/IMG20240218153908.jpg';
+import tokyo_imperial_palace_1_img_v from '../../../assets/images/japan/tokyo/IMG20240218153908.jpg';
 import shinjuku_1_img_h from '../../../assets/images/japan/tokyo/IMG20240218213702.jpg';
 import shinjuku_2_godzilla_head_img_v from '../../../assets/images/japan/tokyo/IMG20240218214524.jpg';
-import shibuya_img from '../../../assets/images/japan/tokyo/IMG20240220184955.jpg';
+import shibuya_img_h from '../../../assets/images/japan/tokyo/IMG20240220184955.jpg';
 
 import '../../../assets/css/japan.css';
 import '../../../assets/css/travels.css';

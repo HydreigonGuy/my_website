@@ -32,10 +32,51 @@ import evening_skyline_img_h from '../../../assets/images/japan/yokohama/IMG2024
 import city_evening_view_img_h from '../../../assets/images/japan/yokohama/IMG20240220174640.jpg';
 import city_sunset_view_img_h from '../../../assets/images/japan/yokohama/IMG20240220174932.jpg';
 
+import '../../../assets/css/japan.css';
+import '../../../assets/css/travels.css';
+
 
 function Yokohama() {
     return (
-            <p>Yokohama</p>
+        <>
+            {/*<p>Yokohama</p>*/}
+
+            <img src={evening_skyline_img_h} className="big_image" />
+            <img src={skyline_2_img_h} className="half_image" />
+            <img src={city_sunset_view_img_h} className="half_image" />
+            <img src={red_brick_warehouse_img_v} className="half_image" />
+            <img src={skyline_1_img_v} className="half_image" />
+            <img src={red_brick_warehouse_2_img_h} className="half_image" />
+            <img src={city_evening_view_img_h} className="half_image" />
+            <img src={tree_blossom_img_v} className="half_image" />
+            <img src={port_view_2_img_v} className="half_image" />
+            <img src={feris_wheel_img_v} className="half_image" />
+            <img src={bread_buy_statue_img_v} className="half_image" />
+            <img src={pokemon_center_1_img_v} className="half_image" />
+            <img src={pokemon_center_2_img_v} className="half_image" />
+        
+        {/* Sankeien */}
+            <img src={sankeien_1_bamboos_img_h} className="third_image" />
+            <img src={sankeien_10_img_h} className="third_image" />
+            <img src={sankeien_2_bamboos_img_h} className="third_image" />
+            <img src={sankeien_3_stairway_img_v} className="half_image" />
+            <img src={sankeien_4_top_temple_img_v} className="half_image" />
+            <img src={sankeien_5_top_view_img_v} className="half_image" />
+            <img src={sankeien_6_img_v} className="half_image" />
+            <img src={sankeien_7_img_v} className="third_image" />
+            <img src={sankeien_12_img_v} className="third_image" />
+            <img src={sankeien_13_img_v} className="third_image" />
+            <img src={sankeien_8_bamboo_in_front_of_house_img_v} className="third_image" />
+            <img src={sankeien_9_img_v} className="third_image" />
+            <img src={sankeien_11_bamboos_img_v} className="third_image" />
+            <img src={sankeien_14__img_v} className="big_image" />
+
+            <img src={misc_shrine_img_h} className="half_image" />
+            <img src={port_view_1_img_h} className="half_image" />
+            <img src={chinatown_1_img_v} className="third_image" />
+            <img src={chinatown_2_img_v} className="third_image" />
+            <img src={chinatown_3_img_v} className="third_image" />
+        </>
     );
 }
 
