@@ -46,9 +46,66 @@ import higashi_honganji_temple_3_img_h from '../../../assets/images/japan/kyoto/
 import higashi_honganji_temple_4_img_v from '../../../assets/images/japan/kyoto/IMG20240223155109.jpg';
 import higashi_honganji_temple_5_img_h from '../../../assets/images/japan/kyoto/IMG20240223160111.jpg';
 
+import '../../../assets/css/japan.css';
+import '../../../assets/css/travels.css';
+
 function Kyoto() {
     return (
-            <p>Kyoto</p>
+        <>
+
+        {/* Fushimi Inari */}
+            <img src={fushimi_inari_1_entrance_day_img_v} className="half_image" />
+            <img src={fushimi_inari_2_img_v} className="half_image" />
+            <img src={fushimi_inari_9_wall_of_mini_gates_img_h} className="true_third_image" />
+            <img src={fushimi_inari_4_img_h} className="true_third_image" />
+            <img src={fushimi_inari_10_wall_of_mini_gates_img_h} className="true_third_image" />
+            <img src={fushimi_inari_5_first_gates_img_v} className="true_third_image" />
+            <img src={fushimi_inari_6_gates_img_v} className="true_third_image" />
+            <img src={fushimi_inari_7_img_v} className="true_third_image" />
+            <img src={fushimi_inari_8_statue_img_v} className="half_image" />
+            <img src={fushimi_inari_11_pond_img_v} className="half_image" />
+            <img src={fushimi_inari_12_gates_img_v} className="half_image" />
+            <img src={fushimi_inari_13_pond_img_v} className="half_image" />
+            <img src={fushimi_inari_16_img_v} className="half_image" />
+            <img src={fushimi_inari_17_img_v} className="half_image" />
+            <img src={fushimi_inari_19_city_view_from_top_img_h} className="big_image" />
+            <img src={fushimi_inari_14_img_h} className="true_third_image" />
+            <img src={fushimi_inari_20_img_h} className="true_third_image" />
+            <img src={fushimi_inari_21_img_h} className="true_third_image" />
+            <img src={fushimi_inari_22_img_v} className="true_third_image" />
+            <img src={fushimi_inari_18_top_img_v} className="true_third_image" />
+            <img src={fushimi_inari_23_img_v} className="true_third_image" />
+
+        {/* Kinkakuji */}
+            <img src={kinkakuji_1_img_v} className="half_image" />
+            <img src={kinkakuji_3_img_v} className="half_image" />
+            <img src={kinkakuji_4_img_v} className="half_image" />
+            <img src={kinkakuji_2_img_v} className="half_image" />
+
+            <img src={dog_temple_statue_img_v} className="half_image" />
+            <img src={hog_temple_statue_img_v} className="half_image" />
+
+            <img src={kyoto_imperial_palace_1_img_h} className="half_image" />
+            <img src={kyoto_imperial_palace_2_img_h} className="half_image" />
+
+            <img src={kyoto_imperial_palace_3_garden_img_h} className="half_image" />
+            <img src={kyoto_imperial_palace_4_garden_img_h} className="half_image" />
+            <img src={kyoto_imperial_palace_5_garden_img_v} className="half_image" />
+            <img src={kyoto_imperial_palace_6_garden_img_v} className="half_image" />
+            <img src={kiyomizu_dera_1_entrence_img_v} className="half_image" />
+            <img src={kiyomizu_dera_2_temple_img_v} className="half_image" />
+            <img src={streets_1_img_v} className="half_image" />
+            <img src={streets_2_img_v} className="half_image" />
+            <img src={higashi_honganji_temple_2_img_v} className="half_image" />
+            <img src={higashi_honganji_temple_4_img_v} className="half_image" />
+            <img src={higashi_honganji_temple_1_img_h} className="true_third_image" />
+            <img src={higashi_honganji_temple_3_img_h} className="true_third_image" />
+            <img src={higashi_honganji_temple_5_img_h} className="true_third_image" />
+
+            <img src={nijo_castle_view_img_h} className="big_image" />
+
+
+        </>
     );
 }
 
