@@ -28,6 +28,12 @@ const DevOpsPrometheusPage = React.lazy(() => import("./pages/cheat_sheets/devop
 const DevOpsCertbotPage = React.lazy(() => import("./pages/cheat_sheets/devops/certbot"));
 const DevOpsDatabasesPage = React.lazy(() => import("./pages/cheat_sheets/devops/databases"));
 const UKPage = React.lazy(() => import("./pages/travels/uk"));
+const JapanPage = React.lazy(() => import("./pages/travels/japan"));
+const JapanTokyoPage = React.lazy(() => import("./pages/travels/japan_cities/tokyo"));
+const JapanYokohamaPage = React.lazy(() => import("./pages/travels/japan_cities/yokohama"));
+const JapanHiroshimaPage = React.lazy(() => import("./pages/travels/japan_cities/hiroshima"));
+const JapanKyotoPage = React.lazy(() => import("./pages/travels/japan_cities/kyoto"));
+const JapanOsakaPage = React.lazy(() => import("./pages/travels/japan_cities/osaka"));
 const ChinaPage = React.lazy(() => import("./pages/travels/china"));
 const ChinaBaladingWallPage = React.lazy(() => import("./pages/travels/china_places/wall_of_balading"));
 const ChinaSummerPalacePage = React.lazy(() => import("./pages/travels/china_places/summer_palace"));
@@ -72,6 +78,12 @@ function App() {
           <Route path="/devops/certbot" element={<DevOpsCertbotPage />} />
           <Route path="/devops/databases" element={<DevOpsDatabasesPage />} />
           <Route path="/uk" element={<UKPage />} />
+          <Route path="/japan" element={<JapanPage />} />
+          <Route path="/japan/tokyo" element={<JapanTokyoPage />} />
+          <Route path="/japan/yokohama" element={<JapanYokohamaPage />} />
+          <Route path="/japan/kyoto" element={<JapanKyotoPage />} />
+          <Route path="/japan/osaka" element={<JapanOsakaPage />} />
+          <Route path="/japan/hiroshima" element={<JapanHiroshimaPage />} />
           <Route path="/china" element={<ChinaPage />} />
           <Route path="/china/baladingwall" element={<ChinaBaladingWallPage />} />
           <Route path="/china/summerpalace" element={<ChinaSummerPalacePage />} />
