@@ -31,3 +31,8 @@
 .japan_city_url img {
     width: 100%;
 }
+
+.japan_title {
+    font-size: 80px;
+    text-align: center;
+}

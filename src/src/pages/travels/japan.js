@@ -14,7 +14,7 @@ import ProgressiveImg from '../../components/image_loading';
 function Japan() {
   return (
     <>
-      <h1>Japan</h1>
+      <h1 className='japan_title'>Japan</h1>
       <a className='japan_city_url' href='/japan/tokyo'>
             <img src={tokyo_img} />
         Tokyo
