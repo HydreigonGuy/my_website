@@ -23,5 +23,11 @@
 }
 
 .japan_city_url {
-    display: block;
+    display: inline-block;
+    width: 40%;
+    margin: 5%;
+}
+
+.japan_city_url img {
+    width: 100%;
 }
