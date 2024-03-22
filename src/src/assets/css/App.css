@@ -12,6 +12,7 @@
 .picture_of_me {
   width: 200px;
   max-width: 50%;
+  border-radius: 20px;
 }
 
 .home_header span {
@@ -26,4 +27,37 @@
 
 .home_category_element {
   position: relative !important;
+}
+
+.background_img {
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+
+.over_img_content {
+  margin: 100px;
+  padding: 100px;
+  background-color: rgba(0, 0, 0, .8);
+  border-radius: 50px;
+  color: white;
+}
+
+.top_message {
+  margin: 50px;
+  position: absolute;
+}
+
+.travels_content {
+  margin: 75px;
+  padding: 30px 5px 50px 50px;
+  border-radius: 30px;
+  background-color: rgba(50, 100, 40, .8);
+}
+
+.travels_content a {
+  color: white;
+  margin: 20px;
 }
