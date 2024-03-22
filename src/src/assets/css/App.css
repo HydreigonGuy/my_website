@@ -38,8 +38,8 @@
 }
 
 .over_img_content {
-  margin: 100px;
-  padding: 100px;
+  margin: min(100px, calc(30px + 8vmin));
+  padding: min(100px, calc(0px + 10vmin));
   background-color: rgba(0, 0, 0, .8);
   border-radius: 50px;
   color: white;
@@ -48,16 +48,45 @@
 .top_message {
   margin: 50px;
   position: absolute;
+  max-width: 23%;
 }
 
 .travels_content {
-  margin: 75px;
-  padding: 30px 5px 50px 50px;
+  margin-top: 75px;
+  padding: min(50px, calc(8px + 3vmin));
   border-radius: 30px;
-  background-color: rgba(50, 100, 40, .8);
+  background-color: rgba(50, 100, 40, .6);
 }
 
 .travels_content a {
   color: white;
-  margin: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+.travels_content h2 {
+  margin-top: 0;
+}
+
+@media (max-width: 600px) {
+
+.over_img_content {
+  margin: calc(10px + 8vmin);
+  padding: calc(0px + 12vmin);
+}
+
+.top_message {
+  display: none;
+}
+
+.picture_of_me {
+  width: calc(20px + 20vmin);
+}
+
+.travels_content a {
+  margin-right: 10px;
+  margin-top: 0px;
+  font-size: 12px;
+}
+
 }

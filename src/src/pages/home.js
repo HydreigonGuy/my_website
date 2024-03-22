@@ -9,9 +9,9 @@ function Home() {
       <img src={background_image} className='background_img'/>
       <div className='over_img_content'>
         <img src={picture_of_me} className="picture_of_me" alt="me" />
-        <span className='top_message'>
-          Welcome to my website!
-        </span>
+          <span className='top_message'>
+            Welcome to my website!
+          </span>
         <br/>
 
         <div className='travels_content'>
