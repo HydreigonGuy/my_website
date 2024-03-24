@@ -1,5 +1,6 @@
 import picture_of_me from '../assets/images/me.png';
 import background_image from '../assets/images/japan/yokohama/IMG20240220122833.jpg';
+import background_image_vertical from '../assets/images/korea/daegu/IMG20230822174437.jpg';
 
 import HomeCategory from '../components/home_category';
 
@@ -7,6 +8,7 @@ function Home() {
   return (
     <>
       <img src={background_image} className='background_img'/>
+      <img src={background_image_vertical} className='background_img_vertical'/>
       <div className='over_img_content'>
         <img src={picture_of_me} className="picture_of_me" alt="me" />
           <span className='top_message'>

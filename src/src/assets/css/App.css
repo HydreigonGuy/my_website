@@ -37,8 +37,17 @@
   left: 0;
 }
 
+.background_img_vertical {
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
 .over_img_content {
-  margin: min(100px, calc(30px + 8vmin));
+  margin: min(100px, calc(20px + 8vmin));
   padding: min(100px, calc(0px + 10vmin));
   background-color: rgba(0, 0, 0, .8);
   border-radius: 50px;
@@ -68,6 +77,28 @@
   margin-top: 0;
 }
 
+@media (max-width: 1000px) {
+
+.over_img_content {
+  margin: calc(30px + 5vmin);
+  margin-top: calc(20px + 3vmin);
+  padding: calc(0px + 8vmin);
+}
+
+}
+
+@media (max-width: 800px) {
+
+.background_img {
+  display: none;
+}
+
+.background_img_vertical {
+  display: block;
+}
+
+}
+
 @media (max-width: 600px) {
 
 .over_img_content {
@@ -76,11 +107,23 @@
 }
 
 .top_message {
-  display: none;
+  max-width: 100%;
+  margin: 0;
+  margin-top: 20px;
+  text-align: center;
+  display: block;
+  max-width: 100%;
+  position: relative;
+}
+
+.travels_content {
+  margin-top: 15px;
 }
 
 .picture_of_me {
   width: calc(20px + 20vmin);
+  display: block;
+  margin: auto;
 }
 
 .travels_content a {
