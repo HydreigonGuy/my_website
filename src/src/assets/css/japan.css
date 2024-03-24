@@ -1,0 +1,38 @@
+
+.hiroshima_title {
+    width: 100%;
+    margin-top: -200px;
+}
+
+.hiroshima_title_text {
+    position: absolute;
+    padding: 10px;
+    background-color: white;
+    top: 40px;
+    margin: 0;
+    font-size: 50px;
+    left: 90px;
+}
+
+.senso_ji_title {
+  position: absolute;
+  background-color: white;
+  margin-top: -118px;
+  font-size: 50px;
+  padding: 30px 100px 30px 100px;
+}
+
+.japan_city_url {
+    display: inline-block;
+    width: 40%;
+    margin: 5%;
+}
+
+.japan_city_url img {
+    width: 100%;
+}
+
+.japan_title {
+    font-size: 80px;
+    text-align: center;
+}

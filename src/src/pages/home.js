@@ -14,7 +14,8 @@ function Home() {
         <HomeCategory title="My travels" items={[
           {"href":"/korea", "name":"Korea"},
           {"href":"/china", "name":"China"},
-          {"href":"/uk", "name":"UK"}
+          {"href":"/uk", "name":"UK"},
+          {"href":"/japan", "name":"Japan"}
         ]}/>
         <HomeCategory title="My cheat sheets" items={[
           {"href":"/korean", "name":"Korean"},
