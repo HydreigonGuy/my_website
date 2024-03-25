@@ -28,6 +28,16 @@ function Home() {
           <a href="/uk">UK</a>
         </div>
       </div>
+
+      <div className='contact_bar'>
+          <p>Contact Me!</p>
+          <br/>
+          <a className='contact_url' href='https://www.instagram.com/hydreigon_chad?igsh=MWxxcjM0cjZ0YnM2Nw==' target='_blank'>Instagram</a>
+          <a className='contact_url' href='https://www.linkedin.com/in/adrien-thibault/' target='_blank'>Linkedin</a>
+          <a className='contact_url' href='https://github.com/HydreigonGuy' target='_blank'>Github</a>
+          {/*<a className='contact_url' href='adrien.thibault@epitech.eu' target='_blank'>Email</a>*/}
+        </div>
+      
     {/*
     <div className="App">
       <div className='home_header'>

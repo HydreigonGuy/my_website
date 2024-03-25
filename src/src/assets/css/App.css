@@ -84,6 +84,28 @@
   margin-top: 0;
 }
 
+.contact_url {
+  color: white;
+  margin: 30px;
+  margin-top: 10px;
+}
+
+.contact_bar p {
+  margin: 0;
+  padding: 0;
+}
+
+.contact_bar {
+  text-align: center;
+  position: relative;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, .8);
+  border-radius: 50px;
+  z-index: 3;
+  color: white;
+}
+
 @media (max-width: 1000px) {
 
 .over_img_content {
@@ -145,4 +167,12 @@
   font-size: 12px;
 }
 
+}
+
+@media (max-width: 550px) {
+  .contact_url {
+    margin: 10px;
+    font-size: 12px;
+    margin-top: 15px;
+  }
 }
