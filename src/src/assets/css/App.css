@@ -21,6 +21,11 @@
   position: absolute;
 }
 
+.home_page {
+  background-color: rgba(50, 100, 40);
+  padding: min(100px, calc(20px + 8vmin));
+}
+
 .home_category_element a {
   color: white;
 }
@@ -32,7 +37,7 @@
 .background_img {
   position: absolute;
   width: 100%;
-  z-index: -1;
+  z-index: 1;
   top: 0;
   left: 0;
 }
@@ -40,18 +45,20 @@
 .background_img_vertical {
   position: absolute;
   width: 100%;
-  z-index: -1;
+  z-index: 1;
   top: 0;
   left: 0;
   display: none;
 }
 
 .over_img_content {
-  margin: min(100px, calc(20px + 8vmin));
+  margin: 0;
   padding: min(100px, calc(0px + 10vmin));
   background-color: rgba(0, 0, 0, .8);
   border-radius: 50px;
   color: white;
+  z-index: 2;
+  position: relative;
 }
 
 .top_message {
@@ -80,9 +87,12 @@
 @media (max-width: 1000px) {
 
 .over_img_content {
-  margin: calc(30px + 5vmin);
-  margin-top: calc(20px + 3vmin);
   padding: calc(0px + 8vmin);
+}
+
+.home_page {
+  padding: calc(30px + 5vmin);
+  padding-top: calc(20px + 3vmin);
 }
 
 }
@@ -102,8 +112,11 @@
 @media (max-width: 600px) {
 
 .over_img_content {
-  margin: calc(10px + 8vmin);
   padding: calc(0px + 12vmin);
+}
+
+.home_page {
+  padding: calc(10px + 8vmin);
 }
 
 .top_message {
