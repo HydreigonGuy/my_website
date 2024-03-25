@@ -1,14 +1,18 @@
 import picture_of_me from '../assets/images/me.png';
 import background_image from '../assets/images/japan/yokohama/IMG20240220122833.jpg';
 import background_image_vertical from '../assets/images/korea/daegu/IMG20230822174437.jpg';
+import background_image_small from '../assets/images/japan/yokohama/small/IMG20240220122833.jpg';
+import background_image_vertical_small from '../assets/images/korea/daegu/small/IMG20230822174437.jpg';
 
 import HomeCategory from '../components/home_category';
 
+import ProgressiveImg from '../components/image_loading';
+
 function Home() {
   return (
-    <>
-      <img src={background_image} className='background_img'/>
-      <img src={background_image_vertical} className='background_img_vertical'/>
+    <div className="home_page">
+      <ProgressiveImg src={background_image} placeholderSrc={background_image_small} className='background_img'/>
+      <ProgressiveImg src={background_image_vertical} placeholderSrc={background_image_vertical_small} className='background_img_vertical'/>
       <div className='over_img_content'>
         <img src={picture_of_me} className="picture_of_me" alt="me" />
           <span className='top_message'>
@@ -46,7 +50,7 @@ function Home() {
       </div>
     </div>
       */}
-    </>
+    </div>
   );
 }
 
