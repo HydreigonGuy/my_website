@@ -46,11 +46,12 @@ function CV() {
         lang = "eng"
     return (
         <>
+            {/* Row 1 with picture of me and Title */}
             <div className='row'>
-                <div className='content'>
+                <div className='content third-width'>
                     <img src={picture_of_me} className='picture' />
                 </div>
-                <div className='content'>
+                <div className='content two-thirds-width lift-text'>
                     <h1>Adrien THIBAULT</h1>
 
                     <h3>{text["Developper"][lang]}</h3>
@@ -100,6 +101,7 @@ function CV() {
                 </div>
             </div>
 
+            {/* Row 3 with Skills */}
             <div className='row center-text'>
                 <h2>{text["Skills"][lang]}</h2>
 
@@ -149,8 +151,9 @@ function CV() {
                     <p>{text["Korean"][lang]} - {text["language basic"][lang]}</p>
                     <p>{text["German"][lang]} - {text["language basic"][lang]}</p>
                 </div>
-
             </div>
+
+
 
             <div>
                 <h2>{text["Projects"][lang]}</h2>
@@ -158,22 +161,34 @@ function CV() {
                 <a href="/projects">{text["See more"][lang]}</a>
             </div>
 
-            <div>
-                <h2>Countries I lived in</h2>
+            <div className='row'>
+                <div className='content about-me-content'>
+                    <h2>About me</h2>
 
-                China : 2007 - 2009 (2 years)
-                USA : 2010 - 2015 (5 years)
-                Germany : 2016 - 2020 (4 years)
-                Korea : 2023 - 2024 (1 year)
-                France : the rest
-            </div>
-            <div>
-                <h2>Hobbies</h2>
+                    <p>
+                        I'm a traveller, I've lived in many different countries.
+                        Living in different countries has made me a big fan of travelling, but also made in interrested in history of different countries.
+                        I like all kinds of physical activity.
+                    </p>
+                </div>
+                <div className='content about-me-content'>
+                    <h2>Countries I lived in</h2>
 
-                Travelling
-                Gym
-                Hiking
+                    <p>China : 2007 - 2009 (2 years)</p>
+                    <p>USA : 2010 - 2015 (5 years)</p>
+                    <p>Germany : 2016 - 2020 (4 years)</p>
+                    <p>Korea : 2023 - 2024 (1 year)</p>
+                    <p>France : the rest</p>
+                </div>
+                <div className='content about-me-content'>
+                    <h2>Hobbies</h2>
+
+                    <p>Travelling</p>
+                    <p>Gym</p>
+                    <p>Hiking</p>
+                </div>
             </div>
+
             <div className='row center-text'>
                 <h2>Contact Me!</h2>
 

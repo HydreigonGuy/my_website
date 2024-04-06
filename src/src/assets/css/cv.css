@@ -47,6 +47,10 @@
     vertical-align: top;
 }
 
+.lift-text {
+    vertical-align: top;
+}
+
 .skills-content {
     vertical-align: top;
     text-align: left;
@@ -72,4 +76,9 @@
 .contact-content {
     vertical-align: top;
     width: 30%;
+}
+
+.about-me-content {
+    vertical-align: top;
+    width: 33.33%;
 }
