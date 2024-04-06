@@ -1,0 +1,50 @@
+
+.row {
+    width: 100%;
+}
+
+.content {
+    display: inline-block;
+}
+
+.picture {
+    padding: 20px;
+    width: 200px;
+}
+
+.language-selector {
+    color: gray;
+    padding: 5px;
+}
+
+.language-selector-container {
+    display: inline-block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.company-url {
+    color: black;
+    text-decoration: none;
+}
+
+.company-content {
+    width: 45%;
+}
+
+.company-img {
+    width: 30%;
+    margin: auto;
+    display: block;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.skills-content {
+    vertical-align: top;
+    text-align: left;
+    width: 20%;
+}

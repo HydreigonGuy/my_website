@@ -1,0 +1,172 @@
+
+import picture_of_me from '../../assets/images/me.png';
+import '../../assets/css/cv.css';
+
+//import useSearchParams from "react-router-dom";
+import { useSearchParams } from "react-router-dom";
+
+function CV() {
+    const text = {
+        "Skills":{"eng":"Skills", "fr":"Compétences"},
+        "Programming Languages":{"eng":"Programming Languages", "fr":"Languages Informatiques"},
+        "Misc Tech Skills":{"eng":"Misc Tech Skills", "fr":"Compétences Informatiques Diverses"},
+        "OS skill":{"eng":"Linux and OS handelling", "fr":"Linux et gestions d'OS"},
+        "SSL skill":{"eng":"SSL certificate generation and handelling", "fr":"Gestion et génération de certificats SSL"},
+        "DNS skill":{"eng":"DNS routing and handelling", "fr":"Routing et gestion DNS"},
+        "Profetionnal Experience":{"eng":"Profetionnal Experiences", "fr":"Expériences Profetionelles"},
+        "Torus text":{
+            "eng":"Internship as a fullstack web developper. Part time job as a fullstack web developper.",
+            "fr":"Stage en tant que développeur web full stack. Travail a temps partiel en tant que développeur web full stack."},
+        "Predicloud text":{
+            "eng":"Part time internship as a DevOps developper and a web and mobile fullstack developper. Internship as a DevOps developper and an AI developper.",
+            "fr":"Stage en temps partiel en tant que développeur DevOps ainsi que développeur web et mobile full stack. Stage en tant que développeur DevOps ainsi que développeur IA."},
+        "Diplomas":{"eng":"Diplomas", "fr":"Diplômes"},
+        "Info Bac":{
+            "eng":"S SVT spé. Maths obtained in 2020 mention Très Bien at the Lycée Français Victor Hugo in Frankfurt Germany. The Baccalauréat is the diploma obtained at the end of HighSchool in France.",
+            "fr":"S SVT spé. Maths obtenu en 2020 mention Très Bien au Lycée Français Victor Hugo de Francfort en Allemagne"},
+        "Info Cambridge":{
+            "eng":"Obtained in 2019 grade A, level C2.",
+            "fr":"Obtenu en 2019 grade A, niveau C2"},
+        "Projects":{"eng":"Projects", "fr":"Projets"},
+        "See more":{"eng":"See more", "fr":"Voire plus"},
+        "Languages":{"eng":"Language Skills", "fr":"Compétences Languistiques"},
+        "Developper":{"eng":"Developper", "fr":"Développeur"},
+        "Student":{"eng":"4th year Student at EPITECH", "fr":"Étudiant en 3ème année à EPITECH"},
+    }
+    let [searchParams, setSearchParams] = useSearchParams();
+    var lang = searchParams.get("lang")
+
+    if (!["eng", "fr"].includes(lang))
+        lang = "eng"
+    return (
+        <>
+            <div className='row'>
+                <div className='content'>
+                    <img src={picture_of_me} className='picture' />
+                </div>
+                <div className='content'>
+                    <h1>Adrien THIBAULT</h1>
+
+                    <h3>{text["Developper"][lang]}</h3>
+                    <h3>{text["Student"][lang]}</h3>
+                </div>
+                <div className='language-selector-container'>
+                    <a className='language-selector' href='?lang=eng'>ENG</a>
+                    <a className='language-selector' href='?lang=fr'>FR</a>
+                </div>
+            </div>
+
+            <div className='row center-text'>
+                <h2>{["Profetionnal Experience"]}</h2>
+                <div className='content company-content'>
+                    <a className='company-url' href="https://www.torus.ai/" target='_blank'>
+                        <img className='company-img' src="https://www.torus.ai/wp-content/uploads/2023/05/logo-torus.png"/>
+                        <h5>Torus Actions</h5>
+                    </a>
+
+                    {text["Torus text"][lang]}
+                </div>
+                <div className='content company-content'>
+                    <a className='company-url' href="https://www.predicloud.com/" target='_blank'>
+                        <img className='company-img' src="https://media.licdn.com/dms/image/C4D0BAQGx5zk_JxQcsg/company-logo_200_200/0/1639936754642/predicloud_logo?e=2147483647&v=beta&t=djy3qu4zFoViKIYOrxhRqgfOZTUhTG7JT9F2YWv3nVg"/>
+                        <h5>Predicloud</h5>
+                    </a>
+
+                    {text["Predicloud text"][lang]}
+                </div>
+            </div>
+            <div className='row center-text'>
+                <h2>{text["Skills"][lang]}</h2>
+
+                <div className='content skills-content'>
+                    <h5>{text["Programming Languages"][lang]}</h5>
+
+                    <p>C</p>
+                    <p>C++</p>
+                    <p>Python</p>
+                    <p>Javascript</p>
+                    <p>Haskell</p>
+                    <p>HTML + CSS</p>
+                </div>
+                
+                <div className='content skills-content'>
+                    <h5>DevOps</h5>
+
+                    <p>Docker + Docker-Compose</p>
+                    <p>Kubernetes</p>
+                    <p>Github Actions</p>
+                    <p>Traefik</p>
+                    <p>Prometheus + Grafana + Loki</p>
+                </div>
+
+                <div  className='content skills-content'>
+                    <h5>Databases</h5>
+
+                    <p>Postgres</p>
+                    <p>MongoDB</p>
+                </div>
+
+                <div  className='content skills-content'>
+                    <h5>{text["Misc Tech Skills"][lang]}</h5>
+
+                    <p>{text["OS skill"][lang]}</p>
+                    <p>{text["SSL skill"][lang]}</p>
+                    <p>{text["DNS skill"][lang]}</p>
+                    <p>Git + Github Actions</p>
+                    <p>Unity</p>
+                </div>
+
+            </div>
+            <div>
+                <h2>{text["Diplomas"][lang]}</h2>
+
+                <h5>Baccalauréat</h5>
+
+                {text["Info Bac"][lang]}
+
+                <h5>Cambridge Certificate in Advanced English</h5>
+
+                {text["Info Cambridge"][lang]}
+            </div>
+            <div>
+                <h2>{text["Projects"][lang]}</h2>
+
+                <a href="/projects">{text["See more"][lang]}</a>
+            </div>
+            <div>
+                <h2>{text["Languages"][lang]}</h2>
+
+                French - Proficient
+                English - Proficient
+                Korean -
+                German -
+            </div>
+            <div>
+                <h2>Countries I lived in</h2>
+
+                China : 2007 - 2009 (2 years)
+                USA : 2010 - 2015 (5 years)
+                Germany : 2016 - 2020 (4 years)
+                Korea : 2023 - 2024 (1 year)
+                France : the rest
+            </div>
+            <div>
+                <h2>Hobbies</h2>
+
+                Travelling
+                Gym
+                Hiking
+            </div>
+            <div>
+                <h2>Contact Me!</h2>
+
+                email: adrien.thibault@epitech.eu
+
+                phone: +33 7 69 29 66 24
+
+            </div>
+        </>
+    );
+}
+
+export default CV;

@@ -14,7 +14,7 @@ function Home() {
       <ProgressiveImg src={background_image} placeholderSrc={background_image_small} className='background_img'/>
       <ProgressiveImg src={background_image_vertical} placeholderSrc={background_image_vertical_small} className='background_img_vertical'/>
       <div className='over_img_content'>
-        <img src={picture_of_me} className="picture_of_me" alt="me" />
+        <img src={picture_of_me} className="picture_of_me" />
           <span className='top_message'>
             Welcome to my website!
           </span>
