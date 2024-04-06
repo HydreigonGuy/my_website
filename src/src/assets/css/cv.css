@@ -1,6 +1,7 @@
 
 .row {
-    width: 100%;
+    padding: 4%;
+    display: block;
 }
 
 .content {
@@ -30,7 +31,9 @@
 }
 
 .company-content {
-    width: 45%;
+    width: 46%;
+    padding: 2%;
+    vertical-align: top;
 }
 
 .company-img {
@@ -41,10 +44,32 @@
 
 .center-text {
     text-align: center;
+    vertical-align: top;
 }
 
 .skills-content {
     vertical-align: top;
     text-align: left;
     width: 20%;
+}
+
+.diploma-content {
+    width: 46%;
+    padding: 2%;
+    vertical-align: top;
+}
+
+.two-thirds-width {
+    width: 66.66%;
+    display: inline-block;
+}
+
+.third-width {
+    width: 33.33%;
+    display: inline-block;
+}
+
+.contact-content {
+    vertical-align: top;
+    width: 30%;
 }

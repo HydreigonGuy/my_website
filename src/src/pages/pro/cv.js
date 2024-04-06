@@ -32,6 +32,12 @@ function CV() {
         "Languages":{"eng":"Language Skills", "fr":"Compétences Languistiques"},
         "Developper":{"eng":"Developper", "fr":"Développeur"},
         "Student":{"eng":"4th year Student at EPITECH", "fr":"Étudiant en 3ème année à EPITECH"},
+        "French":{"eng":"French", "fr":"Français"},
+        "English":{"eng":"English", "fr":"Anglais"},
+        "Korean":{"eng":"Korean", "fr":"Coréen"},
+        "German":{"eng":"German", "fr":"Allemand"},
+        "language fluent":{"eng":"C2 - Proficient", "fr":"C2 - Maitrise parfaite"},
+        "language basic":{"eng":"Basic comunication", "fr":"Comunications basiques"},
     }
     let [searchParams, setSearchParams] = useSearchParams();
     var lang = searchParams.get("lang")
@@ -56,25 +62,44 @@ function CV() {
                 </div>
             </div>
 
-            <div className='row center-text'>
-                <h2>{["Profetionnal Experience"]}</h2>
-                <div className='content company-content'>
-                    <a className='company-url' href="https://www.torus.ai/" target='_blank'>
-                        <img className='company-img' src="https://www.torus.ai/wp-content/uploads/2023/05/logo-torus.png"/>
-                        <h5>Torus Actions</h5>
-                    </a>
+            {/* Row 2 with Profetional experience and Diplomas */}
+            <div className='row'>
+                <div className='center-text two-thirds-width'>
+                    <h2>{["Profetionnal Experience"]}</h2>
+                    <div className='content company-content'>
+                        <a className='company-url' href="https://www.torus.ai/" target='_blank'>
+                            <img className='company-img' src="https://www.torus.ai/wp-content/uploads/2023/05/logo-torus.png"/>
+                            <h5>Torus Actions</h5>
+                        </a>
 
-                    {text["Torus text"][lang]}
+                        {text["Torus text"][lang]}
+                    </div>
+                    <div className='content company-content'>
+                        <a className='company-url' href="https://www.predicloud.com/" target='_blank'>
+                            <img className='company-img' src="https://media.licdn.com/dms/image/C4D0BAQGx5zk_JxQcsg/company-logo_200_200/0/1639936754642/predicloud_logo?e=2147483647&v=beta&t=djy3qu4zFoViKIYOrxhRqgfOZTUhTG7JT9F2YWv3nVg"/>
+                            <h5>Predicloud</h5>
+                        </a>
+
+                        {text["Predicloud text"][lang]}
+                    </div>
                 </div>
-                <div className='content company-content'>
-                    <a className='company-url' href="https://www.predicloud.com/" target='_blank'>
-                        <img className='company-img' src="https://media.licdn.com/dms/image/C4D0BAQGx5zk_JxQcsg/company-logo_200_200/0/1639936754642/predicloud_logo?e=2147483647&v=beta&t=djy3qu4zFoViKIYOrxhRqgfOZTUhTG7JT9F2YWv3nVg"/>
-                        <h5>Predicloud</h5>
-                    </a>
 
-                    {text["Predicloud text"][lang]}
+                <div className='center-text third-width'>
+                    <h2>{text["Diplomas"][lang]}</h2>
+                    <div className='content diploma-content'>
+                        <h5>Baccalauréat</h5>
+
+                        {text["Info Bac"][lang]}
+                    </div>
+
+                    <div className='content diploma-content'>
+                        <h5>Cambridge Certificate in Advanced English</h5>
+
+                        {text["Info Cambridge"][lang]}
+                    </div>
                 </div>
             </div>
+
             <div className='row center-text'>
                 <h2>{text["Skills"][lang]}</h2>
 
@@ -116,31 +141,23 @@ function CV() {
                     <p>Unity</p>
                 </div>
 
+                <div  className='content skills-content'>
+                    <h5>{text["Languages"][lang]}</h5>
+
+                    <p>{text["French"][lang]} - {text["language fluent"][lang]}</p>
+                    <p>{text["English"][lang]} - {text["language fluent"][lang]}</p>
+                    <p>{text["Korean"][lang]} - {text["language basic"][lang]}</p>
+                    <p>{text["German"][lang]} - {text["language basic"][lang]}</p>
+                </div>
+
             </div>
-            <div>
-                <h2>{text["Diplomas"][lang]}</h2>
 
-                <h5>Baccalauréat</h5>
-
-                {text["Info Bac"][lang]}
-
-                <h5>Cambridge Certificate in Advanced English</h5>
-
-                {text["Info Cambridge"][lang]}
-            </div>
             <div>
                 <h2>{text["Projects"][lang]}</h2>
 
                 <a href="/projects">{text["See more"][lang]}</a>
             </div>
-            <div>
-                <h2>{text["Languages"][lang]}</h2>
 
-                French - Proficient
-                English - Proficient
-                Korean -
-                German -
-            </div>
             <div>
                 <h2>Countries I lived in</h2>
 
@@ -157,12 +174,18 @@ function CV() {
                 Gym
                 Hiking
             </div>
-            <div>
+            <div className='row center-text'>
                 <h2>Contact Me!</h2>
 
-                email: adrien.thibault@epitech.eu
-
-                phone: +33 7 69 29 66 24
+                <div className='content contact-content'>
+                    <h5>EMAIL</h5>
+                    <p>adrien.thibault@epitech.eu</p>
+                </div>
+                <div className='content contact-content'>
+                    <h5>PHONE</h5>
+                    {/* French number - reenable when returning to France <p>+33 7 69 29 66 24</p>*/}
+                    <p>SK - +82 10 44 29 86 21</p>
+                </div>
 
             </div>
         </>
