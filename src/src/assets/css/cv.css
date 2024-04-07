@@ -82,3 +82,13 @@
     vertical-align: top;
     width: 33.33%;
 }
+
+.picture-background-img {
+    width: 30%;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    height: 380px;
+}

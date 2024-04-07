@@ -2,7 +2,11 @@
 import picture_of_me from '../../assets/images/me.png';
 import '../../assets/css/cv.css';
 
-//import useSearchParams from "react-router-dom";
+import background_img from '../../assets/images/korea/daegu/IMG20240407143533.jpg';
+import background_img_small from '../../assets/images/korea/daegu/small/IMG20240407143533.jpg';
+
+import ProgressiveImg from '../../components/image_loading';
+
 import { useSearchParams } from "react-router-dom";
 
 function CV() {
@@ -49,6 +53,7 @@ function CV() {
             {/* Row 1 with picture of me and Title */}
             <div className='row'>
                 <div className='content third-width'>
+                    <ProgressiveImg src={background_img} placeholderSrc={background_img_small} className='picture-background-img'/>
                     <img src={picture_of_me} className='picture' />
                 </div>
                 <div className='content two-thirds-width lift-text'>
