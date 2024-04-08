@@ -183,9 +183,12 @@ function CV() {
                     <div className='content projects-content center-text'>
                         <h4>My Website</h4>
                         <p>
+                            This webpage is a part of my website.
                             My website is by far my biggest personnal project, I have been working on it for months and still regularly add to it.
+                            I originally made it to share pictures of my travels with friends and to practice web development.
                         </p>
                     </div>
+                    <br/>
                     <a href="/projects">{text["See more"][lang]}</a>
                 </div>
             </div>
