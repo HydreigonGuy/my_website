@@ -2,8 +2,11 @@
 import picture_of_me from '../../assets/images/me.png';
 import '../../assets/css/cv.css';
 
-import background_img from '../../assets/images/korea/daegu/IMG20240407143533.jpg';
-import background_img_small from '../../assets/images/korea/daegu/small/IMG20240407143533.jpg';
+import background_img from '../../assets/images/korea/daegu/IMG20240407143458.jpg';
+import background_img_small from '../../assets/images/korea/daegu/small/IMG20240407143458.jpg';
+
+import waterfall_background_img from '../../assets/images/korea/sejong/IMG20230915143919.jpg';
+import waterfall_background_img_small from '../../assets/images/korea/sejong/small/IMG20230915143919.jpg';
 
 import ProgressiveImg from '../../components/image_loading';
 
@@ -51,7 +54,7 @@ function CV() {
     return (
         <>
             {/* Row 1 with picture of me and Title */}
-            <div className='row'>
+            <div className='row grey-row'>
                 <div className='content third-width'>
                     <ProgressiveImg src={background_img} placeholderSrc={background_img_small} className='picture-background-img'/>
                     <img src={picture_of_me} className='picture' />
@@ -70,8 +73,9 @@ function CV() {
 
             {/* Row 2 with Profetional experience and Diplomas */}
             <div className='row'>
-                <div className='center-text two-thirds-width'>
-                    <h2>{["Profetionnal Experience"]}</h2>
+                <ProgressiveImg src={waterfall_background_img} placeholderSrc={waterfall_background_img_small} className='row-2-bg-img'/>
+                <div className='center-text two-thirds-width black-background-cover'>
+                    <h2>{text["Profetionnal Experience"][lang]}</h2>
                     <div className='content company-content'>
                         <a className='company-url' href="https://www.torus.ai/" target='_blank'>
                             <img className='company-img' src="https://www.torus.ai/wp-content/uploads/2023/05/logo-torus.png"/>
@@ -90,7 +94,7 @@ function CV() {
                     </div>
                 </div>
 
-                <div className='center-text third-width'>
+                <div className='center-text third-width black-background-cover'>
                     <h2>{text["Diplomas"][lang]}</h2>
                     <div className='content diploma-content'>
                         <h5>Baccalauréat</h5>
