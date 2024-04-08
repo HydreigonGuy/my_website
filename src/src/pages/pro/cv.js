@@ -7,6 +7,7 @@ import background_img_small from '../../assets/images/korea/daegu/small/IMG20240
 
 import waterfall_background_img from '../../assets/images/korea/sejong/IMG20230915143919.jpg';
 import waterfall_background_img_small from '../../assets/images/korea/sejong/small/IMG20230915143919.jpg';
+import sankeien_background_img from '../../assets/images/japan/yokohama/IMG20240220130536.jpg';
 
 import ProgressiveImg from '../../components/image_loading';
 
@@ -38,13 +39,15 @@ function CV() {
         "See more":{"eng":"See more", "fr":"Voire plus"},
         "Languages":{"eng":"Language Skills", "fr":"Compétences Languistiques"},
         "Developper":{"eng":"Developper", "fr":"Développeur"},
-        "Student":{"eng":"4th year Student at EPITECH", "fr":"Étudiant en 3ème année à EPITECH"},
+        "Student":{"eng":"4th year Student at EPITECH", "fr":"Étudiant en 4ème année à EPITECH"},
         "French":{"eng":"French", "fr":"Français"},
         "English":{"eng":"English", "fr":"Anglais"},
         "Korean":{"eng":"Korean", "fr":"Coréen"},
         "German":{"eng":"German", "fr":"Allemand"},
         "language fluent":{"eng":"C2 - Proficient", "fr":"C2 - Maitrise parfaite"},
         "language basic":{"eng":"Basic comunication", "fr":"Comunications basiques"},
+        "Contact Me!":{"eng":"Contact Me!", "fr":"Contectez Moi!"},
+        "PHONE":{"eng":"PHONE", "fr":"TELEPHONE"},
     }
     let [searchParams, setSearchParams] = useSearchParams();
     var lang = searchParams.get("lang")
@@ -55,11 +58,11 @@ function CV() {
         <>
             {/* Row 1 with picture of me and Title */}
             <div className='row grey-row'>
-                <div className='content third-width'>
+                <div className='content top-pic-width'>
                     <ProgressiveImg src={background_img} placeholderSrc={background_img_small} className='picture-background-img'/>
                     <img src={picture_of_me} className='picture' />
                 </div>
-                <div className='content two-thirds-width lift-text'>
+                <div className='content lift-text'>
                     <h1>Adrien THIBAULT</h1>
 
                     <h3>{text["Developper"][lang]}</h3>
@@ -111,7 +114,7 @@ function CV() {
             </div>
 
             {/* Row 3 with Skills */}
-            <div className='row center-text'>
+            <div className='row center-text grey-row'>
                 <h2>{text["Skills"][lang]}</h2>
 
                 <div className='content skills-content'>
@@ -164,13 +167,30 @@ function CV() {
 
 
 
-            <div>
-                <h2>{text["Projects"][lang]}</h2>
-
-                <a href="/projects">{text["See more"][lang]}</a>
+            <div className='row center-text'>
+                <img src={sankeien_background_img} className='projects-background-image'/>
+                <div className='content black-background-cover center-text'>
+                    <h2>{text["Projects"][lang]}</h2>
+                    <div className='content projects-content'>
+                        <h4>Autone</h4>
+                        <p>
+                            Autone is a school project spanding over 3 years in group of 7 students.
+                            The task was to create a company from the ground up, find a problem and establish a solution with our technical knowledge.
+                            We chose to create a website and mobile application that can record an audio and generate a partition for it.
+                            This is done with the use of AI.
+                        </p>
+                    </div>
+                    <div className='content projects-content center-text'>
+                        <h4>My Website</h4>
+                        <p>
+                            My website is by far my biggest personnal project, I have been working on it for months and still regularly add to it.
+                        </p>
+                    </div>
+                    <a href="/projects">{text["See more"][lang]}</a>
+                </div>
             </div>
 
-            <div className='row'>
+            <div className='row green-row'>
                 <div className='content about-me-content'>
                     <h2>About me</h2>
 
@@ -198,15 +218,15 @@ function CV() {
                 </div>
             </div>
 
-            <div className='row center-text'>
-                <h2>Contact Me!</h2>
+            <div className='row center-text dark-green-row'>
+                <h2>{text["Contact Me!"][lang]}</h2>
 
                 <div className='content contact-content'>
                     <h5>EMAIL</h5>
                     <p>adrien.thibault@epitech.eu</p>
                 </div>
                 <div className='content contact-content'>
-                    <h5>PHONE</h5>
+                    <h5>{text["PHONE"][lang]}</h5>
                     {/* French number - reenable when returning to France <p>+33 7 69 29 66 24</p>*/}
                     <p>SK - +82 10 44 29 86 21</p>
                 </div>

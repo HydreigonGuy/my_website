@@ -11,8 +11,7 @@
 .picture {
     z-index: 2;
     position: relative;
-    padding: 20px;
-    width: 200px;
+    width: 150px;
     border-radius: 30px;
 }
 
@@ -89,13 +88,13 @@
 }
 
 .picture-background-img {
-    width: 280px;
+    width: 200px;
     z-index: 1;
     position: absolute;
     top: 30px;
-    left: 30px;
+    left: 40px;
     object-fit: cover;
-    height: 320px;
+    height: 250px;
     border-radius: 30px;
 }
 
@@ -104,8 +103,14 @@
     color: white;
 }
 
+.dark-green-row {
+    background-color: rgb(5, 26, 3);
+    color: #aaf2a4;
+}
+
 .green-row {
-    background-color: rgb(30, 100, 70);
+    color: rgb(5, 26, 3);
+    background-color: #35872e;
 }
 
 .black-background-cover {
@@ -127,4 +132,23 @@
     top: 0;
     object-fit: cover;
     max-height: 900px;
+}
+
+.projects-background-image {
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: 800px;
+    object-fit: cover;
+}
+
+.projects-content {
+    width: 25%;
+}
+
+.top-pic-width {
+    margin: 1%;
+    width: 20%;
+    display: inline-block;
 }
