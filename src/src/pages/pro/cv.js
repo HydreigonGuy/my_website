@@ -95,7 +95,7 @@ function CV() {
             </div>
 
             {/* Row 2 with Profetional experience and Diplomas */}
-            <div className='row'>
+            <div className='row row-2'>
                 <ProgressiveImg src={waterfall_background_img} placeholderSrc={waterfall_background_img_small} className='row-2-bg-img'/>
                 <div className='center-text two-thirds-width black-background-cover'>
                     <h2>{text["Profetionnal Experience"][lang]}</h2>
@@ -107,7 +107,10 @@ function CV() {
 
                         <p className='internship-durration-text'>{text["Torus time"][lang]}</p>
                         <p className='internship-job-description-text'>{text["Torus job"][lang]}</p>
-                        <p>{text["Torus description"][lang]}</p>
+                        <p className='job-description'>{text["Torus description"][lang]}</p>
+                        {/*
+                            <a>{text["See more"][lang]}</a>
+                        */}
                     </div>
                     <div className='content company-content'>
                         <a className='company-url' href="https://www.predicloud.com/" target='_blank'>
@@ -117,22 +120,25 @@ function CV() {
 
                         <p className='internship-durration-text'>{text["Predicloud time"][lang]}</p>
                         <p className='internship-job-description-text'>{text["Predicloud job"][lang]}</p>
-                        <p>{text["Predicloud text"][lang]}</p>
+                        <p className='job-description'>{text["Predicloud text"][lang]}</p>
+                        {/*
+                            <a>{text["See more"][lang]}</a>
+                        */}
                     </div>
                 </div>
 
-                <div className='center-text third-width black-background-cover'>
+                <div className='center-text third-width black-background-cover diplomas-hidden-row'>
                     <h2>{text["Diplomas"][lang]}</h2>
                     <div className='content diploma-content'>
                         <h5>Baccalauréat</h5>
 
-                        {text["Info Bac"][lang]}
+                        <p className='diploma-content-description'>{text["Info Bac"][lang]}</p>
                     </div>
 
                     <div className='content diploma-content'>
                         <h5>Cambridge Certificate in Advanced English</h5>
 
-                        {text["Info Cambridge"][lang]}
+                        <p className='diploma-content-description'>{text["Info Cambridge"][lang]}</p>
                     </div>
                 </div>
             </div>

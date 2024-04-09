@@ -60,9 +60,12 @@
 }
 
 .diploma-content {
-    width: 46%;
-    padding: 2%;
+    padding: 20px;
     vertical-align: top;
+}
+
+.diploma-content-description {
+    font-size: 12px;
 }
 
 .two-thirds-width {
@@ -137,7 +140,7 @@
 .projects-background-image {
     width: 100%;
     position: absolute;
-    z-index: -1;
+    z-index: -2;
     left: 0;
     top: 900px;
     object-fit: cover;
@@ -162,10 +165,56 @@
     font-size: 10px;
 }
 
+@media (max-width: 1200px) {
+    .row-2-bg-img {
+        top: 200px;
+    }
+}
 
 @media (max-width: 1000px) {
     .title-text {
         margin-left: 60px;
+    }
+
+    .row-2-bg-img {
+        top: 260px;
+    }
+}
+
+@media (max-width: 900px) {
+    .two-thirds-width {
+        width: 100%;
+    }
+
+    .third-width {
+        width: 100%;
+    }
+
+    .diplomas-hidden-row {
+        background-color: #4a2915;
+        color: #ebbb6b;
+        display: block;
+        border-radius: 0;
+        margin-left: -55px;
+        width: calc(100% + 110px);
+        padding-top: 20px;
+        margin-bottom: 0;
+    }
+
+    .row-2 {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+}
+
+@media (max-width: 800px) {
+    .job-description {
+        display: none;
+    }
+
+    .skills-content {
+        width: 30%;
+        margin: 10px;
     }
 }
 
