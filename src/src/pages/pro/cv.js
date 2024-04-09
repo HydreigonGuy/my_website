@@ -202,11 +202,11 @@ function CV() {
                     <h2>{text["Projects"][lang]}</h2>
                     <div className='content projects-content'>
                         <h4>Autone</h4>
-                        <p>{text["Autone project info"][lang]}</p>
+                        <p className='project-description-text'>{text["Autone project info"][lang]}</p>
                     </div>
                     <div className='content projects-content center-text'>
                         <h4>{text["My Website"][lang]}</h4>
-                        <p>{text["My Website project info"][lang]}</p>
+                        <p className='project-description-text'>{text["My Website project info"][lang]}</p>
                     </div>
                     <br/>
                     <a href="/projects">{text["See more"][lang]}</a>
