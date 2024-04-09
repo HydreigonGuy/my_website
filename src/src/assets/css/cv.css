@@ -1,6 +1,6 @@
 
 .row {
-    padding: 4%;
+    padding: 53px;
     display: block;
 }
 
@@ -149,7 +149,7 @@
 }
 
 .top-pic-width {
-    margin: 1%;
+    margin: 10px;
     width: 20%;
     display: inline-block;
 }
@@ -160,4 +160,32 @@
 
 .internship-job-description-text {
     font-size: 10px;
+}
+
+
+@media (max-width: 1000px) {
+    .title-text {
+        margin-left: 60px;
+    }
+}
+
+@media (max-width: 550px) {
+    .top-pic-width {
+        width: 100%;
+    }
+
+    .picture {
+        margin: auto;
+        display: block;
+        width: 30%;
+    }
+
+    .picture-background-img {
+        margin: auto;
+        display: block;
+        width: 33%;
+        left: 35%;
+        height: 36vmin;
+        top: 8vmin;
+    }
 }

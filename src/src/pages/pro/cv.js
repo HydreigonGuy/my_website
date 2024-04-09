@@ -82,7 +82,7 @@ function CV() {
                     <ProgressiveImg src={background_img} placeholderSrc={background_img_small} className='picture-background-img'/>
                     <img src={picture_of_me} className='picture' />
                 </div>
-                <div className='content lift-text'>
+                <div className='content lift-text title-text'>
                     <h1>Adrien THIBAULT</h1>
 
                     <h3>{text["Developper"][lang]}</h3>
