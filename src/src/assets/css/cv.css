@@ -1,0 +1,270 @@
+
+.row {
+    padding: 53px;
+    display: block;
+}
+
+.content {
+    display: inline-block;
+}
+
+.picture {
+    z-index: 2;
+    position: relative;
+    width: 120px;
+    border-radius: 30px;
+}
+
+.language-selector {
+    color: #888;
+    padding: 5px;
+}
+
+.language-selector-container {
+    display: inline-block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.company-url {
+    color: black;
+    text-decoration: none;
+}
+
+.company-content {
+    width: 46%;
+    padding: 2%;
+    vertical-align: top;
+}
+
+.company-img {
+    width: 30%;
+    margin: auto;
+    display: block;
+}
+
+.center-text {
+    text-align: center;
+    vertical-align: top;
+}
+
+.lift-text {
+    vertical-align: top;
+}
+
+.skills-content {
+    vertical-align: top;
+    text-align: left;
+    width: 20%;
+}
+
+.diploma-content {
+    padding: 20px;
+    vertical-align: top;
+}
+
+.diploma-content-description {
+    font-size: 12px;
+}
+
+.two-thirds-width {
+    margin: 1%;
+    width: 64.66%;
+    display: inline-block;
+}
+
+.third-width {
+    margin: 1%;
+    width: 31.33%;
+    display: inline-block;
+}
+
+.contact-content {
+    vertical-align: top;
+    width: 30%;
+}
+
+.about-me-content {
+    vertical-align: top;
+    width: 33.33%;
+}
+
+.picture-background-img {
+    width: 160px;
+    z-index: 1;
+    position: absolute;
+    top: 35px;
+    left: 45px;
+    object-fit: cover;
+    height: 200px;
+    border-radius: 30px;
+}
+
+.grey-row {
+    background-color: #222;
+    color: white;
+}
+
+.dark-green-row {
+    background-color: rgb(5, 26, 3);
+    color: #aaf2a4;
+}
+
+.green-row {
+    color: rgb(5, 26, 3);
+    background-color: #35872e;
+}
+
+.black-background-cover {
+    background-color: rgb(0, 0, 0, 0.7);
+    border-radius: 40px;
+    color: white;
+    padding-bottom: 20px;
+}
+
+.black-background-cover a {
+    color: white;
+}
+
+.row-2-bg-img {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    left: 0;
+    top: 0;
+    object-fit: cover;
+    max-height: 900px;
+}
+
+.projects-background-image {
+    width: 100%;
+    position: absolute;
+    z-index: -2;
+    left: 0;
+    top: 900px;
+    object-fit: cover;
+}
+
+.projects-content {
+    width: 25%;
+    margin: 20px;
+}
+
+.top-pic-width {
+    margin: 10px;
+    width: 20%;
+    display: inline-block;
+}
+
+.internship-durration-text {
+    font-size: 12px;
+}
+
+.internship-job-description-text {
+    font-size: 10px;
+}
+
+@media (max-width: 1280px) {
+    .projects-background-image {
+        top: 1000px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .row-2-bg-img {
+        top: 200px;
+    }
+
+    .projects-background-image {
+        top: 1200px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .title-text {
+        margin-left: 60px;
+    }
+
+    .row-2-bg-img {
+        top: 260px;
+    }
+
+    .projects-background-image {
+        height: 1000px;
+    }
+}
+
+@media (max-width: 900px) {
+    .two-thirds-width {
+        width: 100%;
+    }
+
+    .third-width {
+        width: 100%;
+    }
+
+    .diplomas-hidden-row {
+        background-color: #4a2915;
+        color: #ebbb6b;
+        display: block;
+        border-radius: 0;
+        margin-left: -55px;
+        width: calc(100% + 110px);
+        padding-top: 20px;
+        margin-bottom: 0;
+    }
+
+    .row-2 {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+}
+
+@media (max-width: 800px) {
+    .job-description {
+        display: none;
+    }
+
+    .skills-content {
+        width: 30%;
+        margin: 10px;
+    }
+}
+
+@media (max-width: 900px) {
+    .project-description-text {
+        display: none;
+    }
+}
+
+@media (max-width: 705px) {
+    .projects-background-image {
+        top: 1500px;
+    }
+}
+
+@media (max-width: 550px) {
+    .top-pic-width {
+        width: 100%;
+    }
+
+    .picture {
+        margin: auto;
+        display: block;
+        width: 30%;
+    }
+
+    .picture-background-img {
+        margin: auto;
+        display: block;
+        width: 33%;
+        left: 35%;
+        height: 36vmin;
+        top: 8vmin;
+    }
+
+    .projects-background-image {
+        top: 1700px;
+    }
+}
