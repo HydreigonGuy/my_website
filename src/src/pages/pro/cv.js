@@ -22,12 +22,17 @@ function CV() {
         "SSL skill":{"eng":"SSL certificate generation and handelling", "fr":"Gestion et génération de certificats SSL"},
         "DNS skill":{"eng":"DNS routing and handelling", "fr":"Routing et gestion DNS"},
         "Profetionnal Experience":{"eng":"Profetionnal Experiences", "fr":"Expériences Profetionelles"},
-        "Torus text":{
-            "eng":"Internship as a fullstack web developper. Part time job as a fullstack web developper.",
-            "fr":"Stage en tant que développeur web full stack. Travail a temps partiel en tant que développeur web full stack."},
+        "Torus time":{"eng":"6 month internship + 7 month part time job", "fr":"Stage de 6 mois + CDD temps partiel de 7 mois"},
+        "Torus job":{"eng":"fullstack web developper.", "fr":"développeur web full stack"},
+        "Torus description":{
+            "eng":"Torus is a medical AI company that creates tools to find diseases using AI. I worked on many different projects including tools to create datasets for training the AIs and the websites to use them.",
+            "fr":"Torus est une entreprise d'IA dans le secteur médical. Torus crée des outils qui utilisent l'IA pour détecter des maladies. Chez Torus, j'ai travaillé sur de nombreux projets dont des outils pour générer des datasets pour entrainer les IA ainsi que les outils pour utiliser ces IA."
+        },
+        "Predicloud time":{"eng":"6 month part time internship + 4 month full time internship ", "fr":"Stage a temp partiel de 6 mois + Stage de 4 mois temps plein"},
+        "Predicloud job":{"eng":"DevOps developper, AI developper, Web + Mobile fullstack developper", "fr":"Développeur DevOps, développeur IA, développeur Web + Mobile fullstack"},
         "Predicloud text":{
-            "eng":"Part time internship as a DevOps developper and a web and mobile fullstack developper. Internship as a DevOps developper and an AI developper.",
-            "fr":"Stage en temps partiel en tant que développeur DevOps ainsi que développeur web et mobile full stack. Stage en tant que développeur DevOps ainsi que développeur IA."},
+            "eng":"Predicloud is a company that offers to host services for commpanies and monitor them. They also help companies in their projects in many different fields. Here, I worked on a lot of DevOps for the company as well as helped make websites and mobile applications for clients and even worked on an AI.",
+            "fr":"Predicloud est une entreprise qui déploie les services de nos clients sur son cluster kubernetes et les moniteurs. Predicloud propose aussi de l'aide pour les projets techniques dans de domaines divers. Ici, j'ai travillé sur des sites webs et des applications mobiles pour des clients ainsi qu'une IA."},
         "Diplomas":{"eng":"Diplomas", "fr":"Diplômes"},
         "Info Bac":{
             "eng":"S SVT spé. Maths obtained in 2020 mention Très Bien at the Lycée Français Victor Hugo in Frankfurt Germany. The Baccalauréat is the diploma obtained at the end of HighSchool in France.",
@@ -48,6 +53,21 @@ function CV() {
         "language basic":{"eng":"Basic comunication", "fr":"Comunications basiques"},
         "Contact Me!":{"eng":"Contact Me!", "fr":"Contectez Moi!"},
         "PHONE":{"eng":"PHONE", "fr":"TELEPHONE"},
+        "Autone project info":{
+            "eng":"Autone is a school project spanding over 3 years in group of 7 students. The task was to create a company from the ground up, find a problem and establish a solution with our technical knowledge. We chose to create a website and mobile application that can record an audio and generate a partition for it. This is done with the use of AI.",
+            "fr":"Autone est un projet scholaire durrant 3 fait dans un groupe de 7 étudiants qui a pour but de créer une entreprise."},
+        "My Website":{"eng":"My Website", "fr":"Mon Site Web"},
+        "My Website project info":{
+            "eng":"This webpage is a part of my website. My website is by far my biggest personnal project, I have been working on it for months and still regularly add to it. I originally made it to share pictures of my travels with friends and to practice web development.",
+            "fr":"Ceci est mon site web."},
+        "About me":{"eng":"About me", "fr":"À propos de moi"},
+        "About me text":{
+            "eng":"I'm a traveller, I've lived in many different countries. Living in different countries has made me a big fan of travelling, but also made in interrested in history of different countries. I like all kinds of physical activity.",
+            "fr":"Je suis un voyageur, et j'aime le sport."},
+        "Hobbies":{"eng":"Hobbies", "fr":"Hobbies"},
+        "Travelling":{"eng":"Travelling", "fr":"Voyager"},
+        "Gym":{"eng":"Gym", "fr":"Gym"},
+        "Hiking":{"eng":"Hiking", "fr":"Rendonées"},
     }
     let [searchParams, setSearchParams] = useSearchParams();
     var lang = searchParams.get("lang")
@@ -85,7 +105,9 @@ function CV() {
                             <h5>Torus Actions</h5>
                         </a>
 
-                        {text["Torus text"][lang]}
+                        <p className='internship-durration-text'>{text["Torus time"][lang]}</p>
+                        <p className='internship-job-description-text'>{text["Torus job"][lang]}</p>
+                        <p>{text["Torus description"][lang]}</p>
                     </div>
                     <div className='content company-content'>
                         <a className='company-url' href="https://www.predicloud.com/" target='_blank'>
@@ -93,7 +115,9 @@ function CV() {
                             <h5>Predicloud</h5>
                         </a>
 
-                        {text["Predicloud text"][lang]}
+                        <p className='internship-durration-text'>{text["Predicloud time"][lang]}</p>
+                        <p className='internship-job-description-text'>{text["Predicloud job"][lang]}</p>
+                        <p>{text["Predicloud text"][lang]}</p>
                     </div>
                 </div>
 
@@ -165,42 +189,31 @@ function CV() {
                 </div>
             </div>
 
-
-
+            {/* Projects row */}
             <div className='row center-text'>
                 <img src={sankeien_background_img} className='projects-background-image'/>
                 <div className='content black-background-cover center-text'>
                     <h2>{text["Projects"][lang]}</h2>
                     <div className='content projects-content'>
                         <h4>Autone</h4>
-                        <p>
-                            Autone is a school project spanding over 3 years in group of 7 students.
-                            The task was to create a company from the ground up, find a problem and establish a solution with our technical knowledge.
-                            We chose to create a website and mobile application that can record an audio and generate a partition for it.
-                            This is done with the use of AI.
-                        </p>
+                        <p>{text["Autone project info"][lang]}</p>
                     </div>
                     <div className='content projects-content center-text'>
-                        <h4>My Website</h4>
-                        <p>
-                            This webpage is a part of my website.
-                            My website is by far my biggest personnal project, I have been working on it for months and still regularly add to it.
-                            I originally made it to share pictures of my travels with friends and to practice web development.
-                        </p>
+                        <h4>{text["My Website"][lang]}</h4>
+                        <p>{text["My Website project info"][lang]}</p>
                     </div>
                     <br/>
                     <a href="/projects">{text["See more"][lang]}</a>
                 </div>
             </div>
 
-            <div className='row green-row'>
+            {/* Row About me */}
+            {/*<div className='row green-row'>
                 <div className='content about-me-content'>
-                    <h2>About me</h2>
+                    <h2>{text["About me"][lang]}</h2>
 
                     <p>
-                        I'm a traveller, I've lived in many different countries.
-                        Living in different countries has made me a big fan of travelling, but also made in interrested in history of different countries.
-                        I like all kinds of physical activity.
+                        {text["About me text"][lang]}
                     </p>
                 </div>
                 <div className='content about-me-content'>
@@ -213,14 +226,15 @@ function CV() {
                     <p>France : the rest</p>
                 </div>
                 <div className='content about-me-content'>
-                    <h2>Hobbies</h2>
+                    <h2>{text["Hobbies"][lang]}</h2>
 
-                    <p>Travelling</p>
-                    <p>Gym</p>
-                    <p>Hiking</p>
+                    <p>{text["Travelling"][lang]}</p>
+                    <p>{text["Gym"][lang]}</p>
+                    <p>{text["Hiking"][lang]}</p>
                 </div>
-            </div>
+            </div>*/}
 
+            {/* Row for contact info */}
             <div className='row center-text dark-green-row'>
                 <h2>{text["Contact Me!"][lang]}</h2>
 
