@@ -193,6 +193,10 @@
     .projects-background-image {
         height: 1000px;
     }
+
+    .contact-content {
+        width: 50%;
+    }
 }
 
 @media (max-width: 900px) {
@@ -266,5 +270,10 @@
 
     .projects-background-image {
         top: 1700px;
+    }
+
+    .contact-content {
+        width: 100%;
+        display: block;
     }
 }
