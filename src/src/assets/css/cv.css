@@ -4,6 +4,10 @@
     display: block;
 }
 
+.image-bg-row {
+    background-size: cover;
+}
+
 .content {
     display: inline-block;
 }
@@ -90,17 +94,6 @@
     width: 33.33%;
 }
 
-.picture-background-img {
-    width: 160px;
-    z-index: 1;
-    position: absolute;
-    top: 35px;
-    left: 45px;
-    object-fit: cover;
-    height: 200px;
-    border-radius: 30px;
-}
-
 .grey-row {
     background-color: #222;
     color: white;
@@ -153,8 +146,11 @@
 
 .top-pic-width {
     margin: 10px;
-    width: 20%;
+    margin-right: 30px;
     display: inline-block;
+    padding: 20px;
+    background-size: cover;
+    border-radius: 30px;
 }
 
 .internship-durration-text {
@@ -182,16 +178,16 @@
 }
 
 @media (max-width: 1000px) {
-    .title-text {
-        margin-left: 60px;
-    }
-
     .row-2-bg-img {
         top: 260px;
     }
 
     .projects-background-image {
         height: 1000px;
+    }
+
+    .contact-content {
+        width: 50%;
     }
 }
 
@@ -246,25 +242,17 @@
 
 @media (max-width: 550px) {
     .top-pic-width {
-        width: 100%;
-    }
-
-    .picture {
-        margin: auto;
         display: block;
-        width: 30%;
-    }
-
-    .picture-background-img {
         margin: auto;
-        display: block;
-        width: 33%;
-        left: 35%;
-        height: 36vmin;
-        top: 8vmin;
+        width: 120px;
     }
 
     .projects-background-image {
         top: 1700px;
+    }
+
+    .contact-content {
+        width: 100%;
+        display: block;
     }
 }

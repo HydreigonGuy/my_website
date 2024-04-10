@@ -3,10 +3,8 @@ import picture_of_me from '../../assets/images/me.png';
 import '../../assets/css/cv.css';
 
 import background_img from '../../assets/images/korea/daegu/IMG20240407143458.jpg';
-import background_img_small from '../../assets/images/korea/daegu/small/IMG20240407143458.jpg';
 
 import waterfall_background_img from '../../assets/images/korea/sejong/IMG20230915143919.jpg';
-import waterfall_background_img_small from '../../assets/images/korea/sejong/small/IMG20230915143919.jpg';
 import sankeien_background_img from '../../assets/images/japan/yokohama/IMG20240220130536.jpg';
 
 import ProgressiveImg from '../../components/image_loading';
@@ -14,6 +12,16 @@ import ProgressiveImg from '../../components/image_loading';
 import { useSearchParams } from "react-router-dom";
 
 function CV() {
+    var flower_bg = {
+        backgroundImage: `url(${background_img})`
+      };
+    var waterfall_bg = {
+        backgroundImage: `url(${waterfall_background_img})`
+      };
+    var sankeien_bg = {
+        backgroundImage: `url(${sankeien_background_img})`
+      };
+
     const text = {
         "Skills":{"eng":"Skills", "fr":"Compétences"},
         "Programming Languages":{"eng":"Programming Languages", "fr":"Languages Informatiques"},
@@ -78,8 +86,7 @@ function CV() {
         <>
             {/* Row 1 with picture of me and Title */}
             <div className='row grey-row'>
-                <div className='content top-pic-width'>
-                    <ProgressiveImg src={background_img} placeholderSrc={background_img_small} className='picture-background-img'/>
+                <div className='content top-pic-width' style={flower_bg}>
                     <img src={picture_of_me} className='picture' />
                 </div>
                 <div className='content lift-text title-text'>
@@ -95,8 +102,8 @@ function CV() {
             </div>
 
             {/* Row 2 with Profetional experience and Diplomas */}
-            <div className='row row-2'>
-                <ProgressiveImg src={waterfall_background_img} placeholderSrc={waterfall_background_img_small} className='row-2-bg-img'/>
+            <div className='row row-2 image-bg-row' style={waterfall_bg}>
+                {/*<ProgressiveImg src={waterfall_background_img} placeholderSrc={waterfall_background_img_small} className='row-2-bg-img'/>*/}
                 <div className='center-text two-thirds-width black-background-cover'>
                     <h2>{text["Profetionnal Experience"][lang]}</h2>
                     <div className='content company-content'>
@@ -196,7 +203,7 @@ function CV() {
             </div>
 
             {/* Projects row */}
-            <div className='row center-text'>
+            <div className='row center-text image-bg-row' style={sankeien_bg}>
                 <img src={sankeien_background_img} className='projects-background-image'/>
                 <div className='content black-background-cover center-text'>
                     <h2>{text["Projects"][lang]}</h2>
