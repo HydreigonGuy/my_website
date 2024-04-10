@@ -103,7 +103,6 @@ function CV() {
 
             {/* Row 2 with Profetional experience and Diplomas */}
             <div className='row row-2 image-bg-row' style={waterfall_bg}>
-                {/*<ProgressiveImg src={waterfall_background_img} placeholderSrc={waterfall_background_img_small} className='row-2-bg-img'/>*/}
                 <div className='center-text two-thirds-width black-background-cover'>
                     <h2>{text["Profetionnal Experience"][lang]}</h2>
                     <div className='content company-content'>
@@ -204,7 +203,6 @@ function CV() {
 
             {/* Projects row */}
             <div className='row center-text image-bg-row' style={sankeien_bg}>
-                <img src={sankeien_background_img} className='projects-background-image'/>
                 <div className='content black-background-cover center-text'>
                     <h2>{text["Projects"][lang]}</h2>
                     <div className='content projects-content'>
