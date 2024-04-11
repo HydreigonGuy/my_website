@@ -6,6 +6,7 @@
 
 .image-bg-row {
     background-size: cover;
+    background-position: center;
 }
 
 .content {
