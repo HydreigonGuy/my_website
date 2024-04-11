@@ -1,48 +1,63 @@
 
+import '../../assets/css/projects.css';
+
+import ProjectInfo from '../../components/project_info';
+
 function Projects() {
     return (
         <>
-            <div>
-                <a href='https://github.com/HydreigonGuy/my_rpg'>my_rpg</a>
-                <p>
-                    I made an RPG in C with the CSFML library!
-                </p>
-            </div>
+            <ProjectInfo
+                title="Autone"
+                info="Autone is a website and mobile application that generates music sheets from a given music."
+                try_url="https://autone.app"
+                />
 
-            <div>
-                <a href='https://github.com/HydreigonGuy/malloc'>malloc</a>
-                <p>
-                    I recoded malloc in C
-                </p>
-            </div>
+            <ProjectInfo
+                title="My Website"
+                info="This is my website! A website made in REACT."
+                try_url="https://adrien-thibault.de"
+                code_url="https://github.com/HydreigonGuy/my_website"
+                />
 
-            <div>
-                <a href='https://github.com/HydreigonGuy/tekspice'>Tekspice</a>
-                <p>
-                </p>
-            </div>
+            <ProjectInfo
+                title="My RPG"
+                info="I made an RPG in C with the CSFML library!"
+                code_url="https://github.com/HydreigonGuy/my_rpg"
+                />
+            
+            <ProjectInfo
+                title="My Malloc"
+                info="I recoded malloc in C."
+                code_url="https://github.com/HydreigonGuy/malloc"
+                />
 
-            <div>
-                <a href='https://github.com/HydreigonGuy/zappy'>Zappy</a>
-                <p>
-                    Zappy is a project in C of a game, not to be played by humans, but by an AI.
-                    There is a server which runs the game and a client that runs an AI that will play the game.
-                    The AI moves around and tries to collect ressources to multiply and level up.
-                    Multiple AIs can connect and the AI that reaches the highest level wins!
-                </p>
-            </div>
+            <ProjectInfo
+                title="Tekspice"
+                info=""
+                code_url="https://github.com/HydreigonGuy/tekspice"
+                />
+            
+            <ProjectInfo
+                title="Zappy"
+                info="Zappy is a project in C of a game, not to be played by humans, but by an AI.
+                There is a server which runs the game and a client that runs an AI that will play the game.
+                The AI moves around and tries to collect ressources to multiply and level up.
+                Multiple AIs can connect and the AI that reaches the highest level wins!"
+                code_url="https://github.com/HydreigonGuy/zappy"
+                />
 
-            <div>
-                <a href=''></a>
-                <p>
-                </p>
-            </div>
+            <ProjectInfo
+                title="Glados"
+                info="This is a project where as a group we created our own language and made a compiler and an interpreter for it."
+                code_url="https://github.com/HydreigonGuy/glados"
+                />
 
-            <div>
-                <a href=''></a>
-                <p>
-                </p>
-            </div>
+            <ProjectInfo
+                title="My Defender"
+                info="I made a tower defence game in C with the CSFML library!"
+                code_url="https://github.com/HydreigonGuy/my_defender"
+                />
+
         </>
     );
 }
