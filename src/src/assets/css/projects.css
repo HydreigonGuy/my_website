@@ -1,9 +1,33 @@
 
+.projects-header {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.projects-header h1 {
+    margin: 0;
+}
+
+.prijects-body {
+    background-color: darkgreen;
+}
+
 .project-content {
     display: inline-block;
-    padding: 20px;
-    width: 400px;
+    padding: 1%;
+    width: 29.33%;
     vertical-align: top;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    margin: 1%;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.project-content-image {
+    height: 150px;
 }
 
 .links-area {
@@ -13,4 +37,20 @@
 .half-url-content {
     display: inline-block;
     width: 30%;
+}
+
+.project-content-url {
+    color: white;
+    text-decoration: underline;
+}
+
+.language-selector-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.language-selector {
+    color: #888;
+    padding: 5px;
 }
