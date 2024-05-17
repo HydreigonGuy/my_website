@@ -93,6 +93,27 @@ function Projects() {
                 code_url="https://github.com/HydreigonGuy/my_defender"
                 lang={lang}
                 />
+
+            <ProjectInfo
+                title="My Hunter"
+                info="This is the first game that I coded, it was in C with the CSFML library, my first time trying this library. It is a simple hunter game where you need to click on enemies running accross your screen."
+                code_url="https://github.com/HydreigonGuy/my_hunter"
+                lang={lang}
+                />
+
+            <ProjectInfo
+                title="Wolfram"
+                info="Project in Haskell."
+                code_url="https://github.com/HydreigonGuy/wolfram"
+                lang={lang}
+                />
+
+            <ProjectInfo
+                title="My Teams"
+                info="Recoding a microsoft teams like messaging app in C."
+                code_url="https://github.com/HydreigonGuy/my_teams"
+                lang={lang}
+                />
             </div>
 
         </>
