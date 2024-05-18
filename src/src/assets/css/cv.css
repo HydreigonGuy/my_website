@@ -213,4 +213,9 @@
         width: 100%;
         display: block;
     }
+
+    .company-content {
+        display: block;
+        width: 100%;
+    }
 }
