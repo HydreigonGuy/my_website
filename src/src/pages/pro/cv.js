@@ -156,48 +156,48 @@ function CV() {
                 <div className='content skills-content'>
                     <h5>{text["Programming Languages"][lang]}</h5>
 
-                    <p>C</p>
-                    <p>C++</p>
-                    <p>Python</p>
-                    <p>Javascript</p>
-                    <p>Haskell</p>
-                    <p>HTML + CSS</p>
+                    <p className='skill'>C</p>
+                    <p className='skill'>C++</p>
+                    <p className='skill'>Python</p>
+                    <p className='skill'>Javascript</p>
+                    <p className='skill'>Haskell</p>
+                    <p className='skill'>HTML + CSS</p>
                 </div>
                 
                 <div className='content skills-content'>
                     <h5>DevOps</h5>
 
-                    <p>Docker + Docker-Compose</p>
-                    <p>Kubernetes</p>
-                    <p>Github Actions</p>
-                    <p>Traefik</p>
-                    <p>Prometheus + Grafana + Loki</p>
+                    <p className='skill'>Docker + Docker-Compose</p>
+                    <p className='skill'>Kubernetes</p>
+                    <p className='skill'>Github Actions</p>
+                    <p className='skill'>Traefik</p>
+                    <p className='skill'>Prometheus + Grafana + Loki</p>
                 </div>
 
-                <div  className='content skills-content'>
+                <div  className='content skills-content skills-hide-when-small'>
                     <h5>Databases</h5>
 
-                    <p>Postgres</p>
-                    <p>MongoDB</p>
+                    <p className='skill'>Postgres</p>
+                    <p className='skill'>MongoDB</p>
                 </div>
 
                 <div  className='content skills-content'>
                     <h5>{text["Misc Tech Skills"][lang]}</h5>
 
-                    <p>{text["OS skill"][lang]}</p>
-                    <p>{text["SSL skill"][lang]}</p>
-                    <p>{text["DNS skill"][lang]}</p>
-                    <p>Git + Github Actions</p>
-                    <p>Unity</p>
+                    <p className='skill'>{text["OS skill"][lang]}</p>
+                    <p className='skill'>{text["SSL skill"][lang]}</p>
+                    <p className='skill'>{text["DNS skill"][lang]}</p>
+                    <p className='skill'>Git + Github Actions</p>
+                    <p className='skill'>Unity</p>
                 </div>
 
                 <div  className='content skills-content'>
                     <h5>{text["Languages"][lang]}</h5>
 
-                    <p>{text["French"][lang]} - {text["language fluent"][lang]}</p>
-                    <p>{text["English"][lang]} - {text["language fluent"][lang]}</p>
-                    <p>{text["Korean"][lang]} - {text["language basic"][lang]}</p>
-                    <p>{text["German"][lang]} - {text["language basic"][lang]}</p>
+                    <p className='skill'>{text["French"][lang]} - {text["language fluent"][lang]}</p>
+                    <p className='skill'>{text["English"][lang]} - {text["language fluent"][lang]}</p>
+                    <p className='skill'>{text["Korean"][lang]} - {text["language basic"][lang]}</p>
+                    <p className='skill'>{text["German"][lang]} - {text["language basic"][lang]}</p>
                 </div>
             </div>
 

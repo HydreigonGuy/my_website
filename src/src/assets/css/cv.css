@@ -159,12 +159,12 @@
     }
 
     .diplomas-hidden-row {
-        background-color: #4a2915;
-        color: #ebbb6b;
+        background-color: rgb(5, 26, 3);
+        color: #aaf2a4;
         display: block;
         border-radius: 0;
-        margin-left: -55px;
-        width: calc(100% + 110px);
+        margin-left: -53px;
+        width: calc(100% + 106px);
         padding-top: 20px;
         margin-bottom: 0;
     }
@@ -183,6 +183,16 @@
     .skills-content {
         width: 30%;
         margin: 10px;
+    }
+}
+
+@media (max-width: 700px) {
+    .skills-hide-when-small {
+        display: none;
+    }
+
+    .skill {
+        font-size: 8px;
     }
 }
 
