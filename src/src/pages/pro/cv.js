@@ -214,7 +214,7 @@ function CV() {
                         <p className='project-description-text'>{text["My Website project info"][lang]}</p>
                     </div>
                     <br/>
-                    <a href="/projects">{text["See more"][lang]}</a>
+                    <a href={lang ? "/projects?lang=" + lang : "/projects"}>{text["See more"][lang]}</a>
                 </div>
             </div>
 
