@@ -49,7 +49,7 @@ function CV() {
             "eng":"Obtained in 2019 grade A, level C2.",
             "fr":"Obtenu en 2019 grade A, niveau C2"},
         "Projects":{"eng":"Projects", "fr":"Projets"},
-        "See more":{"eng":"See more", "fr":"Voire plus"},
+        "See more":{"eng":"See more", "fr":"Voir plus"},
         "Languages":{"eng":"Language Skills", "fr":"Compétences Languistiques"},
         "Developper":{"eng":"Developper", "fr":"Développeur"},
         "Student":{"eng":"4th year Student at EPITECH", "fr":"Étudiant en 4ème année à EPITECH"},
@@ -62,12 +62,20 @@ function CV() {
         "Contact Me!":{"eng":"Contact Me!", "fr":"Contactez Moi!"},
         "PHONE":{"eng":"PHONE", "fr":"TELEPHONE"},
         "Autone project info":{
-            "eng":"Autone is a school project spanding over 3 years in a group of 7 students. The task was to create a company from the ground up, find a problem and establish a solution with our technical knowledge. We chose to create a website and mobile application that can record an audio and generate a partition for it. This is done with the use of AI.",
-            "fr":"Autone est un projet scholaire durrant 3 fait dans un groupe de 7 étudiants qui a pour but de créer une entreprise."},
+            "eng":"Autone is a website that uses AI to generate sheet music for any given music.",
+            "fr":"Autone est un site web qui utilise une IA pour générer une partition pour une musique que l'on lui présente."},
+        "Autone project info +":{
+            "eng":"It is a school project spanning over 3 years, we are 7 people working on it.",
+            "fr":"C'est un projet scholaire ce déroullant sur 3 ans. Nous travaillons dessus en équipe de 7 développeurs."
+        },
         "My Website":{"eng":"My Website", "fr":"Mon Site Web"},
         "My Website project info":{
-            "eng":"This webpage is a part of my website. My website is by far my biggest personnal project, I have been working on it for months and still regularly add to it. I originally made it to share pictures of my travels with friends and to practice web development.",
+            "eng":"This is my website.",
             "fr":"Ceci est mon site web."},
+        "My Website project info +":{
+            "eng":"It is a personnal project started in 2023 that I regularly work on.",
+            "fr":"C'est un projet personnel commencé en 2023 sur lequel je travail régulierement."
+        },
         "About me":{"eng":"About me", "fr":"À propos de moi"},
         "About me text":{
             "eng":"I'm a traveller, I've lived in many different countries. Living in different countries has made me a big fan of travelling, but also made in interrested in history of different countries. I like all kinds of physical activity.",
@@ -213,10 +221,12 @@ function CV() {
                     <div className='content projects-content'>
                         <h4>Autone</h4>
                         <p className='project-description-text'>{text["Autone project info"][lang]}</p>
+                        <p className='project-description-sub-text'>{text["Autone project info +"][lang]}</p>
                     </div>
                     <div className='content projects-content center-text'>
                         <h4>{text["My Website"][lang]}</h4>
                         <p className='project-description-text'>{text["My Website project info"][lang]}</p>
+                        <p className='project-description-sub-text'>{text["My Website project info +"][lang]}</p>
                     </div>
                     <br/>
                     <a href={lang ? "/projects?lang=" + lang : "/projects"}>{text["See more"][lang]}</a>
