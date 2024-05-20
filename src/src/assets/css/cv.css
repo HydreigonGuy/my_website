@@ -155,6 +155,10 @@
     font-size: 10px;
 }
 
+.project-example-title-url {
+    text-decoration: none;
+}
+
 @media (max-width: 1000px) {
     .contact-content {
         width: 50%;

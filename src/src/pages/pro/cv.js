@@ -219,12 +219,16 @@ function CV() {
                 <div className='content black-background-cover center-text'>
                     <h2>{text["Projects"][lang]}</h2>
                     <div className='content projects-content'>
-                        <h4>Autone</h4>
+                        <a href='https://autone.app' target='_blank' className='project-example-title-url'>
+                            <h4>Autone</h4>
+                        </a>
                         <p className='project-description-text'>{text["Autone project info"][lang]}</p>
                         <p className='project-description-sub-text'>{text["Autone project info +"][lang]}</p>
                     </div>
                     <div className='content projects-content center-text'>
-                        <h4>{text["My Website"][lang]}</h4>
+                        <a href='https://adrien-thibault.de' target='_blank' className='project-example-title-url'>
+                            <h4>{text["My Website"][lang]}</h4>
+                        </a>
                         <p className='project-description-text'>{text["My Website project info"][lang]}</p>
                         <p className='project-description-sub-text'>{text["My Website project info +"][lang]}</p>
                     </div>
