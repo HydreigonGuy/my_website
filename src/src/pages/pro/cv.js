@@ -33,14 +33,14 @@ function CV() {
         "Torus time":{"eng":"6 month internship + 7 month part time job", "fr":"Stage de 6 mois + CDD temps partiel de 7 mois"},
         "Torus job":{"eng":"fullstack web developper.", "fr":"développeur web full stack"},
         "Torus description":{
-            "eng":"Torus is a medical AI company that creates tools to find diseases using AI. I worked on many different projects including tools to create datasets for training the AIs and the websites to use them.",
-            "fr":"Torus est une entreprise d'IA dans le secteur médical. Torus crée des outils qui utilisent l'IA pour détecter des maladies. Chez Torus, j'ai travaillé sur de nombreux projets dont des outils pour générer des datasets pour entrainer les IA ainsi que les outils pour utiliser ces IA."
+            "eng":"Torus is a medical AI company that creates tools to find diseases using AI. They sell tools that take an image of a body part or skin and uses an AI to detect diseases.",
+            "fr":"Torus est une entreprise d'IA dans le secteur médical. Torus crée des outils qui observent des images d'un corps et qui utilisent de l'IA pour détecter des maladies."
         },
         "Predicloud time":{"eng":"6 month part time internship + 4 month full time internship ", "fr":"Stage a temp partiel de 6 mois + Stage de 4 mois temps plein"},
         "Predicloud job":{"eng":"DevOps developper, AI developper, Web + Mobile fullstack developper", "fr":"Développeur DevOps, développeur IA, développeur Web + Mobile fullstack"},
         "Predicloud text":{
-            "eng":"Predicloud is a company that offers to host services for commpanies and monitor them. They also help companies in their projects in many different fields. Here, I worked on a lot of DevOps for the company as well as helped make websites and mobile applications for clients and even worked on an AI.",
-            "fr":"Predicloud est une entreprise qui déploie les services de nos clients sur son cluster kubernetes et les moniteurs. Predicloud propose aussi de l'aide pour les projets techniques dans de domaines divers. Ici, j'ai travillé sur des sites webs et des applications mobiles pour des clients ainsi qu'une IA."},
+            "eng":"Predicloud is a company that offers to host services for commpanies and monitor them. They also help companies in their projects in many different fields.",
+            "fr":"Predicloud est une entreprise qui déploie les services de ses clients et les moniteurs. Predicloud propose aussi de l'aide pour les projets techniques dans de domaines divers."},
         "Diplomas":{"eng":"Diplomas", "fr":"Diplômes"},
         "Info Bac":{
             "eng":"S SVT spé. Maths obtained in 2020 mention Très Bien at the Lycée Français Victor Hugo in Frankfurt Germany.",
@@ -49,7 +49,7 @@ function CV() {
             "eng":"Obtained in 2019 grade A, level C2.",
             "fr":"Obtenu en 2019 grade A, niveau C2"},
         "Projects":{"eng":"Projects", "fr":"Projets"},
-        "See more":{"eng":"See more", "fr":"Voire plus"},
+        "See more":{"eng":"See more", "fr":"Voir plus"},
         "Languages":{"eng":"Language Skills", "fr":"Compétences Languistiques"},
         "Developper":{"eng":"Developper", "fr":"Développeur"},
         "Student":{"eng":"4th year Student at EPITECH", "fr":"Étudiant en 4ème année à EPITECH"},
@@ -62,12 +62,20 @@ function CV() {
         "Contact Me!":{"eng":"Contact Me!", "fr":"Contactez Moi!"},
         "PHONE":{"eng":"PHONE", "fr":"TELEPHONE"},
         "Autone project info":{
-            "eng":"Autone is a school project spanding over 3 years in a group of 7 students. The task was to create a company from the ground up, find a problem and establish a solution with our technical knowledge. We chose to create a website and mobile application that can record an audio and generate a partition for it. This is done with the use of AI.",
-            "fr":"Autone est un projet scholaire durrant 3 fait dans un groupe de 7 étudiants qui a pour but de créer une entreprise."},
+            "eng":"Autone is a website that uses AI to generate sheet music for any given music.",
+            "fr":"Autone est un site web qui utilise une IA pour générer une partition pour une musique que l'on lui présente."},
+        "Autone project info +":{
+            "eng":"It is a school project spanning over 3 years, we are 7 people working on it.",
+            "fr":"C'est un projet scholaire ce déroullant sur 3 ans. Nous travaillons dessus en équipe de 7 développeurs."
+        },
         "My Website":{"eng":"My Website", "fr":"Mon Site Web"},
         "My Website project info":{
-            "eng":"This webpage is a part of my website. My website is by far my biggest personnal project, I have been working on it for months and still regularly add to it. I originally made it to share pictures of my travels with friends and to practice web development.",
+            "eng":"This is my website.",
             "fr":"Ceci est mon site web."},
+        "My Website project info +":{
+            "eng":"It is a personnal project started in 2023 that I regularly work on.",
+            "fr":"C'est un projet personnel commencé en 2023 sur lequel je travail régulierement."
+        },
         "About me":{"eng":"About me", "fr":"À propos de moi"},
         "About me text":{
             "eng":"I'm a traveller, I've lived in many different countries. Living in different countries has made me a big fan of travelling, but also made in interrested in history of different countries. I like all kinds of physical activity.",
@@ -211,12 +219,18 @@ function CV() {
                 <div className='content black-background-cover center-text'>
                     <h2>{text["Projects"][lang]}</h2>
                     <div className='content projects-content'>
-                        <h4>Autone</h4>
+                        <a href='https://autone.app' target='_blank' className='project-example-title-url'>
+                            <h4>Autone</h4>
+                        </a>
                         <p className='project-description-text'>{text["Autone project info"][lang]}</p>
+                        <p className='project-description-sub-text'>{text["Autone project info +"][lang]}</p>
                     </div>
                     <div className='content projects-content center-text'>
-                        <h4>{text["My Website"][lang]}</h4>
+                        <a href='https://adrien-thibault.de' target='_blank' className='project-example-title-url'>
+                            <h4>{text["My Website"][lang]}</h4>
+                        </a>
                         <p className='project-description-text'>{text["My Website project info"][lang]}</p>
+                        <p className='project-description-sub-text'>{text["My Website project info +"][lang]}</p>
                     </div>
                     <br/>
                     <a href={lang ? "/projects?lang=" + lang : "/projects"}>{text["See more"][lang]}</a>
