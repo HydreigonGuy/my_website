@@ -1,5 +1,5 @@
 
-import picture_of_me from '../../assets/images/me.png';
+import picture_of_me from '../../assets/images/pro/me.png';
 import '../../assets/css/cv.css';
 
 import background_img from '../../assets/images/korea/daegu/IMG20240407143458.jpg';
@@ -26,10 +26,10 @@ function CV() {
         "Skills":{"eng":"Skills", "fr":"Compétences"},
         "Programming Languages":{"eng":"Programming Languages", "fr":"Languages Informatiques"},
         "Misc Tech Skills":{"eng":"Misc Tech Skills", "fr":"Compétences Informatiques Diverses"},
-        "OS skill":{"eng":"Linux and OS handelling", "fr":"Linux et gestions d'OS"},
-        "SSL skill":{"eng":"SSL certificate generation and handelling", "fr":"Gestion et génération de certificats SSL"},
-        "DNS skill":{"eng":"DNS routing and handelling", "fr":"Routing et gestion DNS"},
-        "Profetionnal Experience":{"eng":"Profetionnal Experiences", "fr":"Expériences Profetionelles"},
+        "OS skill":{"eng":"Linux and OS handling", "fr":"Linux et gestions d'OS"},
+        "SSL skill":{"eng":"SSL certificate generation and handling", "fr":"Gestion et génération de certificats SSL"},
+        "DNS skill":{"eng":"DNS routing and handling", "fr":"Routing et gestion DNS"},
+        "Profetionnal Experience":{"eng":"Professional Experience", "fr":"Expérience Profetionelle"},
         "Torus time":{"eng":"6 month internship + 7 month part time job", "fr":"Stage de 6 mois + CDD temps partiel de 7 mois"},
         "Torus job":{"eng":"fullstack web developper.", "fr":"développeur web full stack"},
         "Torus description":{
@@ -43,7 +43,7 @@ function CV() {
             "fr":"Predicloud est une entreprise qui déploie les services de nos clients sur son cluster kubernetes et les moniteurs. Predicloud propose aussi de l'aide pour les projets techniques dans de domaines divers. Ici, j'ai travillé sur des sites webs et des applications mobiles pour des clients ainsi qu'une IA."},
         "Diplomas":{"eng":"Diplomas", "fr":"Diplômes"},
         "Info Bac":{
-            "eng":"S SVT spé. Maths obtained in 2020 mention Très Bien at the Lycée Français Victor Hugo in Frankfurt Germany. The Baccalauréat is the diploma obtained at the end of HighSchool in France.",
+            "eng":"S SVT spé. Maths obtained in 2020 mention Très Bien at the Lycée Français Victor Hugo in Frankfurt Germany.",
             "fr":"S SVT spé. Maths obtenu en 2020 mention Très Bien au Lycée Français Victor Hugo de Francfort en Allemagne"},
         "Info Cambridge":{
             "eng":"Obtained in 2019 grade A, level C2.",
@@ -58,11 +58,11 @@ function CV() {
         "Korean":{"eng":"Korean", "fr":"Coréen"},
         "German":{"eng":"German", "fr":"Allemand"},
         "language fluent":{"eng":"C2 - Proficient", "fr":"C2 - Maitrise parfaite"},
-        "language basic":{"eng":"Basic comunication", "fr":"Comunications basiques"},
-        "Contact Me!":{"eng":"Contact Me!", "fr":"Contectez Moi!"},
+        "language basic":{"eng":"Basic comunication", "fr":"Débutant"},
+        "Contact Me!":{"eng":"Contact Me!", "fr":"Contactez Moi!"},
         "PHONE":{"eng":"PHONE", "fr":"TELEPHONE"},
         "Autone project info":{
-            "eng":"Autone is a school project spanding over 3 years in group of 7 students. The task was to create a company from the ground up, find a problem and establish a solution with our technical knowledge. We chose to create a website and mobile application that can record an audio and generate a partition for it. This is done with the use of AI.",
+            "eng":"Autone is a school project spanding over 3 years in a group of 7 students. The task was to create a company from the ground up, find a problem and establish a solution with our technical knowledge. We chose to create a website and mobile application that can record an audio and generate a partition for it. This is done with the use of AI.",
             "fr":"Autone est un projet scholaire durrant 3 fait dans un groupe de 7 étudiants qui a pour but de créer une entreprise."},
         "My Website":{"eng":"My Website", "fr":"Mon Site Web"},
         "My Website project info":{
