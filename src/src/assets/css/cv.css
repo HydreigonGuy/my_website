@@ -151,6 +151,14 @@
     font-size: 10px;
 }
 
+.project-description-sub-text {
+    font-size: 10px;
+}
+
+.project-example-title-url {
+    text-decoration: none;
+}
+
 @media (max-width: 1000px) {
     .contact-content {
         width: 50%;
@@ -206,6 +214,10 @@
 
 @media (max-width: 900px) {
     .project-description-text {
+        font-size: 10px;
+    }
+
+    .project-description-sub-text {
         display: none;
     }
 }

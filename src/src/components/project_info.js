@@ -2,7 +2,7 @@
 function ProjectInfo(props) {
   const text = {
     "Go":{"eng":"Go", "fr":"Go"},
-    "View the code":{"eng":"View the code", "fr":"Voire le code"},
+    "View the code":{"eng":"View the code", "fr":"Voir le code"},
   } 
   return (
     <div className="project-content">
