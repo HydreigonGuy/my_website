@@ -79,6 +79,7 @@ function CV() {
     }
     let [searchParams, setSearchParams] = useSearchParams();
     var lang = searchParams.get("lang")
+    const top_pic_background = false;
 
     if (!["eng", "fr"].includes(lang))
         lang = "eng"
@@ -86,9 +87,13 @@ function CV() {
         <>
             {/* Row 1 with picture of me and Title */}
             <div className='row grey-row'>
-                <div className='content top-pic-width' style={flower_bg}>
-                    <img src={picture_of_me} className='picture' />
-                </div>
+                { top_pic_background ?
+
+                    <div className='content top-pic-width' style={flower_bg}>
+                        <img src={picture_of_me} className='picture' />
+                    </div>
+                : <img src={picture_of_me} className='picture-no-bg' />
+                }
                 <div className='content lift-text title-text'>
                     <h1>Adrien THIBAULT</h1>
 
