@@ -33,14 +33,14 @@ function CV() {
         "Torus time":{"eng":"6 month internship + 7 month part time job", "fr":"Stage de 6 mois + CDD temps partiel de 7 mois"},
         "Torus job":{"eng":"fullstack web developper.", "fr":"développeur web full stack"},
         "Torus description":{
-            "eng":"Torus is a medical AI company that creates tools to find diseases using AI. I worked on many different projects including tools to create datasets for training the AIs and the websites to use them.",
-            "fr":"Torus est une entreprise d'IA dans le secteur médical. Torus crée des outils qui utilisent l'IA pour détecter des maladies. Chez Torus, j'ai travaillé sur de nombreux projets dont des outils pour générer des datasets pour entrainer les IA ainsi que les outils pour utiliser ces IA."
+            "eng":"Torus is a medical AI company that creates tools to find diseases using AI. They sell tools that take an image of a body part or skin and uses an AI to detect diseases.",
+            "fr":"Torus est une entreprise d'IA dans le secteur médical. Torus crée des outils qui observent des images d'un corps et qui utilisent de l'IA pour détecter des maladies."
         },
         "Predicloud time":{"eng":"6 month part time internship + 4 month full time internship ", "fr":"Stage a temp partiel de 6 mois + Stage de 4 mois temps plein"},
         "Predicloud job":{"eng":"DevOps developper, AI developper, Web + Mobile fullstack developper", "fr":"Développeur DevOps, développeur IA, développeur Web + Mobile fullstack"},
         "Predicloud text":{
-            "eng":"Predicloud is a company that offers to host services for commpanies and monitor them. They also help companies in their projects in many different fields. Here, I worked on a lot of DevOps for the company as well as helped make websites and mobile applications for clients and even worked on an AI.",
-            "fr":"Predicloud est une entreprise qui déploie les services de nos clients sur son cluster kubernetes et les moniteurs. Predicloud propose aussi de l'aide pour les projets techniques dans de domaines divers. Ici, j'ai travillé sur des sites webs et des applications mobiles pour des clients ainsi qu'une IA."},
+            "eng":"Predicloud is a company that offers to host services for commpanies and monitor them. They also help companies in their projects in many different fields.",
+            "fr":"Predicloud est une entreprise qui déploie les services de ses clients et les moniteurs. Predicloud propose aussi de l'aide pour les projets techniques dans de domaines divers."},
         "Diplomas":{"eng":"Diplomas", "fr":"Diplômes"},
         "Info Bac":{
             "eng":"S SVT spé. Maths obtained in 2020 mention Très Bien at the Lycée Français Victor Hugo in Frankfurt Germany.",
