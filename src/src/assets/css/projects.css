@@ -1,17 +1,19 @@
 
+.projects-page {
+    max-height: 1200px;
+    overflow: scroll;
+    background-size: cover;
+    background-position: center;
+}
+
 .projects-header {
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.8);
     color: white;
-    padding: 20px;
-    text-align: center;
+    padding: 12px;
 }
 
 .projects-header h1 {
     margin: 0;
-}
-
-.prijects-body {
-    background-color: darkgreen;
 }
 
 .project-list {
@@ -26,7 +28,7 @@
     width: 80%;
     display: inline-block;
     vertical-align: top;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.6);
     color: white;
     margin: 1%;
     border-radius: 20px;

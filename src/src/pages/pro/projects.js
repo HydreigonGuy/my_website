@@ -5,14 +5,43 @@ import autone_img from '../../assets/images/pro/autone.png';
 import my_web_img from '../../assets/images/pro/my_web.png';
 import my_rpg_img from '../../assets/images/pro/my_rpg.png';
 
+import bg_img from '../../assets/images/bg/IMG20240424133146.jpg';
+
 import ProjectInfo from '../../components/project_info';
 
 import { useSearchParams } from "react-router-dom";
 
 function Projects() {
+    var bg = {
+        backgroundImage: `url(${bg_img})`
+      };
     const text = {
         "Projects":{"eng":"Projects", "fr":"Projets"},
         "My Website":{"eng":"My Website", "fr":"Mon Site Web"},
+        "Autone info":{
+            "eng":"Autone is a website that generates sheet music for a given music.",
+            "fr":"Autone est un site web qui génére une partition pour une musique donnée."},
+        "my website info":{
+            "eng":"This is my website.",
+            "fr":"Ceci est mon site web."},
+        "my rpg info":{
+            "eng":"This is an RPG that I coded in C in my first year at Epitech using the CSFML library.",
+            "fr":"Ceci est un RPG que j'ai codé en C durrant ma premiére année à Epitech en utilisant la librairie CSFML."},
+        "malloc info":{
+            "eng":"In my second year at Epitech, I recoded the malloc function in C.",
+            "fr":"En deuxième année à Epitech, j'ai cecodé la fonction malloc en C."},
+        "tekspice info":{
+            "eng":"Tekspice is a second year Epitech project that makes us code virtual electronic circuits in C++. We can create circuits and the tekspice will tell us the results of the electric outputs.",
+            "fr":"Tekspice est un projet de seconde année d'Epitech qui nous demande de recoder des circuits electroniques en C++. Nous pouvons créer des circuits et le tekspice nous donne les etats des sorties."},
+        "my defender info":{
+            "eng":"I coded a tower defence game in C with the CSFML library in my first year at Epitech.",
+            "fr":"J'ai codé un jeu tower defence en C avec la librairie CSFML en premiére année à Epitech."},
+        "my hunter info":{
+            "eng":"This is the first game that I coded, it was a first year project at Epitech where we needed to code a duck hunt like game in C with the CSFML library.",
+            "fr":"Ceci est le premier jeu que j'ai codé, c'etais un projet Epitech de premiére année qui nous demandais de recoder un duck hunt en C avec la librairie CSFML."},
+        "my teams info":{
+            "eng":"I coded a program that works similarly to microsoft teams in C in my second year of Epitech. It has a server and a client. The server runs hosts all the users, the messages, threads, and channels. The client can interract with the server to loggin, it can then create or view the threads, channels, and messages.",
+            "fr":"J'ai codé un programme qui fonctionne similairement à microsoft teams en C en deuxieme année d'Epitech. Ceci contiens un serveur et un client."},
         "":{"eng":"", "fr":""},
     }
     let [searchParams, setSearchParams] = useSearchParams();
@@ -21,7 +50,7 @@ function Projects() {
     if (!["eng", "fr"].includes(lang))
         lang = "eng"
     return (
-        <>
+        <div className='projects-page' style={bg}>
             <div className="projects-header">
                 <h1>{text["Projects"][lang]}</h1>
 
@@ -30,13 +59,17 @@ function Projects() {
                     <a className='language-selector' href='?lang=fr'>FR</a>
                 </div>
             </div>
-            <div className="prijects-body">
+            <div className="projects-body">
+
+            {/*
             <h3 className='projects-label'>Top Projects</h3>
             <div className='project-label-line'/>
+            */}
+
             <div className='project-list'>
                 <ProjectInfo
                     title="Autone"
-                    info="Autone is a website and mobile application that generates music sheets from a given music."
+                    info={text["Autone info"][lang]}
                     try_url="https://autone.app"
                     image={autone_img}
                     lang={lang}
@@ -46,7 +79,7 @@ function Projects() {
             <div className='project-list'>
                 <ProjectInfo
                     title={text["My Website"][lang]}
-                    info="This is my website! A website made in REACT."
+                    info={text["my website info"][lang]}
                     try_url="https://adrien-thibault.de"
                     code_url="https://github.com/HydreigonGuy/my_website"
                     image={my_web_img}
@@ -57,15 +90,17 @@ function Projects() {
             <div className='project-list'>
                 <ProjectInfo
                     title="My RPG"
-                    info="I made an RPG in C with the CSFML library!"
+                    info={text["my rpg info"][lang]}
                     code_url="https://github.com/HydreigonGuy/my_rpg"
                     image={my_rpg_img}
                     lang={lang}
                     />
             </div>
 
+            {/*
             <h3 className='projects-label'>School Projects</h3>
             <div className='project-label-line'/>
+            */}
             
             <div className='project-list'>
                 <ProjectInfo
@@ -80,14 +115,14 @@ function Projects() {
 
                 <ProjectInfo
                     title="My Malloc"
-                    info="I recoded malloc in C."
+                    info={text["malloc info"][lang]}
                     code_url="https://github.com/HydreigonGuy/malloc"
                     lang={lang}
                     />
                 
                 <ProjectInfo
                     title="Tekspice"
-                    info=""
+                    info={text["tekspice info"][lang]}
                     code_url="https://github.com/HydreigonGuy/tekspice"
                     lang={lang}
                     />
@@ -110,7 +145,7 @@ function Projects() {
 
                 <ProjectInfo
                     title="My Teams"
-                    info="Recoding a microsoft teams like messaging app in C."
+                    info={text["my teams info"][lang]}
                     code_url="https://github.com/HydreigonGuy/my_teams"
                     lang={lang}
                     />
@@ -119,14 +154,14 @@ function Projects() {
             <div className='project-list'>
                 <ProjectInfo
                     title="My Defender"
-                    info="I made a tower defence game in C with the CSFML library!"
+                    info={text["my defender info"][lang]}
                     code_url="https://github.com/HydreigonGuy/my_defender"
                     lang={lang}
                     />
                 
                 <ProjectInfo
                 title="My Hunter"
-                info="This is the first game that I coded, it was in C with the CSFML library, my first time trying this library. It is a simple hunter game where you need to click on enemies running accross your screen."
+                info={text["my hunter info"][lang]}
                 code_url="https://github.com/HydreigonGuy/my_hunter"
                 lang={lang}
                 />
@@ -134,7 +169,7 @@ function Projects() {
 
             </div>
 
-        </>
+        </div>
     );
 }
 
