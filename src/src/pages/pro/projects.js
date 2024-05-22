@@ -52,7 +52,7 @@ function Projects() {
     return (
         <div className='projects-page' style={bg}>
             <div className="projects-header">
-                <h1>{text["Projects"][lang]}</h1>
+                <h1 className='projects-title'>{text["Projects"][lang]}</h1>
 
                 <div className='language-selector-container'>
                     <a className='language-selector' href='?lang=eng'>ENG</a>
