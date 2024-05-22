@@ -37,6 +37,8 @@
 
 .project-content-image {
     height: 150px;
+    max-width: 100%;
+    
 }
 
 .links-area {
@@ -78,4 +80,21 @@
     margin-left: 10%;
     margin-right: 10%;
     margin-bottom: 20px;
+}
+
+@media (max-width: 1000px) {
+    .project-content-image {
+        height: 100px;
+    }
+}
+
+@media (max-width: 650px) {
+    .project-content-image {
+        height: 150px;
+    }
+    .project-list {
+        margin-left: 5%;
+        margin-right: 5%;
+        width: 90%;
+    }
 }
