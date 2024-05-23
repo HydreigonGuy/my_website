@@ -42,6 +42,15 @@ function Projects() {
         "my teams info":{
             "eng":"I coded a program that works similarly to microsoft teams in C in my second year of Epitech. It has a server and a client. The server runs hosts all the users, the messages, threads, and channels. The client can interract with the server to loggin, it can then create or view the threads, channels, and messages.",
             "fr":"J'ai codé un programme qui fonctionne similairement à microsoft teams en C en deuxieme année d'Epitech. Ceci contiens un serveur et un client."},
+        "wolfram info":{
+            "eng":"Wolfram is a project I coded in Haskell in my second year at Epitech. It is a program that generates paterns based on a given rule.",
+            "fr":"Wolfram est un projet que j'ai codé en premiere année d'Epitech. C'est un program qui génére une serie en fonction de parametres données."},
+        "glados info":{
+            "eng":"Glados was a third year project at Epitech coded in Haskell. We needed to code an interpreter for the Lisp language and then create a compiler for our own programming language.",
+            "fr":"Glados etais un projet de troisieme année d'Epitech codé en Haskell. Nous avons codé un interpretteur du language Lisp, puis nous avons codé un compilateur pour un language que nous avons nous meme inventé."},
+        "zappy info":{
+            "eng":"Zappy is a project in C of a game, not to be played by humans, but by an AI. There is a server which runs the game and a client that runs an AI that will play the game. The AI moves around and tries to collect ressources to multiply and level up. Multiple AIs can connect and the AI that reaches the highest level wins!",
+            "fr":"Zappy est un Jeu codé en C, mais ce n'est pas un jeu joué par des humains, c'est joué par des IA. Il y a un serveurs qui tourne le jeu et des clients peuvent s'y connecter avec une IA qui joues au jeu. L'IA ce déplace, récupére des ressources et essay de ce multiplier et de monter en niveau. Plusieurs IA peuvent ce connecter au jeu et l'IA qui atteins le plus haut niveau gagne!"},
         "":{"eng":"", "fr":""},
     }
     let [searchParams, setSearchParams] = useSearchParams();
@@ -105,10 +114,7 @@ function Projects() {
             <div className='project-list'>
                 <ProjectInfo
                     title="Zappy"
-                    info="Zappy is a project in C of a game, not to be played by humans, but by an AI.
-                    There is a server which runs the game and a client that runs an AI that will play the game.
-                    The AI moves around and tries to collect ressources to multiply and level up.
-                    Multiple AIs can connect and the AI that reaches the highest level wins!"
+                    info={text["zappy info"][lang]}
                     code_url="https://github.com/HydreigonGuy/zappy"
                     lang={lang}
                     />
@@ -131,14 +137,14 @@ function Projects() {
             <div className='project-list'>
                 <ProjectInfo
                     title="Glados"
-                    info="This is a project where as a group we created our own language and made a compiler and an interpreter for it."
+                    info={text["glados info"][lang]}
                     code_url="https://github.com/HydreigonGuy/glados"
                     lang={lang}
                     />
                 
                 <ProjectInfo
                     title="Wolfram"
-                    info="Project in Haskell."
+                    info={text["wolfram info"][lang]}
                     code_url="https://github.com/HydreigonGuy/wolfram"
                     lang={lang}
                     />
