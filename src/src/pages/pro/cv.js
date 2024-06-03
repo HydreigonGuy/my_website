@@ -24,23 +24,23 @@ function CV() {
 
     const text = {
         "Skills":{"eng":"Skills", "fr":"Compétences"},
-        "Programming Languages":{"eng":"Programming Languages", "fr":"Languages Informatiques"},
+        "Programming Languages":{"eng":"Programming Languages", "fr":"Langages Informatiques"},
         "Misc Tech Skills":{"eng":"Misc Tech Skills", "fr":"Compétences Informatiques Diverses"},
         "OS skill":{"eng":"Linux and OS handling", "fr":"Linux et gestions d'OS"},
         "SSL skill":{"eng":"SSL certificate generation and handling", "fr":"Gestion et génération de certificats SSL"},
         "DNS skill":{"eng":"DNS routing and handling", "fr":"Routing et gestion DNS"},
-        "Profetionnal Experience":{"eng":"Professional Experience", "fr":"Expérience Profetionelle"},
+        "Profetionnal Experience":{"eng":"Professional Experience", "fr":"Expérience Professionelle"},
         "Torus time":{"eng":"6 month internship + 7 month part time job", "fr":"Stage de 6 mois + CDD temps partiel de 7 mois"},
         "Torus job":{"eng":"fullstack web developper.", "fr":"développeur web full stack"},
         "Torus description":{
             "eng":"Torus is a medical AI company that creates tools to find diseases using AI. They sell tools that take an image of a body part or skin and uses an AI to detect diseases.",
-            "fr":"Torus est une entreprise d'IA dans le secteur médical. Torus crée des outils qui observent des images d'un corps et qui utilisent de l'IA pour détecter des maladies."
+            "fr":"Torus est une entreprise d'IA dans le secteur médical. Torus développe des outils qui grâce à l'IA détectent des maladies à partir d'imagerie médicale."
         },
-        "Predicloud time":{"eng":"6 month part time internship + 4 month full time internship ", "fr":"Stage a temp partiel de 6 mois + Stage de 4 mois temps plein"},
+        "Predicloud time":{"eng":"6 month part time internship + 4 month full time internship ", "fr":"Stage temps partiel de 6 mois + Stage de 4 mois temps plein"},
         "Predicloud job":{"eng":"DevOps developper, AI developper, Web + Mobile fullstack developper", "fr":"Développeur DevOps, développeur IA, développeur Web + Mobile fullstack"},
         "Predicloud text":{
             "eng":"Predicloud is a company that offers to host services for commpanies and monitor them. They also help companies in their projects in many different fields.",
-            "fr":"Predicloud est une entreprise qui déploie les services de ses clients et les moniteurs. Predicloud propose aussi de l'aide pour les projets techniques dans de domaines divers."},
+            "fr":"Predicloud est une entreprise d'infogérance. Elle aide ses clients à déployer et monitorer leurs services. Predicloud propose aussi de l'aide pour les projets techniques dans de domaines divers."},
         "Diplomas":{"eng":"Diplomas", "fr":"Diplômes"},
         "Info Bac":{
             "eng":"S SVT spé. Maths obtained in 2020 mention Très Bien at the Lycée Français Victor Hugo in Frankfurt Germany.",
@@ -59,14 +59,14 @@ function CV() {
         "German":{"eng":"German", "fr":"Allemand"},
         "language fluent":{"eng":"C2 - Proficient", "fr":"C2 - Maitrise parfaite"},
         "language basic":{"eng":"Basic comunication", "fr":"Débutant"},
-        "Contact Me!":{"eng":"Contact Me!", "fr":"Contactez Moi!"},
+        "Contact Me!":{"eng":"Contact Me!", "fr":"Contactez-moi!"},
         "PHONE":{"eng":"PHONE", "fr":"TELEPHONE"},
         "Autone project info":{
             "eng":"Autone is a website that uses AI to generate sheet music for any given music.",
-            "fr":"Autone est un site web qui utilise une IA pour générer une partition pour une musique que l'on lui présente."},
+            "fr":"Autone est un site web qui utilise une IA pour générer une partition à partir d'une musique que l'on lui présente."},
         "Autone project info +":{
             "eng":"It is a school project spanning over 3 years, we are 7 people working on it.",
-            "fr":"C'est un projet scholaire ce déroullant sur 3 ans. Nous travaillons dessus en équipe de 7 développeurs."
+            "fr":"C'est un projet d'études de 3 ans. Nous travaillons dessus en équipe de 7 développeurs."
         },
         "My Website":{"eng":"My Website", "fr":"Mon Site Web"},
         "My Website project info":{
@@ -74,7 +74,7 @@ function CV() {
             "fr":"Ceci est mon site web."},
         "My Website project info +":{
             "eng":"It is a personnal project started in 2023 that I regularly work on.",
-            "fr":"C'est un projet personnel commencé en 2023 sur lequel je travail régulierement."
+            "fr":"C'est un projet personnel commencé en 2023 sur lequel je travaille régulièrement."
         },
         "About me":{"eng":"About me", "fr":"À propos de moi"},
         "About me text":{
