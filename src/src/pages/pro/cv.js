@@ -274,8 +274,8 @@ function CV() {
                 </div>
                 <div className='content contact-content'>
                     <h5>{text["PHONE"][lang]}</h5>
-                    {/* French number - reenable when returning to France <p>+33 7 69 29 66 24</p>*/}
-                    <p>SK - +82 10 44 29 86 21</p>
+                    <p>+33 7 69 29 66 24</p>
+                    {/*<p>SK - +82 10 44 29 86 21</p>*/}
                 </div>
 
             </div>
