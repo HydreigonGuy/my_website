@@ -17,17 +17,18 @@ body {
     padding-left: 4%;
     padding-right: 4%;
     margin: 0;
+    margin-bottom: 20px;
 }
 .cityTitle {
     display: inline-block;
     text-align: center;
-    width: 30.66%;
+    width: 33.33%;
 }
 
 .cityTitleBlock {
-    width: 100%;
+    width: 92%;
     padding-bottom: 50px;
     margin: 0;
-    position: fixed;
+    position: absolute;
     background-image: linear-gradient(to bottom, #101010, rgba(10, 10, 10, 0)); 
 }
