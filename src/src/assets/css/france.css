@@ -1,0 +1,34 @@
+
+body {
+    background-color: #101010;
+    color: aqua;
+}
+
+.image {
+    width: 33.33%;
+}
+
+.title {
+    margin-left: 10%;
+}
+
+.images_body {
+    width: 92%;
+    padding-left: 4%;
+    padding-right: 4%;
+    margin: 0;
+    margin-bottom: 20px;
+}
+.cityTitle {
+    display: inline-block;
+    text-align: center;
+    width: 33.33%;
+}
+
+.cityTitleBlock {
+    width: 92%;
+    padding-bottom: 50px;
+    margin: 0;
+    position: absolute;
+    background-image: linear-gradient(to bottom, #101010, rgba(10, 10, 10, 0)); 
+}

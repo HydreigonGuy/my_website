@@ -22,6 +22,7 @@ function Home() {
 
         <div className='travels_content'>
           <h2>Check out my travels!</h2>
+          <a href="/france">France</a>
           <a href="/korea">Korea</a>
           <a href="/china">China</a>
           <a href="/japan">Japan</a>
