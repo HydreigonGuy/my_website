@@ -8,9 +8,6 @@ import hiroshima_img from '../../assets/images/japan/hiroshima/IMG20240225144657
 import '../../assets/css/japan.css';
 import '../../assets/css/travels.css';
 
-import TravelCityUrl from '../../components/travels_city_url';
-import ProgressiveImg from '../../components/image_loading';
-
 function Japan() {
   return (
     <>

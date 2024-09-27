@@ -1,14 +1,11 @@
 
-import ProgressiveImg from './image_loading';
-
 function TravelCityUrl(props) {
     return (
       <div className="city_url">
         <a href={props.url}>
           <div>
-            <ProgressiveImg
+            <img
               src={props.img}
-              placeholderSrc={props.small_img}
             />
             <br/>
             {props.name}
