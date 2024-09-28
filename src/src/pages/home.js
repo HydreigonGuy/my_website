@@ -1,15 +1,11 @@
 import picture_of_me from '../assets/images/me.png';
-import background_image from '../assets/images/japan/yokohama/IMG20240220122833.jpg';
-import background_image_small from '../assets/images/japan/yokohama/small/IMG20240220122833.jpg';
 
 import HomeCategory from '../components/home_category';
-
-import ProgressiveImg from '../components/image_loading';
 
 function Home() {
   return (
     <div className="home_page">
-      <ProgressiveImg src={background_image} placeholderSrc={background_image_small} className='background_img'/>
+      <img src="https://raw.githubusercontent.com/HydreigonGuy/my_website/refs/heads/images/images/travels/japan/yokohama/IMG20240220122833.jpg" className='background_img'/>
       <img src="https://raw.githubusercontent.com/HydreigonGuy/my_website/refs/heads/images/images/travels/korea/daegu/IMG20230822174437.jpg" className='background_img_vertical'/>
       <div className='over_img_content'>
         <img src={picture_of_me} className="picture_of_me" />
