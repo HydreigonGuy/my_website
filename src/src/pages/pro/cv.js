@@ -2,24 +2,17 @@
 import picture_of_me from '../../assets/images/pro/me.png';
 import '../../assets/css/cv.css';
 
-import background_img from '../../assets/images/korea/daegu/IMG20240407143458.jpg';
-
-import waterfall_background_img from '../../assets/images/korea/sejong/IMG20230915143919.jpg';
-import sankeien_background_img from '../../assets/images/japan/yokohama/IMG20240220130536.jpg';
-
-import ProgressiveImg from '../../components/image_loading';
-
 import { useSearchParams } from "react-router-dom";
 
 function CV() {
     var flower_bg = {
-        backgroundImage: `url(${background_img})`
+        backgroundImage: `url("https://raw.githubusercontent.com/HydreigonGuy/my_website/refs/heads/images/images/travels/korea/daegu/IMG20240407143458.jpg")`
       };
     var waterfall_bg = {
-        backgroundImage: `url(${waterfall_background_img})`
+        backgroundImage: `url("https://raw.githubusercontent.com/HydreigonGuy/my_website/refs/heads/images/images/travels/korea/sejong/IMG20230915143919.jpg")`
       };
     var sankeien_bg = {
-        backgroundImage: `url(${sankeien_background_img})`
+        backgroundImage: `url("https://raw.githubusercontent.com/HydreigonGuy/my_website/refs/heads/images/images/travels/japan/yokohama/IMG20240220130536.jpg")`
       };
 
     const text = {
