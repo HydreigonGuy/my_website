@@ -20,11 +20,11 @@ function France() {
         <div className='cityTitleBlock'>
           <a href='/france/collioure' className='cityTitle'>Collioure</a>
           <a href='/france/leucate' className='cityTitle'>Canet / Leucate</a>
-          <h3 className='cityTitle'>Ars en Ré</h3>
+          <a href='/france/re' className='cityTitle'>Ars en Ré</a>
         </div>
         <a href='/france/collioure'><img className='image' src="https://raw.githubusercontent.com/HydreigonGuy/my_website/refs/heads/images/images/travels/france/collioure/IMG20240725115503.jpg"/></a>
         <a href='/france/leucate'><img className='image' src="https://raw.githubusercontent.com/HydreigonGuy/my_website/refs/heads/images/images/travels/france/leucate/IMG20240724190037.jpg"/></a>
-        <img className='image' src="https://raw.githubusercontent.com/HydreigonGuy/my_website/refs/heads/images/images/travels/france/ile-de-re/IMG20240811084955.jpg" />
+        <a href='/france/re'><img className='image' src="https://raw.githubusercontent.com/HydreigonGuy/my_website/refs/heads/images/images/travels/france/ile-de-re/IMG20240811084955.jpg" /></a>
       </div>
     </>
   );
