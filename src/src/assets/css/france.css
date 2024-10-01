@@ -40,6 +40,11 @@ body {
     width: 100%;
 }
 
+.fourth_img {
+    padding: 2%;
+    width: 21%;
+}
+
 .third_img {
     padding: 3%;
     width: 27.33%;
@@ -77,6 +82,16 @@ body {
 }
 
 .paris_title {
+    color: black;
+    position: absolute;
+    font-weight: bold;
+    left: 10%;
+    top: 5px;
+    margin: 0;
+    font-size: 24px;
+}
+
+.collioure_title {
     color: black;
     position: absolute;
     font-weight: bold;
