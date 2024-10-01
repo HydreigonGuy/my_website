@@ -23,6 +23,9 @@ body {
     display: inline-block;
     text-align: center;
     width: 33.33%;
+    color: aqua;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 .cityTitleBlock {
@@ -30,5 +33,90 @@ body {
     padding-bottom: 50px;
     margin: 0;
     position: absolute;
-    background-image: linear-gradient(to bottom, #101010, rgba(10, 10, 10, 0)); 
+    background-image: linear-gradient(to bottom, #101010, rgba(10, 10, 10, 0));
+}
+
+.full_img {
+    width: 100%;
+}
+
+.fourth_img {
+    padding: 2%;
+    width: 21%;
+}
+
+.third_img {
+    padding: 3%;
+    width: 27.33%;
+}
+
+.full_half_img {
+    width: 50%;
+}
+
+.half_img {
+    padding: 4%;
+    width: 42%;
+}
+
+.toulouse_body {
+    background-color: pink;
+    padding: 0;
+    margin: 0;
+}
+
+.toulouse_title {
+    color: black;
+    position: absolute;
+    font-weight: bold;
+    left: 10%;
+    font-size: 30px;
+}
+
+.niort_title {
+    color: black;
+    position: absolute;
+    font-weight: bold;
+    left: 10%;
+    font-size: 30px;
+}
+
+.paris_title {
+    color: black;
+    position: absolute;
+    font-weight: bold;
+    left: 10%;
+    top: 5px;
+    margin: 0;
+    font-size: 24px;
+}
+
+.collioure_title {
+    color: black;
+    position: absolute;
+    font-weight: bold;
+    left: 10%;
+    top: 5px;
+    margin: 0;
+    font-size: 24px;
+}
+
+.leucate_title {
+    color: black;
+    position: absolute;
+    font-weight: bold;
+    left: 10%;
+    top: 5px;
+    margin: 0;
+    font-size: 24px;
+}
+
+.re_title {
+    color: rgb(255, 255, 255);
+    position: absolute;
+    font-weight: bold;
+    left: 10%;
+    top: 5px;
+    margin: 0;
+    font-size: 24px;
 }
