@@ -49,6 +49,7 @@ const KoreaGwangjuPage = React.lazy(() => import("./pages/travels/korea_cities/g
 const FrancePage = React.lazy(() => import("./pages/travels/france"));
 const ToulousePage = React.lazy(() => import("./pages/travels/france_cities/toulouse"));
 const NiortPage = React.lazy(() => import("./pages/travels/france_cities/niort"));
+const ParisPage = React.lazy(() => import("./pages/travels/france_cities/paris"));
 const CVPage = React.lazy(() => import("./pages/pro/cv"));
 const ProjectsPage = React.lazy(() => import("./pages/pro/projects"));
 
@@ -104,6 +105,7 @@ function App() {
           <Route path="/france" element={<FrancePage />} />
           <Route path="/france/toulouse" element={<ToulousePage />} />
           <Route path="/france/niort" element={<NiortPage />} />
+          <Route path="/france/paris" element={<ParisPage />} />
           <Route path="/cv" element={<CVPage />} />
           <Route path="/projects" element={<ProjectsPage />} />
         </Routes>

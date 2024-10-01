@@ -8,11 +8,11 @@ function France() {
       <h1 className='title'>France</h1>
       <div className='images_body'>
         <div className='cityTitleBlock'>
-          <h3 className='cityTitle'>Paris</h3>
+          <a href='/france/paris' className='cityTitle'>Paris</a>
           <a href='/france/toulouse' className='cityTitle'>Toulouse</a>
           <a href='/france/niort' className='cityTitle'>Niort</a>
         </div>
-        <img className='image' src="https://raw.githubusercontent.com/HydreigonGuy/my_website/refs/heads/images/images/travels/france/paris/IMG20240914202245.jpg"/>
+        <a href='/france/paris'><img className='image' src="https://raw.githubusercontent.com/HydreigonGuy/my_website/refs/heads/images/images/travels/france/paris/IMG20240914202245.jpg"/></a>
         <a href='/france/toulouse'><img className='image' src="https://raw.githubusercontent.com/HydreigonGuy/my_website/refs/heads/images/images/travels/france/toulouse/IMG20240711104504.jpg"/></a>
         <a href='/france/niort'><img className='image' src="https://raw.githubusercontent.com/HydreigonGuy/my_website/refs/heads/images/images/travels/france/niort/IMG20240809142103.jpg" /></a>
       </div>
