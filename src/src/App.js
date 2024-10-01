@@ -51,6 +51,7 @@ const ToulousePage = React.lazy(() => import("./pages/travels/france_cities/toul
 const NiortPage = React.lazy(() => import("./pages/travels/france_cities/niort"));
 const ParisPage = React.lazy(() => import("./pages/travels/france_cities/paris"));
 const ColliourePage = React.lazy(() => import("./pages/travels/france_cities/collioure"));
+const LeucatePage = React.lazy(() => import("./pages/travels/france_cities/leucate"));
 const CVPage = React.lazy(() => import("./pages/pro/cv"));
 const ProjectsPage = React.lazy(() => import("./pages/pro/projects"));
 
@@ -108,6 +109,7 @@ function App() {
           <Route path="/france/niort" element={<NiortPage />} />
           <Route path="/france/paris" element={<ParisPage />} />
           <Route path="/france/collioure" element={<ColliourePage />} />
+          <Route path="/france/leucate" element={<LeucatePage />} />
           <Route path="/cv" element={<CVPage />} />
           <Route path="/projects" element={<ProjectsPage />} />
         </Routes>
