@@ -176,3 +176,10 @@
     margin-top: 15px;
   }
 }
+
+
+@media (max-width: 400px) {
+  .travels_content a {
+    display: inline-block;
+  }
+}
