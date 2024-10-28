@@ -4,6 +4,7 @@ import '../../assets/css/projects.css';
 import autone_img from '../../assets/images/pro/autone.png';
 import my_web_img from '../../assets/images/pro/my_web.png';
 import my_rpg_img from '../../assets/images/pro/my_rpg.png';
+import korean_study_img from '../../assets/images/pro/korean_study.png';
 
 import bg_img from '../../assets/images/bg/IMG20240424133146.jpg';
 
@@ -51,6 +52,8 @@ function Projects() {
         "zappy info":{
             "eng":"Zappy is a project in C of a game, not to be played by humans, but by an AI. There is a server which runs the game and a client that runs an AI that will play the game. The AI moves around and tries to collect ressources to multiply and level up. Multiple AIs can connect and the AI that reaches the highest level wins!",
             "fr":"Zappy est un Jeu codé en C, mais ce n'est pas un jeu joué par des humains, c'est joué par des IA. Il y a un serveurs qui tourne le jeu et des clients peuvent s'y connecter avec une IA qui joues au jeu. L'IA ce déplace, récupére des ressources et essay de ce multiplier et de monter en niveau. Plusieurs IA peuvent ce connecter au jeu et l'IA qui atteins le plus haut niveau gagne!"},
+        "korean vocab":{"eng":"Korean Vocab", "fr":"Vocab Coréen"},
+        "korean vocab info":{"eng":"A Webapp to learn Korean vocabulairy made in python using Django.", "fr":"Une application web pour apprendre du vocabulaire Coréen fait en python en utilisant Django."},
         "":{"eng":"", "fr":""},
     }
     let [searchParams, setSearchParams] = useSearchParams();
@@ -92,6 +95,13 @@ function Projects() {
                     try_url="https://adrien-thibault.de"
                     code_url="https://github.com/HydreigonGuy/my_website"
                     image={my_web_img}
+                    lang={lang}
+                    />
+                <ProjectInfo
+                    title={text["korean vocab"][lang]}
+                    info={text["korean vocab info"][lang]}
+                    code_url="https://github.com/HydreigonGuy/korean-study"
+                    image={korean_study_img}
                     lang={lang}
                     />
             </div>

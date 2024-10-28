@@ -102,6 +102,20 @@ function devops_docker() {
             <p className='bash_code'>
                 sudo docker image prune
             </p>
+            <h3>Building images for different CPU types</h3>
+            <p>
+                You can use docker buildx to build images for different CPU types, if you wish to run a docker image on something that doesn't use a normal CPU architecture, like a raspberry pi for example.
+                You can install it by running:
+            </p>
+            <p className='bash_code'>
+                sudo apt install docker-buildx
+            </p>
+            <p>
+                And build and push the image with this command:
+            </p>
+            <p className='bash_code'>
+                sudo docker buildx build -t <b>image name</b>  --progress plain --platform linux/amd64,linux/arm/v7,linux/arm64 --push .
+            </p>
             <h3>Useful links</h3>
             <a className="url" href="https://www.docker.com/" target="_blank">Docker Website</a>
             <a className="url" href="https://hub.docker.com/" target="_blank">Docker Hub</a>
