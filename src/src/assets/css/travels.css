@@ -19,6 +19,12 @@
     display: inline;
 }
 
+.half_gapped_image {
+    width: 46%;
+    padding: 2%;
+    display: inline;
+}
+
 .third_image {
     width: 31%;
     padding: 1%;
