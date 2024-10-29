@@ -138,6 +138,17 @@ background-color: beige;
 padding: 20px;
 }
 
+.jeju_title {
+  position: absolute;
+  background-color: beige;
+  padding: 20px;
+}
+
+.jeju_header_img {
+  width: 100%;
+  margin-top: -20%;
+}
+
 .half_screen {
   width: 50%;
   display: inline-block;
