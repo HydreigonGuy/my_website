@@ -156,6 +156,17 @@ padding: 20px;
   right: 0;
 }
 
+.seoul_title {
+  position: absolute;
+  background-color: beige;
+  padding: 20px;
+}
+
+.seoul_header_img {
+  width: 100%;
+  margin-top: -20%;
+}
+
 .half_screen {
   width: 50%;
   display: inline-block;
