@@ -35,6 +35,8 @@ const JapanHiroshimaPage = React.lazy(() => import("./pages/travels/japan_cities
 const JapanKyotoPage = React.lazy(() => import("./pages/travels/japan_cities/kyoto"));
 const JapanOsakaPage = React.lazy(() => import("./pages/travels/japan_cities/osaka"));
 const ChinaPage = React.lazy(() => import("./pages/travels/china"));
+const ChinaBeijingPage = React.lazy(() => import("./pages/travels/china_places/beijing"));
+const ChinaShanghaiPage = React.lazy(() => import("./pages/travels/china_places/shanghai"));
 const ChinaBaladingWallPage = React.lazy(() => import("./pages/travels/china_places/wall_of_balading"));
 const ChinaSummerPalacePage = React.lazy(() => import("./pages/travels/china_places/summer_palace"));
 const ChinaForbiddenCityPage = React.lazy(() => import("./pages/travels/china_places/forbidden_city"));
@@ -97,6 +99,8 @@ function App() {
           <Route path="/japan/osaka" element={<JapanOsakaPage />} />
           <Route path="/japan/hiroshima" element={<JapanHiroshimaPage />} />
           <Route path="/china" element={<ChinaPage />} />
+          <Route path="/china/beijing" element={<ChinaBeijingPage />} />
+          <Route path="/china/shanghai" element={<ChinaShanghaiPage />} />
           <Route path="/china/baladingwall" element={<ChinaBaladingWallPage />} />
           <Route path="/china/summerpalace" element={<ChinaSummerPalacePage />} />
           <Route path="/china/forbiddencity" element={<ChinaForbiddenCityPage />} />
