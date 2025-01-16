@@ -1,23 +1,31 @@
 
-.china_header_image {
+.beijing_header_image {
     width: 100%;
     margin-top: -30%;
     margin-bottom: -15%;
 }
 
-.china_header_image_container {
+.beijing_header_image_container {
     width: 100%;
     overflow: hidden;
 }
 
 .china_body {
     padding: 2%;
+}
+
+.china_body a {
+    text-decoration: none;
+}
+
+.beijing_body {
+    padding: 2%;
     min-height: 120vh;
     background-color: darkred;
     color: white;
 }
 
-.china_body a {
+.beijing_body a {
     color: white;
     text-decoration: none;
 }
@@ -43,6 +51,10 @@ h1 {
 .place_url_link h2 {
     text-align: center;
     font-size: 3Vmin;
+}
+
+.place_url_link h3 {
+    text-align: center;
 }
 
 h3 {
