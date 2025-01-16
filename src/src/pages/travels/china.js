@@ -17,7 +17,7 @@ function China() {
             </div>
             <div className='place_url_link'>
                 <a href='/china/shanghai'>
-                    <img src="https://raw.githubusercontent.com/HydreigonGuy/my_website/refs/heads/images/images/travels/china/shang-hai/IMG20240624200149.jpg"/>
+                    <img src="https://raw.githubusercontent.com/HydreigonGuy/my_website/refs/heads/images/images/travels/china/shang-hai/IMG20240624150020.jpg"/>
                     <h2>Shanghai</h2>
                     <h3>上海</h3>
                 </a>
