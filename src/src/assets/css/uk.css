@@ -26,10 +26,6 @@
     display: inline-block;
 }
 
-.content {
-    padding: max(20px, calc(10px + 2vmin));
-}
-
 .content p {
     text-align: center;
 }
