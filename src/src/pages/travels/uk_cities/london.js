@@ -1,12 +1,8 @@
 
-import me_big_ben_img from '../../../assets/images/uk/Snapchat-716959219.jpg';
-import me_buckingham_img from '../../../assets/images/uk/Snapchat-1705563956.jpg';
-import me_idk_img from '../../../assets/images/uk/Snapchat-566078020.jpg';
-
 import '../../../assets/css/uk.css';
 import '../../../assets/css/travels.css';
 
-function UK() {
+function London() {
   return (
     <>
       <div className='korean_page korean'>
@@ -36,4 +32,4 @@ function UK() {
   );
 }
 
-export default UK;
+export default London;
