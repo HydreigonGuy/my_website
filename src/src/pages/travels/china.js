@@ -7,7 +7,10 @@ function China() {
     return (
         <>
         <div className='china_body'>
-            <h1>China</h1>
+            <h1 className='china_title'>
+                China
+                中国
+            </h1>
             <div className='place_url_link'>
                 <a href='/china/beijing' className='china_city_url'>
                     <img src="https://raw.githubusercontent.com/HydreigonGuy/my_website/refs/heads/images/images/travels/china/beijing/IMG20240110101709.jpg"/>
