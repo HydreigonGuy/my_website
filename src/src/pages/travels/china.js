@@ -9,15 +9,15 @@ function China() {
         <div className='china_body'>
             <h1>China</h1>
             <div className='place_url_link'>
-                <a href='/china/beijing'>
+                <a href='/china/beijing' className='china_city_url'>
                     <img src="https://raw.githubusercontent.com/HydreigonGuy/my_website/refs/heads/images/images/travels/china/beijing/IMG20240110101709.jpg"/>
                     <h2>Beijing</h2>
                     <h3>北京</h3>
                 </a>
             </div>
             <div className='place_url_link'>
-                <a href='/china/shanghai'>
-                    <img src="https://raw.githubusercontent.com/HydreigonGuy/my_website/refs/heads/images/images/travels/china/shang-hai/IMG20240624150020.jpg"/>
+                <a href='/china/shanghai'className='china_city_url'>
+                    <img src="https://raw.githubusercontent.com/HydreigonGuy/my_website/refs/heads/images/images/travels/china/shang-hai/IMG20240624201921.jpg"/>
                     <h2>Shanghai</h2>
                     <h3>上海</h3>
                 </a>

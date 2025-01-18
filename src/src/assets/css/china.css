@@ -18,6 +18,10 @@
     text-decoration: none;
 }
 
+.china_city_url {
+    color: black;
+}
+
 .beijing_body {
     padding: 2%;
     min-height: 120vh;
