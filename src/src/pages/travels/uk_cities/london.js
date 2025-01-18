@@ -5,7 +5,6 @@ import '../../../assets/css/travels.css';
 function London() {
   return (
     <>
-      <div className='korean_page korean'>
         <div className='content'>
           <img src="https://raw.githubusercontent.com/HydreigonGuy/my_website/refs/heads/images/images/travels/uk/london/IMG20230325140520.jpg" className="picture" />
           <img src="https://raw.githubusercontent.com/HydreigonGuy/my_website/refs/heads/images/images/travels/uk/london/IMG20230325125356.jpg" className="picture" />
@@ -27,7 +26,6 @@ function London() {
           <img src="https://raw.githubusercontent.com/HydreigonGuy/my_website/refs/heads/images/images/travels/uk/london/IMG20230326142451.jpg" className="picture_half" />
           <img src="https://raw.githubusercontent.com/HydreigonGuy/my_website/refs/heads/images/images/travels/uk/london/IMG20230326135558.jpg" className="picture_full" />
         </div>
-      </div>
     </>
   );
 }
