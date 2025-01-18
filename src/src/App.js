@@ -28,6 +28,9 @@ const DevOpsPrometheusPage = React.lazy(() => import("./pages/cheat_sheets/devop
 const DevOpsCertbotPage = React.lazy(() => import("./pages/cheat_sheets/devops/certbot"));
 const DevOpsDatabasesPage = React.lazy(() => import("./pages/cheat_sheets/devops/databases"));
 const UKPage = React.lazy(() => import("./pages/travels/uk"));
+const UKLondonPage = React.lazy(() => import("./pages/travels/uk_cities/london"));
+const UKYorkPage = React.lazy(() => import("./pages/travels/uk_cities/york"));
+const UKNewcastlePage = React.lazy(() => import("./pages/travels/uk_cities/newcastle"));
 const JapanPage = React.lazy(() => import("./pages/travels/japan"));
 const JapanTokyoPage = React.lazy(() => import("./pages/travels/japan_cities/tokyo"));
 const JapanYokohamaPage = React.lazy(() => import("./pages/travels/japan_cities/yokohama"));
@@ -92,6 +95,9 @@ function App() {
           <Route path="/devops/certbot" element={<DevOpsCertbotPage />} />
           <Route path="/devops/databases" element={<DevOpsDatabasesPage />} />
           <Route path="/uk" element={<UKPage />} />
+          <Route path="/uk/london" element={<UKLondonPage />} />
+          <Route path="/uk/york" element={<UKYorkPage />} />
+          <Route path="/uk/newcastle" element={<UKNewcastlePage />} />
           <Route path="/japan" element={<JapanPage />} />
           <Route path="/japan/tokyo" element={<JapanTokyoPage />} />
           <Route path="/japan/yokohama" element={<JapanYokohamaPage />} />
