@@ -11,11 +11,24 @@
 }
 
 .china_body {
-    padding: 2%;
+    background-color: #111;
+    min-height: 100vh;
 }
 
 .china_body a {
     text-decoration: none;
+}
+
+.china_city_url {
+    color: yellow;
+}
+
+.china_city_url h2 {
+    color: yellow;
+}
+
+.china_city_url h3 {
+    color: yellow;
 }
 
 .beijing_body {
@@ -66,4 +79,9 @@ h3 {
     margin: 0;
     min-height: 120vh;
     color: white;
+}
+
+.china_title {
+    background-color: red;
+    color: yellow;
 }
