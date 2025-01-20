@@ -8,6 +8,7 @@ function China() {
         <>
         <div className='china_body'>
             <h1 className='china_title'>
+                <img className="china_title_img" src="https://raw.githubusercontent.com/HydreigonGuy/my_website/refs/heads/images/images/flags/china.png"/>
                 China
                 中国
             </h1>

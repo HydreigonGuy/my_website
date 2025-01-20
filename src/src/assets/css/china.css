@@ -82,6 +82,12 @@ h3 {
 }
 
 .china_title {
-    background-color: red;
+    background-color: #ee1c25;
     color: yellow;
+}
+
+.china_title_img  {
+    position: absolute;
+    left: 0px;
+    height: 10vh;
 }
