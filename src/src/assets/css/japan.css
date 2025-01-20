@@ -26,6 +26,13 @@
     display: inline-block;
     width: 40%;
     margin: 5%;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+.japan_city_url h3 {
+    font-size: 30px;
 }
 
 .japan_city_url img {
@@ -35,4 +42,17 @@
 .japan_title {
     font-size: 80px;
     text-align: center;
+    margin: 0;
+    width: fit-content;
+    margin: auto;
+    background-image: url('https://raw.githubusercontent.com/HydreigonGuy/my_website/refs/heads/images/images/flags/japan.png');
+    background-size: 400px;
+    background-position: center;
+    padding: 30px;
+}
+
+.japan_title_bg  {
+    padding: 3%;
+    background-image: url('https://raw.githubusercontent.com/HydreigonGuy/my_website/refs/heads/images/images/travels/japan/yokohama/IMG20240220122840.jpg');
+    background-size: cover;
 }
