@@ -49,6 +49,7 @@
   top: 0;
   left: 0;
   display: none;
+  height: 100vh;
 }
 
 .over_img_content {
