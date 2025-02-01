@@ -50,6 +50,7 @@
   left: 0;
   display: none;
   height: 100vh;
+  object-fit: cover;
 }
 
 .over_img_content {
