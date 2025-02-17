@@ -5,6 +5,8 @@ import autone_img from '../../assets/images/pro/autone.png';
 import my_web_img from '../../assets/images/pro/my_web.png';
 import my_rpg_img from '../../assets/images/pro/my_rpg.png';
 import korean_study_img from '../../assets/images/pro/korean_study.png';
+import flutter_app_img from '../../assets/images/pro/flutter_app.png';
+import rust_guitar_img from '../../assets/images/pro/rust_guitar.png';
 
 import bg_img from '../../assets/images/bg/IMG20240424133146.jpg';
 
@@ -54,6 +56,10 @@ function Projects() {
             "fr":"Zappy est un Jeu codé en C, mais ce n'est pas un jeu joué par des humains, c'est joué par des IA. Il y a un serveurs qui tourne le jeu et des clients peuvent s'y connecter avec une IA qui joues au jeu. L'IA ce déplace, récupére des ressources et essay de ce multiplier et de monter en niveau. Plusieurs IA peuvent ce connecter au jeu et l'IA qui atteins le plus haut niveau gagne!"},
         "korean vocab":{"eng":"Korean Vocab", "fr":"Vocab Coréen"},
         "korean vocab info":{"eng":"A Webapp to learn Korean vocabulairy made in python using Django.", "fr":"Une application web pour apprendre du vocabulaire Coréen fait en python en utilisant Django."},
+        "rust guitar tabs":{"eng":"Rust Guitar Tab", "fr":"Tablatures Guitare Rust"},
+        "rust guitar tabs info":{"eng":"Rust Webapp that stores guitar tabs that you create.", "fr":"Une application web en Rust qui stoque les tablatures de guitares."},
+        "flutter app":{"eng":"My Mobile App", "fr":"Mon Application Mobile"},
+        "flutter app info":{"eng":"Flutter app for learning and testing mobile development. It's an App on which you can play a variety of games.", "fr":"Application en Flutter pour découvrir et tester le developpement mobile. C'est une appli ou on peux jouer à des jeux variés."},
         "":{"eng":"", "fr":""},
     }
     let [searchParams, setSearchParams] = useSearchParams();
@@ -86,6 +92,13 @@ function Projects() {
                     image={autone_img}
                     lang={lang}
                     />
+                <ProjectInfo
+                    title={text["flutter app"][lang]}
+                    info={text["flutter app info"][lang]}
+                    code_url="https://github.com/HydreigonGuy/my_flutter_app"
+                    image={flutter_app_img}
+                    lang={lang}
+                    />
             </div>
 
             <div className='project-list'>
@@ -112,6 +125,13 @@ function Projects() {
                     info={text["my rpg info"][lang]}
                     code_url="https://github.com/HydreigonGuy/my_rpg"
                     image={my_rpg_img}
+                    lang={lang}
+                    />
+                <ProjectInfo
+                    title={text["rust guitar tabs"][lang]}
+                    info={text["rust guitar tabs info"][lang]}
+                    code_url="https://github.com/HydreigonGuy/rust_guitar_tab_server"
+                    image={rust_guitar_img}
                     lang={lang}
                     />
             </div>
