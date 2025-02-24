@@ -45,7 +45,7 @@ function CV() {
         "See more":{"eng":"See more", "fr":"Voir plus"},
         "Languages":{"eng":"Language Skills", "fr":"Compétences Languistiques"},
         "Developper":{"eng":"Developper", "fr":"Développeur"},
-        "Student":{"eng":"4th year Student at EPITECH", "fr":"Étudiant en 4ème année à EPITECH"},
+        "Student":{"eng":"5th year Student at EPITECH", "fr":"Étudiant en 5ème année à EPITECH"},
         "French":{"eng":"French", "fr":"Français"},
         "English":{"eng":"English", "fr":"Anglais"},
         "Korean":{"eng":"Korean", "fr":"Coréen"},
