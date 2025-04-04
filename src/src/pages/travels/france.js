@@ -29,8 +29,10 @@ function France() {
       <div className='images_body'>
         <div className='cityTitleBlock'>
           <a href='/france/leucate' className='cityTitle'>Canet / Leucate</a>
+          <a href='/france/pyrenees' className='cityTitle'>Pyrenees</a>
         </div>
         <a href='/france/leucate'><img className='image' src="https://raw.githubusercontent.com/HydreigonGuy/my_website/refs/heads/images/images/travels/france/leucate/IMG20240724190037.jpg"/></a>
+        <a href='/france/pyrenees'><img className='image' src="https://raw.githubusercontent.com/HydreigonGuy/my_website/refs/heads/images/images/travels/france/pyrenees/IMG20250220132422.jpg"/></a>
       </div>
     </>
   );
