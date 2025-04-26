@@ -78,6 +78,18 @@ const cv_page_map = {
     "position":{
         "fr":"Développeur DevOps",
         "eng":"DevOps Developper"
+    },
+    "exp_title":{
+        "fr":"Expérience Professionelle",
+        "eng":"Professional Experience"
+    },
+    "diplomas_title":{
+        "fr":"Diplômes",
+        "eng":"Diplomas"
+    },
+    "projects_title":{
+        "fr":"Projets",
+        "eng":"Projects"
     }
 }
 
@@ -99,7 +111,7 @@ function getFooterContents() {
 }
 
 function getTravelPage() {
-    return '<h3>' + travel_page_map.title[lang] + '</h3>\
+    return '<h3 class="content_title">' + travel_page_map.title[lang] + '</h3>\
         <a href="/france">' + travel_page_map.france[lang] + '</a>\
         <a href="/korea">' + travel_page_map.korea[lang] + '</a>\
         <a href="/china">' + travel_page_map.china[lang] + '</a>\
@@ -108,8 +120,19 @@ function getTravelPage() {
 }
 
 function getCVPage() {
-    return '<h3>Adrien THIBAULT</h3>\
-        <h5>' + cv_page_map.position[lang] + '</h5>'
+    return '<div class="cv_content">\
+            <h3>Adrien THIBAULT</h3>\
+            <h5>' + cv_page_map.position[lang] + '</h5>\
+            <div>\
+                <h4>' + cv_page_map.exp_title[lang] + '</h4>\
+            </div>\
+            <div>\
+                <h4>' + cv_page_map.diplomas_title[lang] + '</h4>\
+            </div>\
+            <div>\
+                <h4>' + cv_page_map.projects_title[lang] + '</h4>\
+            </div>\
+        </div>'
 }
 
 function update_content() {
