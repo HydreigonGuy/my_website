@@ -1,7 +1,26 @@
 
+function getCookie(cname) {
+    let name = cname + "=";
+    let decodedCookie = decodeURIComponent(document.cookie);
+    let ca = decodedCookie.split(';');
+    for(let i = 0; i <ca.length; i++) {
+      let c = ca[i];
+      while (c.charAt(0) == ' ') {
+        c = c.substring(1);
+      }
+      if (c.indexOf(name) == 0) {
+        return c.substring(name.length, c.length);
+      }
+    }
+    return "";
+}
+
 var selected_page = "home";
 
-var lang = "eng";
+var lang = getCookie("lang");
+if (lang == "") {
+    lang = "eng";
+}
 
 const travel_page_map = {
     "title":{
@@ -39,6 +58,16 @@ function getTravelPage() {
         <a href="/uk">' + travel_page_map.uk[lang] + '</a>'
 }
 
-window.onload = function () {
+function update_content() {
     document.getElementById("content_container").innerHTML = getTravelPage();
+}
+
+window.onload = function () {
+    update_content();
+}
+
+function update_lang() {
+    lang = document.getElementById("lang_selector").value;
+    document.cookie = "lang=" + lang;
+    update_content();
 }
