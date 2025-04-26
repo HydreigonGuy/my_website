@@ -22,6 +22,28 @@ if (lang == "") {
     lang = "eng";
 }
 
+const header_map = {
+    "title":{
+        "fr":"Site d'Adrien",
+        "eng":"Adrien's Website"
+    },
+    "travels":{
+        "fr":"Voyages",
+        "eng":"Travels"
+    },
+    "cv":{
+        "fr":"CV",
+        "eng":"CV"
+    }
+}
+
+const footer_map = {
+    "links":{
+        "fr":"Liens",
+        "eng":"Links"
+    }
+}
+
 const travel_page_map = {
     "title":{
         "fr":"Voyages",
@@ -49,6 +71,23 @@ const travel_page_map = {
     }
 }
 
+function getHeaderContents() {
+    return '<div class="header_subcontainer">\
+            <h2 class="header_title">' + header_map.title[lang] + '</h2>\
+            <a class="header_urls" href="">' + header_map.travels[lang] + '</a>\
+            <a class="header_urls" href="">' + header_map.cv[lang] + '</a>\
+        </div>'
+}
+
+function getFooterContents() {
+    return '<div class="footer_subcontainer">\
+            <p class="footer_title">' + footer_map.links[lang] + '</p>\
+            <a class="footer_link" href="">Instagram</a>\
+            <a class="footer_link" href="">Gitlab</a>\
+            <a class="footer_link" href="">Linkedin</a>\
+        </div>'
+}
+
 function getTravelPage() {
     return '<h3>' + travel_page_map.title[lang] + '</h3>\
         <a href="/france">' + travel_page_map.france[lang] + '</a>\
@@ -59,6 +98,8 @@ function getTravelPage() {
 }
 
 function update_content() {
+    document.getElementById("header_container").innerHTML = getHeaderContents();
+    document.getElementById("footer_container").innerHTML = getFooterContents();
     document.getElementById("content_container").innerHTML = getTravelPage();
 }
 

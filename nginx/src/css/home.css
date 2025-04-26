@@ -38,7 +38,9 @@ body {
 }
 
 .language_selector {
-    float: right;
+    position: absolute;
+    top: 5px;
+    right: 5px;
 }
 
 .footer_container {
