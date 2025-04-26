@@ -15,7 +15,10 @@ function getCookie(cname) {
     return "";
 }
 
-var selected_page = "home";
+var selected_page = getCookie("selected_page");
+if (selected_page == "") {
+    selected_page = "travels";
+}
 
 var lang = getCookie("lang");
 if (lang == "") {
@@ -71,11 +74,18 @@ const travel_page_map = {
     }
 }
 
+const cv_page_map = {
+    "position":{
+        "fr":"Développeur DevOps",
+        "eng":"DevOps Developper"
+    }
+}
+
 function getHeaderContents() {
     return '<div class="header_subcontainer">\
             <h2 class="header_title">' + header_map.title[lang] + '</h2>\
-            <a class="header_urls" href="">' + header_map.travels[lang] + '</a>\
-            <a class="header_urls" href="">' + header_map.cv[lang] + '</a>\
+            <button class="header_urls" href="" onclick="update_selected_page(\'travels\')">' + header_map.travels[lang] + '</button>\
+            <button class="header_urls" href="" onclick="update_selected_page(\'cv\')">' + header_map.cv[lang] + '</button>\
         </div>'
 }
 
@@ -97,18 +107,39 @@ function getTravelPage() {
         <a href="/uk">' + travel_page_map.uk[lang] + '</a>'
 }
 
+function getCVPage() {
+    return '<h3>Adrien THIBAULT</h3>\
+        <h5>' + cv_page_map.position[lang] + '</h5>'
+}
+
 function update_content() {
     document.getElementById("header_container").innerHTML = getHeaderContents();
     document.getElementById("footer_container").innerHTML = getFooterContents();
-    document.getElementById("content_container").innerHTML = getTravelPage();
+    if (["travels", "cv"].includes(selected_page)) {
+        if (selected_page == "travels") {
+            document.getElementById("content_container").innerHTML = getTravelPage();
+        }
+        if (selected_page == "cv") {
+            document.getElementById("content_container").innerHTML = getCVPage();
+        }
+    } else {
+        // default home page
+    }
 }
 
 window.onload = function () {
+    lang = document.getElementById("lang_selector").value = lang;
     update_content();
 }
 
 function update_lang() {
     lang = document.getElementById("lang_selector").value;
     document.cookie = "lang=" + lang;
+    update_content();
+}
+
+function update_selected_page(new_page) {
+    selected_page = new_page;
+    document.cookie = "selected_page=" + selected_page;
     update_content();
 }
