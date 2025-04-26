@@ -67,10 +67,21 @@ body {
     text-align: center;
     color: black;
     text-decoration: none;
+    position: relative;
 }
 
 .travel_url img {
     width: 100%;
+}
+
+.travel_url p {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(50, 50, 50, 0.6);
+    top: 0;
+    color: white;
+    margin: 0;
 }
 
 .cv_content {
