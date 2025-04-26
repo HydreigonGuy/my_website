@@ -1,0 +1,10 @@
+version: '3'
+services:
+  site:
+    container_name: my_nginx_website
+    build:
+      context: .
+    ports:
+      - "8000:80"
+    volumes:
+      - ./src:/usr/share/nginx/html
