@@ -1,0 +1,43 @@
+
+@font-face {
+    font-family: chinese;
+    src: url(/fonts/Noto_Sans_SC/NotoSans-VariableFont_wght.ttf);
+}
+
+body {
+    background-color: #111;
+    color: #ff0;
+    margin: 0;
+    padding: 0;
+    font-family: chinese;
+}
+
+.city_url {
+    color: #ff0;
+    text-decoration: none;
+    width: 40%;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: inline-block;
+    padding: 0;
+    text-align: center;
+    font-size: 20px;
+}
+
+.city_url img {
+    width: 100%;
+}
+
+.top_header {
+    background-color: #ee1c25;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 100px;
+}
+
+.top_header h1 {
+    margin: 0;
+    font-size: 60px;
+    padding: 20px;
+}
