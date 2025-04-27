@@ -90,6 +90,22 @@ const cv_page_map = {
     "projects_title":{
         "fr":"Projets",
         "eng":"Projects"
+    },
+    "autone_title":{
+        "fr":"Autone",
+        "eng":"Autone"
+    },
+    "autone_text":{
+        "fr":"Autone est un site web qui utilise une IA pour générer une partition à partir d'une musique que l'on lui présente.",
+        "eng":"Autone is a website that uses AI to generate sheet music for any given music."
+    },
+    "my_website_title":{
+        "fr":"Mon Site Web",
+        "eng":"My Website"
+    },
+    "my_website_text":{
+        "fr":"Ici c'est mon site web, un projet ou je présente mes voyages et où je m'améliore en developpement frontend.",
+        "eng":"This is my website, a project to show off my travels and improve my abilities in frontend developping."
     }
 }
 
@@ -136,6 +152,7 @@ function getTravelPage() {
 
 function getCVPage() {
     return '<div class="cv_content">\
+            <img class="cv_img" src="/img/me.jpg" />\
             <h3>Adrien THIBAULT</h3>\
             <h5>' + cv_page_map.position[lang] + '</h5>\
             <div>\
@@ -146,6 +163,14 @@ function getCVPage() {
             </div>\
             <div>\
                 <h4>' + cv_page_map.projects_title[lang] + '</h4>\
+                <div>\
+                    <b>' + cv_page_map.autone_title[lang] + '</b>\
+                    <p>' + cv_page_map.autone_text[lang] + '</p>\
+                </div>\
+                <div>\
+                    <b>' + cv_page_map.my_website_title[lang] + '</b>\
+                    <p>' + cv_page_map.my_website_text[lang] + '</p>\
+                </div>\
             </div>\
         </div>'
 }
