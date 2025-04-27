@@ -1,0 +1,35 @@
+
+body {
+    background-color: #101010;
+    color: aqua;
+}
+
+.city_url {
+    width: 33%;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    color: aqua;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.city_url p {
+    background-image: linear-gradient(180deg,#101010,#0a0a0a00);
+    position: absolute;
+    width: 100%;
+    margin: 0;
+    padding-bottom: 50px;
+}
+
+.city_url img {
+    width: 100%;
+}
+
+.city_row {
+    width: 92%;
+    padding-left: 4%;
+    padding-right: 4%;
+    margin: 0 0 20px 0;
+}
