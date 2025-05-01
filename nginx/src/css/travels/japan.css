@@ -1,0 +1,18 @@
+
+.title {
+    text-align: center;
+}
+
+.city_url {
+    display: inline-block;
+    margin: 4%;
+    width: 42%;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    font-size: 30px;
+}
+
+.city_url img {
+    width: 100%;
+}
