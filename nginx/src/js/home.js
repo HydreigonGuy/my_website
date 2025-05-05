@@ -120,9 +120,9 @@ function getHeaderContents() {
 function getFooterContents() {
     return '<div class="footer_subcontainer">\
             <p class="footer_title">' + footer_map.links[lang] + '</p>\
-            <a class="footer_link" href="">Instagram</a>\
-            <a class="footer_link" href="">Gitlab</a>\
-            <a class="footer_link" href="">Linkedin</a>\
+            <a class="footer_link" href="https://www.instagram.com/hydreigon_chad?igsh=MWxxcjM0cjZ0YnM2Nw==" target="_blank">Instagram</a>\
+            <a class="footer_link" href="https://github.com/HydreigonGuy" target="_blank">Gitlab</a>\
+            <a class="footer_link" href="https://www.linkedin.com/in/adrien-thibault/" target="_blank">Linkedin</a>\
         </div>'
 }
 
