@@ -43,8 +43,8 @@ body {
     width: 50%;
 }
 .half_image_margin {
-    width: 42%;
-    margin: 4%;
+    width: 48%;
+    margin: 1%;
 }
 
 /* Third image */
@@ -52,8 +52,8 @@ body {
     width: 33.33%;
 }
 .third_image_margin {
-    width: 27.33%;
-    margin: 3%;
+    width: 31.33%;
+    margin: 1%;
 }
 
 /* Fourth image */
@@ -61,8 +61,8 @@ body {
     width: 25%;
 }
 .fourth_image_margin {
-    width: 22%;
-    margin: 1.5%;
+    width: 23%;
+    margin: 1%;
 }
 
 /* Fith image */
