@@ -22,6 +22,10 @@ body {
     background-color: #0c2006;
 }
 
+.dark_red_bg {
+    background-color: darkred;
+}
+
 .light_grey_bg {
     background-color: #ddd;
 }
@@ -34,8 +38,8 @@ body {
     width: 100%;
 }
 .full_image_margin {
-    width: 80%;
-    margin: 10%;
+    width: 98%;
+    margin: 1%;
 }
 
 /* Helf image */
