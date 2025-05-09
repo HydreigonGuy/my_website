@@ -1,7 +1,13 @@
 
+@font-face {
+    font-family: notoserifkr;
+    src: url(/fonts/Noto_Serif_KR/NotoSerifKR-Regular.otf);
+}
+
 body {
     background-color: #ddd;
     color: #541f06;
+    font-family: notoserifkr;
 }
 
 .city_url {
