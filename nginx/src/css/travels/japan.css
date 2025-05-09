@@ -1,6 +1,19 @@
 
+@font-face {
+    font-family: bebas;
+    src: url(/fonts/Bebas_Neue/BebasNeue-Regular.ttf);
+}
+
+body {
+    background: url("https://github.com/HydreigonGuy/my_website/blob/images/images/flags/japan.png?raw=true");
+    background-size: cover;
+    background-position: center;
+    font-family: bebas;
+}
+
 .title {
     text-align: center;
+    font-size: 50px;
 }
 
 .city_url {
