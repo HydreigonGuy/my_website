@@ -9,6 +9,16 @@
     src: url(/fonts/Cal_Sans/CalSans-Regular.ttf);
 }
 
+@font-face {
+    font-family: rubik_mono;
+    src: url(/fonts/Rubik_Mono_One/RubikMonoOne-Regular.ttf);
+}
+
+@font-face {
+    font-family: press_start;
+    src: url(/fonts/Press_Start_2P/PressStart2P-Regular.ttf);
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -25,17 +35,18 @@ body {
 .header_container {
     margin: 0;
     width: 100;
-    font-family: calSans;
 }
 
 .travels_header {
     background-color: black;
     color: green;
+    font-family: rubik_mono;
 }
 
 .cv_header {
     background-color: #13263d;
     color: #d5edff;
+    font-family: calSans;
 }
 
 .header_subcontainer {
@@ -59,6 +70,7 @@ body {
 
 .travels_header_urls {
     color: green;
+    font-family: rubik_mono;
 }
 
 .travels_header_urls:hover {
@@ -68,6 +80,7 @@ body {
 
 .cv_header_urls {
     color: #d5edff;
+    font-family: rubik_mono;
 }
 
 .cv_header_urls:hover {
@@ -166,17 +179,18 @@ body {
 .travels_footer_container {
     color: lime;
     background-color: rgb(8, 8, 8);
+    font-family: press_start;
 }
 
 .cv_footer_container {
     color: #d5edff;
     background-color: #071524;
+    font-family: coiny;
 }
 
 .footer_subcontainer {
     margin: 20px;
     text-align: center;
-    font-family: coiny;
 }
 
 .footer_title {
