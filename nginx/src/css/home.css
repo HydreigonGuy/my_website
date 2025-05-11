@@ -25,7 +25,15 @@ body {
 }
 
 .travels_body {
-    background-color: green;
+    background: url("https://raw.githubusercontent.com/HydreigonGuy/my_website/refs/heads/images/images/travels/japan/yokohama/IMG20240220122833.jpg");
+    background-size: cover;
+}
+
+@media (max-width: 1400px) {
+    .travels_body {
+        background: url("https://raw.githubusercontent.com/HydreigonGuy/my_website/refs/heads/images/images/travels/korea/daegu/IMG20230822174437.jpg");
+        background-size: cover;
+    }    
 }
 
 .cv_body {
@@ -107,7 +115,6 @@ body {
 .cv_language_selector {
     color: #071524;
     background-color: #d5edff;
-    font-family: calSans;
 }
 
 .content_container {
@@ -116,10 +123,12 @@ body {
 
 .travels_content_container {
     color: black;
+    font-family: rubik_mono;
 }
 
 .cv_content_container {
     color: #13263d;
+    font-family: calSans;
 }
 
 .content_title {
@@ -144,10 +153,12 @@ body {
     position: absolute;
     width: 100%;
     text-align: center;
-    background-color: rgba(9, 42, 25, 0.6);
+    background-color: rgba(9, 42, 25, 0.7);
     top: 0;
-    color: #d5fff0;
+    color: #9aff9f;
     margin: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .cv_content {

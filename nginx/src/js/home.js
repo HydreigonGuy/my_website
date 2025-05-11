@@ -138,7 +138,7 @@ function getFooterContents() {
 }
 
 function getTravelPage() {
-    return '<h3 class="content_title">' + travel_page_map.title[lang] + '</h3>\
+    return '<!--h3 class="content_title">' + travel_page_map.title[lang] + '</h3-->\
         <a class="travel_url" href="/france">\
             <p>' + travel_page_map.france[lang] + '</p>\
             <img src="https://raw.githubusercontent.com/HydreigonGuy/my_website/refs/heads/images/images/travels/france/paris/IMG20240914202245.jpg"/>\
@@ -164,9 +164,15 @@ function getCVPage() {
             <h5>' + cv_page_map.position[lang] + '</h5>\
             <div>\
                 <h4>' + cv_page_map.exp_title[lang] + '</h4>\
+                <p>Lyra</p>\
+                <p>Predicloud</p>\
+                <p>Torus Actions</p>\
             </div>\
             <div>\
                 <h4>' + cv_page_map.diplomas_title[lang] + '</h4>\
+                <p>Epitech</p>\
+                <p>Baccalauréat</p>\
+                <p>Cambridge Certificate in Advanced English</p>\
             </div>\
             <div>\
                 <h4>' + cv_page_map.projects_title[lang] + '</h4>\
