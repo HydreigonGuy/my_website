@@ -109,20 +109,31 @@ const cv_page_map = {
     }
 }
 
+const selected_page_class_map = {
+    "header_url":{
+        "travels":"travels_header_urls",
+        "cv":"cv_header_urls"
+    },
+    "footer_link":{
+        "travels":"travels_footer_link",
+        "cv":"cv_footer_link"
+    }
+}
+
 function getHeaderContents() {
     return '<div class="header_subcontainer">\
             <h2 class="header_title">' + header_map.title[lang] + '</h2>\
-            <button class="header_urls" href="" onclick="update_selected_page(\'travels\')">' + header_map.travels[lang] + '</button>\
-            <button class="header_urls" href="" onclick="update_selected_page(\'cv\')">' + header_map.cv[lang] + '</button>\
+            <button class="header_urls ' + selected_page_class_map.header_url[selected_page] + '" href="" onclick="update_selected_page(\'travels\')">' + header_map.travels[lang] + '</button>\
+            <button class="header_urls ' + selected_page_class_map.header_url[selected_page] + '" href="" onclick="update_selected_page(\'cv\')">' + header_map.cv[lang] + '</button>\
         </div>'
 }
 
 function getFooterContents() {
     return '<div class="footer_subcontainer">\
             <p class="footer_title">' + footer_map.links[lang] + '</p>\
-            <a class="footer_link" href="https://www.instagram.com/hydreigon_chad?igsh=MWxxcjM0cjZ0YnM2Nw==" target="_blank">Instagram</a>\
-            <a class="footer_link" href="https://github.com/HydreigonGuy" target="_blank">Gitlab</a>\
-            <a class="footer_link" href="https://www.linkedin.com/in/adrien-thibault/" target="_blank">Linkedin</a>\
+            <a class="footer_link ' + selected_page_class_map.footer_link[selected_page] + '" href="https://www.instagram.com/hydreigon_chad?igsh=MWxxcjM0cjZ0YnM2Nw==" target="_blank">Instagram</a>\
+            <a class="footer_link ' + selected_page_class_map.footer_link[selected_page] + '" href="https://github.com/HydreigonGuy" target="_blank">Gitlab</a>\
+            <a class="footer_link ' + selected_page_class_map.footer_link[selected_page] + '" href="https://www.linkedin.com/in/adrien-thibault/" target="_blank">Linkedin</a>\
         </div>'
 }
 
@@ -176,9 +187,19 @@ function update_content() {
     document.getElementById("footer_container").innerHTML = getFooterContents();
     if (["travels", "cv"].includes(selected_page)) {
         if (selected_page == "travels") {
+            document.getElementById("page_body").className = "header_container travels_body";
+            document.getElementById("header_container").className = "travels_header";
+            document.getElementById("lang_selector").className = "language_selector travels_language_selector";
+            document.getElementById("footer_container").className = "footer_container travels_footer_container";
+            document.getElementById("content_container").className = "content_container travels_content_container";
             document.getElementById("content_container").innerHTML = getTravelPage();
         }
         if (selected_page == "cv") {
+            document.getElementById("page_body").className = "header_container cv_body";
+            document.getElementById("header_container").className = "cv_header";
+            document.getElementById("lang_selector").className = "language_selector cv_language_selector";
+            document.getElementById("footer_container").className = "footer_container cv_footer_container";
+            document.getElementById("content_container").className = "content_container cv_content_container";
             document.getElementById("content_container").innerHTML = getCVPage();
         }
     } else {
