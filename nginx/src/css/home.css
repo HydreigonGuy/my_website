@@ -47,7 +47,7 @@ body {
 
 .travels_header {
     background-color: black;
-    color: #27a102;
+    color: #1fea00;
     font-family: rubik_mono;
 }
 
@@ -77,12 +77,12 @@ body {
 }
 
 .travels_header_urls {
-    color: #27a102;
+    color: #1fea00;
     font-family: rubik_mono;
 }
 
 .travels_header_urls:hover {
-    background-color: #27a102;
+    background-color: #1fea00;
     color: black;
 }
 
@@ -108,7 +108,7 @@ body {
 
 .travels_language_selector {
     color: black;
-    background-color: #27a102;
+    background-color: #1fea00;
     font-family: rubik_mono;
 }
 
@@ -143,6 +143,13 @@ body {
     text-align: center;
     text-decoration: none;
     position: relative;
+}
+
+@media (max-width: 1200px) {
+    .travel_url {
+        margin: 3%;
+        width: 27.33%;
+    }
 }
 
 .travel_url img {
