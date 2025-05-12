@@ -168,18 +168,14 @@ body {
     padding-bottom: 10px;
 }
 
-.cv_content {
-    margin: 20px;
-}
-
-.cv_content h3 {
+.cv_name {
     font-size: 45px;
     display: inline;
     margin: 15px;
     vertical-align: top;
 }
 
-.cv_content h5 {
+.cv_position {
     font-size: 30px;
     display: inline;
     margin: 15px;
@@ -187,7 +183,30 @@ body {
 }
 
 .cv_img {
-    width: 300px;
+    vertical-align: top;
+    width: 15%;
+    margin: 3%;
+}
+
+.cv_diplomas_container {
+    display: block;
+}
+
+.cv_right_of_img {
+    display: inline-block;
+    width: 76%;
+    padding: 3%;
+    padding-left: 0;
+}
+
+.cv_exp_title {
+    text-align: center;
+}
+
+.cv_exp_company_container {
+    display: inline-block;
+    width: 33.33%;
+    text-align: center;
 }
 
 .footer_container {

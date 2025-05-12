@@ -32,8 +32,8 @@ const header_map = {
             "eng":"Adrien's Travels"
         },
         "cv":{
-            "fr":"Site d'Adrien",
-            "eng":"Adrien's Website"
+            "fr":"CV d'Adrien",
+            "eng":"Adrien's CV"
         }
     },
     "travels":{
@@ -92,6 +92,14 @@ const cv_page_map = {
     "diplomas_title":{
         "fr":"Diplômes",
         "eng":"Diplomas"
+    },
+    "diploma_bac_text":{
+        "fr":"BAC S SVT spé. Maths obtenu en 2020 mention Très Bien au Lycée Français Victor Hugo de Francfort en Allemagne",
+        "eng":"French highschool diploma, science option specialising in Maths with highest honour obtained in 2020 at the Lycée Français Victor Hugo in Frankfurt Germany."
+    },
+    "diploma_cambridge_text":{
+        "fr":"Obtenu en 2019 grade A, niveau C2",
+        "eng":"Obtained in 2019 grade A, level C2."
     },
     "projects_title":{
         "fr":"Projets",
@@ -168,20 +176,27 @@ function getTravelPage() {
 
 function getCVPage() {
     return '<div class="cv_content">\
-            <img class="cv_img" src="/img/me.jpg" />\
-            <h3>Adrien THIBAULT</h3>\
-            <h5>' + cv_page_map.position[lang] + '</h5>\
-            <div>\
-                <h4>' + cv_page_map.exp_title[lang] + '</h4>\
-                <p>Lyra</p>\
-                <p>Predicloud</p>\
-                <p>Torus Actions</p>\
+            <img class="cv_img" src="/img/me.jpg" /><div class="cv_right_of_img">\
+                <h3 class="cv_name">Adrien THIBAULT</h3>\
+                <h5 class="cv_position">' + cv_page_map.position[lang] + '</h5>\
+                <div class="cv_diplomas_container">\
+                    <h3>' + cv_page_map.diplomas_title[lang] + '</h3>\
+                    <h4>Epitech</h4>\
+                    <h4>Baccalauréat</h4>\
+                    <p>' + cv_page_map.diploma_bac_text[lang] + '</p>\
+                    <h4>Cambridge Certificate in Advanced English</h4>\
+                    <p>' + cv_page_map.diploma_cambridge_text[lang] + '</p>\
+                </div>\
             </div>\
             <div>\
-                <h4>' + cv_page_map.diplomas_title[lang] + '</h4>\
-                <p>Epitech</p>\
-                <p>Baccalauréat</p>\
-                <p>Cambridge Certificate in Advanced English</p>\
+                <h4 class="cv_exp_title">' + cv_page_map.exp_title[lang] + '</h4>\
+                <div class="cv_exp_company_container">\
+                    <h4>Lyra</h4>\
+                </div><div class="cv_exp_company_container">\
+                    <h4>Predicloud</h4>\
+                </div><div class="cv_exp_company_container">\
+                    <h4>Torus Actions</h4>\
+                </div>\
             </div>\
             <div>\
                 <h4>' + cv_page_map.projects_title[lang] + '</h4>\
