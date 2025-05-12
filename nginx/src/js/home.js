@@ -27,8 +27,14 @@ if (lang == "") {
 
 const header_map = {
     "title":{
-        "fr":"Site d'Adrien",
-        "eng":"Adrien's Website"
+        "travels":{
+            "fr":"Voyages d'Adrien",
+            "eng":"Adrien's Travels"
+        },
+        "cv":{
+            "fr":"Site d'Adrien",
+            "eng":"Adrien's Website"
+        }
     },
     "travels":{
         "fr":"Voyages",
@@ -121,11 +127,14 @@ const selected_page_class_map = {
 }
 
 function getHeaderContents() {
-    return '<div class="header_subcontainer">\
-            <h2 class="header_title">' + header_map.title[lang] + '</h2>\
-            <button class="header_urls ' + selected_page_class_map.header_url[selected_page] + '" href="" onclick="update_selected_page(\'travels\')">' + header_map.travels[lang] + '</button>\
-            <button class="header_urls ' + selected_page_class_map.header_url[selected_page] + '" href="" onclick="update_selected_page(\'cv\')">' + header_map.cv[lang] + '</button>\
-        </div>'
+    formated = '<div class="header_subcontainer">\
+            <h2 class="header_title">' + header_map.title[selected_page][lang] + '</h2>'
+    if (selected_page != 'travels')
+        formated += '<button class="header_urls ' + selected_page_class_map.header_url[selected_page] + '" href="" onclick="update_selected_page(\'travels\')">' + header_map.travels[lang] + '</button>'
+    if (selected_page != 'cv')
+        formated += '<button class="header_urls ' + selected_page_class_map.header_url[selected_page] + '" href="" onclick="update_selected_page(\'cv\')">' + header_map.cv[lang] + '</button>'
+    formated += '</div>';
+    return formated
 }
 
 function getFooterContents() {
