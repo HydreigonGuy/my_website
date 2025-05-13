@@ -183,6 +183,11 @@ body {
     vertical-align: top;
 }
 
+.cv_diplome_toggle_btn {
+    background: none;
+    border: none;
+}
+
 .cv_img {
     vertical-align: top;
     width: 15%;
@@ -280,4 +285,8 @@ body {
 
 .cv_footer_link {
     color: #d5edff;
+}
+
+.invisible {
+    display: none;
 }

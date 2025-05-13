@@ -109,6 +109,10 @@ const cv_page_map = {
         "fr":"Diplômes",
         "eng":"Diplomas"
     },
+    "diploma_epitech_title":{
+        "fr":"Master en informatique obtenu à l'Epitech",
+        "eng":"Master's degree in computer science from Epitech"
+    },
     "diploma_bac_text":{
         "fr":"BAC S SVT spé. Maths obtenu en 2020 mention Très Bien au Lycée Français Victor Hugo de Francfort en Allemagne",
         "eng":"French highschool diploma, science option specialising in Maths with highest honour obtained in 2020 at the Lycée Français Victor Hugo in Frankfurt Germany."
@@ -193,16 +197,17 @@ function getTravelPage() {
 function getCVPage() {
     return '<div class="cv_content">\
             <img class="cv_img" src="/img/me.jpg" /><div class="cv_right_of_img">\
-                <h3 class="cv_name">Adrien THIBAULT</h3>\
-                <h5 class="cv_position">' + cv_page_map.position[lang] + '</h5>\
-                <br/>\
+                <div>\
+                    <h3 class="cv_name">Adrien THIBAULT</h3>\
+                    <h5 class="cv_position">' + cv_page_map.position[lang] + '</h5>\
+                </div><br/>\
                 <div class="cv_diplomas_container">\
                     <h3>' + cv_page_map.diplomas_title[lang] + '</h3>\
-                    <h4>Epitech</h4>\
-                    <h4>Baccalauréat</h4>\
-                    <p>' + cv_page_map.diploma_bac_text[lang] + '</p>\
-                    <h4>Cambridge Certificate in Advanced English</h4>\
-                    <p>' + cv_page_map.diploma_cambridge_text[lang] + '</p>\
+                    <h4>' + cv_page_map.diploma_epitech_title[lang] + '</h4>\
+                    <h4>Baccalauréat <button id="bac_diploma_toggle_btn" onclick="toggle_diploma_text_visibility(\'bac\')" class="cv_diplome_toggle_btn">+</button></h4>\
+                    <p id="bac_diploma_text" class="invisible">' + cv_page_map.diploma_bac_text[lang] + '</p>\
+                    <h4>Cambridge Certificate in Advanced English  <button id="cambridge_diploma_toggle_btn" onclick="toggle_diploma_text_visibility(\'cambridge\')" class="cv_diplome_toggle_btn">+</button></h4>\
+                    <p id="cambridge_diploma_text" class="invisible">' + cv_page_map.diploma_cambridge_text[lang] + '</p>\
                 </div><div class="cv_skills_container">\
                     <h4>' + cv_page_map.skills_title[lang] +  '</h4>\
                     <p>DevOps - Docker, Kubernetes, Jenkins, Ansible, Openshift</p>\
@@ -281,4 +286,14 @@ function update_selected_page(new_page) {
     selected_page = new_page;
     document.cookie = "selected_page=" + selected_page;
     update_content();
+}
+
+function toggle_diploma_text_visibility(name) {
+    if (document.getElementById(name + "_diploma_text").className == "invisible") {
+        document.getElementById(name + "_diploma_toggle_btn").innerHTML = "-";
+        document.getElementById(name + "_diploma_text").className = "";
+    } else {
+        document.getElementById(name + "_diploma_toggle_btn").innerHTML = "+";
+        document.getElementById(name + "_diploma_text").className = "invisible";
+    }
 }
