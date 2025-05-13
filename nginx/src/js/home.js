@@ -89,6 +89,22 @@ const cv_page_map = {
         "fr":"Expérience Professionelle",
         "eng":"Professional Experience"
     },
+    "lyra_position":{
+        "fr":"DevOps et Développeur Fullstack",
+        "eng":"DevOps and Fullstack Developer"
+    },
+    "predicloud_position":{
+        "fr":"DevOps et Développeur Fullstack et IA",
+        "eng":"DevOps and Fullstack and AI Developer"
+    },
+    "torus_position":{
+        "fr":"Développeur Fullstack",
+        "eng":"Fullstack Developer"
+    },
+    "skills_title":{
+        "fr":"Compétences",
+        "eng":"Skills"
+    },
     "diplomas_title":{
         "fr":"Diplômes",
         "eng":"Diplomas"
@@ -179,6 +195,7 @@ function getCVPage() {
             <img class="cv_img" src="/img/me.jpg" /><div class="cv_right_of_img">\
                 <h3 class="cv_name">Adrien THIBAULT</h3>\
                 <h5 class="cv_position">' + cv_page_map.position[lang] + '</h5>\
+                <br/>\
                 <div class="cv_diplomas_container">\
                     <h3>' + cv_page_map.diplomas_title[lang] + '</h3>\
                     <h4>Epitech</h4>\
@@ -186,25 +203,37 @@ function getCVPage() {
                     <p>' + cv_page_map.diploma_bac_text[lang] + '</p>\
                     <h4>Cambridge Certificate in Advanced English</h4>\
                     <p>' + cv_page_map.diploma_cambridge_text[lang] + '</p>\
+                </div><div class="cv_skills_container">\
+                    <h4>' + cv_page_map.skills_title[lang] +  '</h4>\
+                    <p>DevOps - Docker, Kubernetes, Jenkins, Ansible, Openshift</p>\
+                    <p>Python, Javascript / Typescript, C, C++, Rust, Haskell, Shellscript</p>\
                 </div>\
             </div>\
             <div>\
                 <h4 class="cv_exp_title">' + cv_page_map.exp_title[lang] + '</h4>\
                 <div class="cv_exp_company_container">\
+                    <img src="https://www.lyra.com/in/wp-content/uploads/sites/8/2020/01/Lyra-Network-Introduces-NAC-GPRS-SIM-Solution-for-Last-Mile-Connectivity.png" />\
                     <h4>Lyra</h4>\
+                    <p>03/2025 - 08/2025</p>\
+                    <p>' + cv_page_map.lyra_position[lang] + '</p>\
                 </div><div class="cv_exp_company_container">\
+                    <img src="https://media.licdn.com/dms/image/C4D0BAQGx5zk_JxQcsg/company-logo_200_200/0/1639936754642/predicloud_logo?e=2147483647&v=beta&t=djy3qu4zFoViKIYOrxhRqgfOZTUhTG7JT9F2YWv3nVg" />\
                     <h4>Predicloud</h4>\
+                    <p>10/22 - 8/23</p>\
+                    <p>' + cv_page_map.predicloud_position[lang] + '</p>\
                 </div><div class="cv_exp_company_container">\
+                    <img src="https://www.torus.ai/wp-content/uploads/2023/05/logo-torus.png" />\
                     <h4>Torus Actions</h4>\
+                    <p>07/21 - 12/21</p>\
+                    <p>' + cv_page_map.torus_position[lang] + '</p>\
                 </div>\
             </div>\
             <div>\
-                <h4>' + cv_page_map.projects_title[lang] + '</h4>\
-                <div>\
+                <h4 class="cv_projects_title">' + cv_page_map.projects_title[lang] + '</h4>\
+                <div class="cv_project_container">\
                     <b>' + cv_page_map.autone_title[lang] + '</b>\
                     <p>' + cv_page_map.autone_text[lang] + '</p>\
-                </div>\
-                <div>\
+                </div><div class="cv_project_container">\
                     <b>' + cv_page_map.my_website_title[lang] + '</b>\
                     <p>' + cv_page_map.my_website_text[lang] + '</p>\
                 </div>\

@@ -129,6 +129,7 @@ body {
 .cv_content_container {
     color: #13263d;
     font-family: calSans;
+    min-height: 110vh;
 }
 
 .content_title {
@@ -189,7 +190,14 @@ body {
 }
 
 .cv_diplomas_container {
-    display: block;
+    display: inline-block;
+    width: 50%;
+}
+
+.cv_skills_container {
+    display: inline-block;
+    width: 44%;
+    margin: 3%;
 }
 
 .cv_right_of_img {
@@ -201,11 +209,33 @@ body {
 
 .cv_exp_title {
     text-align: center;
+    font-size: 2vw;
+    margin-top: 0;
 }
 
 .cv_exp_company_container {
     display: inline-block;
     width: 33.33%;
+    text-align: center;
+    vertical-align: top;
+}
+
+.cv_exp_company_container img {
+    width: 200px;
+}
+
+.cv_exp_company_container h4 {
+    font-size: 1.4vw;
+}
+
+.cv_projects_title {
+    text-align: center;
+    font-size: 2vw;
+}
+
+.cv_project_container {
+    display: inline-block;
+    width: 50%;
     text-align: center;
 }
 
