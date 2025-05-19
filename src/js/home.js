@@ -34,6 +34,10 @@ const header_map = {
         "cv":{
             "fr":"CV d'Adrien",
             "eng":"Adrien's CV"
+        },
+        "doc":{
+            "fr":"Notes d'Adrien",
+            "eng":"Adrien's Cheat Sheets"
         }
     },
     "travels":{
@@ -43,6 +47,10 @@ const header_map = {
     "cv":{
         "fr":"CV",
         "eng":"CV"
+    },
+    "doc":{
+        "fr":"Notes",
+        "eng":"Cheat Sheets"
     }
 }
 
@@ -143,6 +151,13 @@ const cv_page_map = {
     }
 }
 
+const doc_page_map = {
+    "korean_title":{
+        "fr":"Coréen",
+        "eng":"Korean"
+    }
+}
+
 const selected_page_class_map = {
     "header_url":{
         "travels":"travels_header_urls",
@@ -161,6 +176,8 @@ function getHeaderContents() {
         formated += '<button class="header_urls ' + selected_page_class_map.header_url[selected_page] + '" href="" onclick="update_selected_page(\'travels\')">' + header_map.travels[lang] + '</button>'
     if (selected_page != 'cv')
         formated += '<button class="header_urls ' + selected_page_class_map.header_url[selected_page] + '" href="" onclick="update_selected_page(\'cv\')">' + header_map.cv[lang] + '</button>'
+    if (selected_page != 'doc')
+        formated += '<button class="header_urls ' + selected_page_class_map.header_url[selected_page] + '" href="" onclick="update_selected_page(\'doc\')">' + header_map.doc[lang] + '</button>'
     formated += '</div>';
     return formated
 }
@@ -246,10 +263,21 @@ function getCVPage() {
         </div>'
 }
 
+function getDocPage() {
+    return '<h3>DevOps</h3>\
+        <a class="doc_url">Docker</a>\
+        <a class="doc_url">Traefik</a>\
+        <a class="doc_url">Prometheus</a>\
+        <a class="doc_url">Certbot</a>\
+        <a class="doc_url">DB admin</a>\
+        <h3>' + doc_page_map.korean_title[lang] + '</h3>\
+        '
+}
+
 function update_content() {
     document.getElementById("header_container").innerHTML = getHeaderContents();
     document.getElementById("footer_container").innerHTML = getFooterContents();
-    if (["travels", "cv"].includes(selected_page)) {
+    if (["travels", "cv", "doc"].includes(selected_page)) {
         if (selected_page == "travels") {
             document.getElementById("page_body").className = "header_container travels_body";
             document.getElementById("header_container").className = "travels_header";
@@ -265,6 +293,14 @@ function update_content() {
             document.getElementById("footer_container").className = "footer_container cv_footer_container";
             document.getElementById("content_container").className = "content_container cv_content_container";
             document.getElementById("content_container").innerHTML = getCVPage();
+        }
+        if (selected_page == "doc") {
+            document.getElementById("page_body").className = "header_container doc_body";
+            document.getElementById("header_container").className = "";
+            document.getElementById("lang_selector").className = "language_selector";
+            document.getElementById("footer_container").className = "footer_container";
+            document.getElementById("content_container").className = "content_container";
+            document.getElementById("content_container").innerHTML = getDocPage();
         }
     } else {
         // default home page
