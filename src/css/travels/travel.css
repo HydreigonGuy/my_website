@@ -1,0 +1,99 @@
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Background colors */
+
+.dark_gray_bg {
+    background-color: #101010;
+}
+
+.dark_gray_bg_2 {
+    background-color: #111;
+}
+
+.pink_bg {
+    background-color: pink;
+}
+
+.dark_green_bg {
+    background-color: #0c2006;
+}
+
+.dark_red_bg {
+    background-color: darkred;
+}
+
+.light_grey_bg {
+    background-color: #ddd;
+}
+
+/* Text Colors */
+
+.white_text {
+    color: white;
+}
+
+
+/* Images */
+
+/* Full image */
+.full_image {
+    width: 100%;
+}
+.full_image_margin {
+    width: 98%;
+    margin: 1%;
+}
+
+/* Helf image */
+.half_image {
+    width: 50%;
+}
+.half_image_margin {
+    width: 48%;
+    margin: 1%;
+}
+
+/* Third image */
+.third_image {
+    width: 33.33%;
+}
+.third_image_margin {
+    width: 31.33%;
+    margin: 1%;
+}
+
+/* Fourth image */
+.fourth_image {
+    width: 25%;
+}
+.fourth_image_margin {
+    width: 23%;
+    margin: 1%;
+}
+
+/* Fith image */
+.fith_image {
+    width: 20%;
+}
+.fith_image_margin {
+    width: 18%;
+    margin: 1%;
+}
+
+/* City URLs */
+
+.half_image_url {
+    display: inline-block;
+    margin: 6%;
+    width: 38%;
+    text-decoration: none;
+    text-align: center;
+}
+
+.half_image_url img {
+    width: 100%;
+}

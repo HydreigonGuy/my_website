@@ -1,0 +1,48 @@
+
+@font-face {
+    font-family: lobster;
+    src: url(/fonts/Lobster/Lobster-Regular.ttf);
+}
+
+body {
+    font-family: lobster;
+    background-color: beige;
+    color: brown;
+}
+
+.france_title {
+    margin-left: 200px;
+    font-size: 50px;
+}
+
+.city_url {
+    width: 33.33%;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    color: brown;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.city_url p {
+    background-image: linear-gradient(180deg,beige,rgba(255, 255, 255, 0));
+    position: absolute;
+    width: 100%;
+    margin: 0;
+    padding-bottom: 50px;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.city_url img {
+    width: 100%;
+}
+
+.city_row {
+    width: 92%;
+    padding-left: 4%;
+    padding-right: 4%;
+    margin: 0 0 20px 0;
+}
