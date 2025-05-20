@@ -113,6 +113,15 @@ body {
     color: #071524;
 }
 
+.doc_header_urls {
+    font-family: sometypemono;
+    color: black;
+}
+
+.doc_header_urls:hover {
+    color: blue;
+}
+
 .language_selector {
     position: absolute;
     top: 22px;
@@ -132,10 +141,6 @@ body {
 .cv_language_selector {
     color: #071524;
     background-color: #d5edff;
-}
-
-.content_container {
-    font-family: calSans;
 }
 
 .travels_content_container {

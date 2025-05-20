@@ -152,6 +152,10 @@ const cv_page_map = {
 }
 
 const doc_page_map = {
+    "description":{
+        "fr":"Cette page contiens des informations et du code / des commandes pour pouvoir y avoir accés facilement.",
+        "eng":"This page contains random usefull informations and code / commands that I need on a regular basis."
+    },
     "korean_title":{
         "fr":"Coréen",
         "eng":"Korean"
@@ -161,7 +165,8 @@ const doc_page_map = {
 const selected_page_class_map = {
     "header_url":{
         "travels":"travels_header_urls",
-        "cv":"cv_header_urls"
+        "cv":"cv_header_urls",
+        "doc":"doc_header_urls"
     },
     "footer_link":{
         "travels":"travels_footer_link",
@@ -264,7 +269,8 @@ function getCVPage() {
 }
 
 function getDocPage() {
-    return '<h3>DevOps</h3>\
+    return '<p>' + doc_page_map.description[lang] + '</p>\
+        <h3>DevOps</h3>\
         <a class="doc_url">Docker</a>\
         <a class="doc_url">Traefik</a>\
         <a class="doc_url">Prometheus</a>\
