@@ -290,6 +290,34 @@ body {
     font-family: sometypemono;
     display: block;
     color: black;
+    background: none;
+    border: none;
+}
+
+.doc_url:hover {
+    color: blue;
+}
+
+.doc_options_list {
+    display: inline-block;
+    width: 20%;
+}
+
+.doc_contents {
+    display: inline-block;
+    width: 80%;
+    vertical-align: top;
+}
+
+.doc_code_segment {
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+
+.doc_file_segment {
+    background-color: #ddd;
+    padding: 20px;
 }
 
 .footer_subcontainer {
