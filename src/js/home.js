@@ -34,6 +34,10 @@ const header_map = {
         "cv":{
             "fr":"CV d'Adrien",
             "eng":"Adrien's CV"
+        },
+        "doc":{
+            "fr":"Notes d'Adrien",
+            "eng":"Adrien's Cheat Sheets"
         }
     },
     "travels":{
@@ -43,6 +47,10 @@ const header_map = {
     "cv":{
         "fr":"CV",
         "eng":"CV"
+    },
+    "doc":{
+        "fr":"Notes",
+        "eng":"Cheat Sheets"
     }
 }
 
@@ -143,10 +151,22 @@ const cv_page_map = {
     }
 }
 
+const doc_page_map = {
+    "description":{
+        "fr":"Cette page contiens des informations et du code / des commandes pour pouvoir y avoir accés facilement.",
+        "eng":"This page contains random usefull informations and code / commands that I need on a regular basis."
+    },
+    "korean_title":{
+        "fr":"Coréen",
+        "eng":"Korean"
+    }
+}
+
 const selected_page_class_map = {
     "header_url":{
         "travels":"travels_header_urls",
-        "cv":"cv_header_urls"
+        "cv":"cv_header_urls",
+        "doc":"doc_header_urls"
     },
     "footer_link":{
         "travels":"travels_footer_link",
@@ -161,11 +181,15 @@ function getHeaderContents() {
         formated += '<button class="header_urls ' + selected_page_class_map.header_url[selected_page] + '" href="" onclick="update_selected_page(\'travels\')">' + header_map.travels[lang] + '</button>'
     if (selected_page != 'cv')
         formated += '<button class="header_urls ' + selected_page_class_map.header_url[selected_page] + '" href="" onclick="update_selected_page(\'cv\')">' + header_map.cv[lang] + '</button>'
+    if (selected_page != 'doc')
+        formated += '<button class="header_urls ' + selected_page_class_map.header_url[selected_page] + '" href="" onclick="update_selected_page(\'doc\')">' + header_map.doc[lang] + '</button>'
     formated += '</div>';
     return formated
 }
 
 function getFooterContents() {
+    if (selected_page == "doc")
+        return ""
     return '<div class="footer_subcontainer">\
             <p class="footer_title">' + footer_map.links[lang] + '</p>\
             <a class="footer_link ' + selected_page_class_map.footer_link[selected_page] + '" href="https://www.instagram.com/hydreigon_chad?igsh=MWxxcjM0cjZ0YnM2Nw==" target="_blank">Instagram</a>\
@@ -246,10 +270,25 @@ function getCVPage() {
         </div>'
 }
 
+function getDocPage() {
+    return '\
+        <div class="doc_options_list">\
+            <h3>DevOps</h3>\
+            <button onclick="displayDocDocker()" class="doc_url">Docker</button>\
+            <button onclick="displayDocTraefik()" class="doc_url">Traefik</button>\
+            <button onclick="displayDocPrometheus()" class="doc_url">Prometheus</button>\
+            <button onclick="displayDocCertbot()" class="doc_url">Certbot</button>\
+            <button onclick="displayDocDB()" class="doc_url">DB admin</button>\
+            <!--h3>' + doc_page_map.korean_title[lang] + '</h3-->\
+        </div><div id="doc_contents" class="doc_contents">\
+            <p>' + doc_page_map.description[lang] + '</p>\
+        </div>'
+}
+
 function update_content() {
     document.getElementById("header_container").innerHTML = getHeaderContents();
     document.getElementById("footer_container").innerHTML = getFooterContents();
-    if (["travels", "cv"].includes(selected_page)) {
+    if (["travels", "cv", "doc"].includes(selected_page)) {
         if (selected_page == "travels") {
             document.getElementById("page_body").className = "header_container travels_body";
             document.getElementById("header_container").className = "travels_header";
@@ -265,6 +304,14 @@ function update_content() {
             document.getElementById("footer_container").className = "footer_container cv_footer_container";
             document.getElementById("content_container").className = "content_container cv_content_container";
             document.getElementById("content_container").innerHTML = getCVPage();
+        }
+        if (selected_page == "doc") {
+            document.getElementById("page_body").className = "header_container doc_body";
+            document.getElementById("header_container").className = "";
+            document.getElementById("lang_selector").className = "language_selector";
+            document.getElementById("footer_container").className = "footer_container";
+            document.getElementById("content_container").className = "content_container";
+            document.getElementById("content_container").innerHTML = getDocPage();
         }
     } else {
         // default home page
