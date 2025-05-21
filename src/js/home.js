@@ -188,6 +188,8 @@ function getHeaderContents() {
 }
 
 function getFooterContents() {
+    if (selected_page == "doc")
+        return ""
     return '<div class="footer_subcontainer">\
             <p class="footer_title">' + footer_map.links[lang] + '</p>\
             <a class="footer_link ' + selected_page_class_map.footer_link[selected_page] + '" href="https://www.instagram.com/hydreigon_chad?igsh=MWxxcjM0cjZ0YnM2Nw==" target="_blank">Instagram</a>\
@@ -269,120 +271,18 @@ function getCVPage() {
 }
 
 function getDocPage() {
-    return '<p>' + doc_page_map.description[lang] + '</p>\
+    return '\
         <div class="doc_options_list">\
             <h3>DevOps</h3>\
             <button onclick="displayDocDocker()" class="doc_url">Docker</button>\
-            <button class="doc_url">Traefik</button>\
-            <button class="doc_url">Prometheus</button>\
-            <button class="doc_url">Certbot</button>\
-            <button class="doc_url">DB admin</button>\
-            <h3>' + doc_page_map.korean_title[lang] + '</h3>\
+            <button onclick="displayDocTraefik()" class="doc_url">Traefik</button>\
+            <button onclick="displayDocPrometheus()" class="doc_url">Prometheus</button>\
+            <button onclick="displayDocCertbot()" class="doc_url">Certbot</button>\
+            <button onclick="displayDocDB()" class="doc_url">DB admin</button>\
+            <!--h3>' + doc_page_map.korean_title[lang] + '</h3-->\
         </div><div id="doc_contents" class="doc_contents">\
+            <p>' + doc_page_map.description[lang] + '</p>\
         </div>'
-}
-
-function displayDocDocker() {
-    document.getElementById("doc_contents").innerHTML = '\
-    <h1>DevOps - Docker</h1>\
-    Docker is a tool to create, handle and run containers.\
-    <h3>Docker Compose</h3>\
-    Docker Compose is a tool to help easily handle docker images.\
-    <br>\
-    To build the image:\
-    <p class="doc_code_segment">sudo docker-compose build</p>\
-    To run the image:\
-    <p class="doc_code_segment">sudo docker-compose up</p>\
-    To run the image while rebuilding the image (to update the files / dependencies):\
-    <p class="doc_code_segment">sudo docker-compose up --build</p>\
-    Docker Compose is controlled by the docker-compose.yaml file. Here is an example file:\
-    <p class="doc_file_segment">\
-        version: \'3\'<br/>\
-        services:<br/>\
-        &emsp;app:<br/>\
-        &emsp;&emsp;container_name: name_of_service<br/>\
-        &emsp;&emsp;build:<br/>\
-        &emsp;&emsp;&emsp;context: path_to_dockerfile<br/>\
-        &emsp;&emsp;ports:<br/>\
-        &emsp;&emsp;&emsp;- "80:80"<br/>\
-        &emsp;&emsp;volumes:<br/>\
-        &emsp;&emsp;&emsp;- ./src:/usr/src/app/\
-    </p>\
-    <p>\
-        Or you can une Docker Compose for an already existing image:\
-    </p>\
-    <p class="doc_file_segment">\
-        version: \'3\'<br/>\
-        services:<br/>\
-        &emsp;front-web:<br/>\
-        &emsp;&emsp;image: image_name<br/>\
-        &emsp;&emsp;restart: always<br/>\
-        &emsp;&emsp;ports:<br/>\
-        &emsp;&emsp;&emsp;- 80:80<br/>\
-        &emsp;&emsp;&emsp;- 443:443<br/>\
-        &emsp;&emsp;volumes:<br/>\
-        &emsp;&emsp;&emsp;- certs:/etc/letsencrypt/<br/>\
-        <br/>\
-        volumes:<br/>\
-        &emsp;certs:\
-    </p>\
-    <h3>Docker</h3>\
-    <p>\
-        To build a docker image:\
-    </p>\
-    <p class="doc_code_segment">\
-        sudo docker build .\
-    </p>\
-    <p>\
-        In the command above, <b>.</b> is the path to the dockerfile.\
-        Once built, docker will give you the image\'s ID that you can then run in a container with:\
-    </p>\
-    <p class="doc_code_segment">\
-        sudo docker run IMAGE_ID\
-    </p>\
-    <p>\
-        You can also get the ID and a lot more info running:\
-    </p>\
-    <p class="doc_code_segment">\
-        sudo docker image ls\
-    </p>\
-    <p>\
-        To kill a docker container, get it\'s container ID with:\
-    </p>\
-    <p class="doc_code_segment">\
-        sudo docker ps\
-    </p>\
-    <p>\
-        Then you can kill it with:\
-    </p>\
-    <p class="doc_code_segment">\
-        sudo docker kill CONTAINER_ID\
-    </p>\
-    <h3>Cleaning Up</h3>\
-    <p>\
-        Docker Images can take up a lot of space on a server, make sure you regularly remove unused images with:\
-    </p>\
-    <p class="doc_code_segment">\
-        sudo docker image prune\
-    </p>\
-    <h3>Building images for different CPU types</h3>\
-    <p>\
-        You can use docker buildx to build images for different CPU types, if you wish to run a docker image on something that doesn\'t use a normal CPU architecture, like a raspberry pi for example.\
-        You can install it by running:\
-    </p>\
-    <p class="doc_code_segment">\
-        sudo apt install docker-buildx\
-    </p>\
-    <p>\
-        And build and push the image with this command:\
-    </p>\
-    <p class="doc_code_segment">\
-        sudo docker buildx build -t <b>image name</b>  --progress plain --platform linux/amd64,linux/arm/v7,linux/arm64 --push .\
-    </p>\
-    <h3>Useful links</h3>\
-    <a href="https://www.docker.com/" target="_blank">Docker Website</a>\
-    <a href="https://hub.docker.com/" target="_blank">Docker Hub</a>\
-    ';
 }
 
 function update_content() {
