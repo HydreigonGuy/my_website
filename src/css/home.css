@@ -114,7 +114,7 @@ body {
     top: 22px;
     right: 30px;
     border: none;
-    padding: 20px;
+    padding: 1.3vw;
     border-radius: 30px;
     font-size: 2vw;
 }
@@ -350,8 +350,8 @@ body {
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
     .travels_body {
-        background-size: 1000px;
+        background-size: initial;
     }
 }
