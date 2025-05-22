@@ -349,7 +349,7 @@ body {
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 800px) {
     .travels_body {
         background: url("https://raw.githubusercontent.com/HydreigonGuy/my_website/refs/heads/images/images/travels/korea/daegu/IMG20230822174437.jpg");
         background-size: 100vh;
