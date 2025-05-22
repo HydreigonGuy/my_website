@@ -1,0 +1,32 @@
+
+@font-face {
+    font-family: notoserifkr;
+    src: url(/fonts/Noto_Serif_KR/NotoSerifKR-Regular.otf);
+}
+
+body {
+    background-color: #ddd;
+    color: #541f06;
+    font-family: notoserifkr;
+}
+
+.city_url {
+    display: inline-block;
+    width: 29.33%;
+    margin: 2%;
+    text-decoration: none;
+    color: #541f06;
+    text-align: center;
+}
+
+.city_url img {
+    width: 100%;
+}
+
+.city_url p {
+    font-size: 30px;
+}
+
+.title {
+    text-align: center;
+}

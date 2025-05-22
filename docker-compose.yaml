@@ -1,10 +1,10 @@
 version: '3'
 services:
-  app:
-    container_name: my_website
+  site:
+    container_name: my_nginx_website
     build:
-      context: ./src
+      context: .
     ports:
-      - "8000:3000"
+      - "8000:80"
     volumes:
-      - ./src:/usr/src/app/
+      - ./src:/usr/share/nginx/html

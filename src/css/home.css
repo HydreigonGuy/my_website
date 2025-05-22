@@ -1,0 +1,357 @@
+
+@font-face {
+    font-family: coiny;
+    src: url(/fonts/Coiny/Coiny-Regular.ttf);
+}
+
+@font-face {
+    font-family: calSans;
+    src: url(/fonts/Cal_Sans/CalSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: rubik_mono;
+    src: url(/fonts/Rubik_Mono_One/RubikMonoOne-Regular.ttf);
+}
+
+@font-face {
+    font-family: press_start;
+    src: url(/fonts/Press_Start_2P/PressStart2P-Regular.ttf);
+}
+
+@font-face {
+    font-family: sometypemono;
+    src: url(/fonts/Sometype_Mono/SometypeMono-VariableFont_wght.ttf);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.travels_body {
+    background: url("https://raw.githubusercontent.com/HydreigonGuy/my_website/refs/heads/images/images/travels/japan/yokohama/IMG20240220122833.jpg");
+    background-size: cover;
+}
+
+.cv_body {
+    background-color: #d5edff;
+    font-size: 1vw;
+}
+
+.doc_body {
+    font-family: sometypemono;
+}
+
+.header_container {
+    margin: 0;
+    width: 100;
+}
+
+.travels_header {
+    background-color: black;
+    color: #1fea00;
+    font-family: rubik_mono;
+}
+
+.cv_header {
+    background-color: #13263d;
+    color: #d5edff;
+    font-family: calSans;
+}
+
+.header_subcontainer {
+    padding: 20px;
+}
+
+.header_title {
+    margin: 0;
+    display: inline;
+    font-size: 3vw;
+}
+
+.header_urls {
+    margin-left: 5vw;
+    font-size: 2.5vw;
+    background: none;
+    border: none;
+    border-radius: 30px;
+    padding: 20px;
+}
+
+.travels_header_urls {
+    color: #1fea00;
+    font-family: rubik_mono;
+}
+
+.travels_header_urls:hover {
+    background-color: #1fea00;
+    color: black;
+}
+
+.cv_header_urls {
+    color: #d5edff;
+    font-family: calSans;
+}
+
+.cv_header_urls:hover {
+    background-color: #b9dffc;
+    color: #071524;
+}
+
+.doc_header_urls {
+    font-family: sometypemono;
+    color: black;
+}
+
+.doc_header_urls:hover {
+    color: blue;
+}
+
+.language_selector {
+    position: absolute;
+    top: 22px;
+    right: 30px;
+    border: none;
+    padding: 20px;
+    border-radius: 30px;
+    font-size: 2vw;
+}
+
+.travels_language_selector {
+    color: black;
+    background-color: #1fea00;
+    font-family: rubik_mono;
+}
+
+.cv_language_selector {
+    color: #071524;
+    background-color: #d5edff;
+}
+
+.travels_content_container {
+    color: black;
+    font-family: rubik_mono;
+}
+
+.cv_content_container {
+    color: #13263d;
+    font-family: calSans;
+    min-height: 110vh;
+    margin-bottom: 200px;
+}
+
+.content_title {
+    margin: 40px;
+    font-size: 30px;
+}
+
+.travel_url {
+    display: inline-block;
+    margin: 2%;
+    width: 16%;
+    text-align: center;
+    text-decoration: none;
+    position: relative;
+}
+
+.travel_url img {
+    width: 100%;
+}
+
+.travel_url p {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(12, 12, 12, 0.7);
+    top: 0;
+    color: #1fea00;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.cv_name {
+    font-size: 3vw;
+    display: inline;
+    margin: 15px;
+    vertical-align: top;
+}
+
+.cv_position {
+    font-size: 2vw;
+    display: inline;
+    margin: 15px;
+    vertical-align: top;
+}
+
+.cv_diplome_toggle_btn {
+    background: none;
+    border: none;
+}
+
+.cv_img {
+    vertical-align: top;
+    width: 15%;
+    margin: 3%;
+}
+
+.cv_diplomas_container {
+    display: inline-block;
+    width: 50%;
+}
+
+.cv_skills_container {
+    display: inline-block;
+    width: 44%;
+    margin: 3%;
+    vertical-align: top;
+}
+
+.cv_right_of_img {
+    display: inline-block;
+    width: 76%;
+    padding: 3%;
+    padding-left: 0;
+}
+
+.cv_exp_title {
+    text-align: center;
+    font-size: 2vw;
+    margin-top: 0;
+}
+
+.cv_exp_company_container {
+    display: inline-block;
+    width: 33.33%;
+    text-align: center;
+    vertical-align: top;
+}
+
+.cv_exp_company_container img {
+    width: 50%;
+}
+
+.cv_exp_company_container h4 {
+    font-size: 1.4vw;
+}
+
+.cv_projects_title {
+    text-align: center;
+    font-size: 2vw;
+}
+
+.cv_project_container {
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+}
+
+.footer_container {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.travels_footer_container {
+    color: #1fea00;
+    background-color: rgb(12, 12, 12);
+    font-family: press_start;
+}
+
+.cv_footer_container {
+    color: #d5edff;
+    background-color: #071524;
+    font-family: coiny;
+}
+
+.doc_url {
+    font-family: sometypemono;
+    display: block;
+    color: black;
+    background: none;
+    border: none;
+}
+
+.doc_url:hover {
+    color: blue;
+}
+
+.doc_options_list {
+    display: inline-block;
+    width: 20%;
+}
+
+.doc_contents {
+    display: inline-block;
+    width: 80%;
+    vertical-align: top;
+}
+
+.doc_code_segment {
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+
+.doc_file_segment {
+    background-color: #ddd;
+    padding: 20px;
+}
+
+.footer_subcontainer {
+    margin: 20px;
+    text-align: center;
+}
+
+.footer_title {
+    font-size: 24px;
+}
+
+.footer_link {
+    text-decoration: none;
+    display: inline-block;
+    width: 20%;
+    text-align: center;
+    font-size: 20px;
+}
+
+.travels_footer_link {
+    color: #1fea00;
+}
+
+.cv_footer_link {
+    color: #d5edff;
+}
+
+.invisible {
+    display: none;
+}
+
+
+@media (max-width: 1400px) {
+    .travels_body {
+        background: url("https://raw.githubusercontent.com/HydreigonGuy/my_website/refs/heads/images/images/travels/korea/daegu/IMG20230822174437.jpg");
+        background-size: cover;
+    }
+}
+
+@media (max-width: 1200px) {
+    .travel_url {
+        margin: 3%;
+        width: 27.33%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .cv_body {
+        font-size: 1.5vw;
+    }
+}
+
+@media (max-width: 500px) {
+    .travels_body {
+        background: url("https://raw.githubusercontent.com/HydreigonGuy/my_website/refs/heads/images/images/travels/korea/daegu/IMG20230822174437.jpg");
+        background-size: 100vh;
+    }
+}
