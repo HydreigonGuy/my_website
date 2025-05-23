@@ -32,7 +32,6 @@ body {
 .travels_body {
     background: url("https://raw.githubusercontent.com/HydreigonGuy/my_website/refs/heads/images/images/travels/japan/yokohama/IMG20240220122833.jpg");
     background-size: cover;
-    background-color: black;
 }
 
 .cv_body {
@@ -352,6 +351,6 @@ body {
 
 @media (max-width: 800px) {
     .travels_body {
-        background-size: initial;
+        background-size: 100lvh;
     }
 }
