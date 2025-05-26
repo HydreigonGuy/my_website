@@ -403,3 +403,22 @@ function displayDocDB() {
             <a class="url" href="https://www.mongodb.com/" target="_blank">MongoDB official website</a>
     `
 }
+
+function displayDocGitlabApi() {
+    document.getElementById("doc_contents").innerHTML = `
+            <h1>DevOps - Gitlab API</h1>
+            <h3>Create file</h3>
+            <p>POST {GITLAB_URL}/api/v4/projects/{PROJECT_ID}/repository/files/{FILENAME}</p>
+            <p>Data: {"branch": ... , "content": ... , "commit_message": ... }</p>
+            <h3>Update file</h3>
+            <p>PUT {GITLAB_URL}/api/v4/projects/{PROJECT_ID}/repository/files/{FILENAME}</p>
+            <p>Data: {"branch": ... , "content": ... , "commit_message": ... }</p>
+            <h3>Get file</h3>
+            <p>GET {GITLAB_URL}/api/v4/projects/{PROJECT_ID}/repository/files/{FILENAME}?ref={BRANCH_NAME}</p>
+            <h3>Create branch</h3>
+            <p>POST {GITLAB_URL}/api/v4/projects/{PROJECT_ID}/repository/branches?ref={REF_BRANCH}&branch={NEW_BRANCH}</p>
+            <h3>Launch pipeline</h3>
+            <p>POST {GITLAB_URL}/api/v4/projects/{PROJECT_ID}/trigger/pipeline</p>
+            <p>Data: {"token": ... , "ref": ... , "variables[{PIPELINE_VARIABLE}]": ... }</p>
+    `
+}
