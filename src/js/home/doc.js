@@ -35,9 +35,53 @@ const docker_doc_map = {
         "eng":"Or you can use Docker Compose for an already existing image",
         "fr":"Ou vous pouvez utiliser Docker Compose pour une image qui existe déjà"
     },
-    "":{
-        "eng":"",
-        "fr":""
+    "to_build_docker_image":{
+        "eng":"To build a docker image",
+        "fr":"Pour construire une image docker"
+    },
+    "build_image_aditional_info":{
+        "eng":"In the command above, <b>.</b> is the path to the dockerfile.",
+        "fr":"Dans la commande ci dessus, <b>.</b> est le chemin vers le dockerfile."
+    },
+    "to_run_docker_image":{
+        "eng":"Once built, docker will give you the image's ID that you can then run in a container with",
+        "fr":"Une fois construite, docker vous montrera l'ID de l'image que vous pouvez lancer avec"
+    },
+    "to_docker_image_ls":{
+        "eng":"You can also get the ID and a lot more info running",
+        "fr":"Vous pouvez aussi récupérer l'ID et d'autres informations en lançant"
+    },
+    "to_docker_ps":{
+        "eng":"To kill a docker container, get it's container ID with",
+        "fr":"Pour tuer un conteneur, retrouvez son ID avec"
+    },
+    "to_docker_kill":{
+        "eng":"Then you can kill it with",
+        "fr":"Puis tuez le avec"
+    },
+    "cleaning_up":{
+        "eng":"Cleaning Up",
+        "fr":"Nettoyage"
+    },
+    "to_docker_image_prune":{
+        "eng":"Docker Images can take up a lot of space on a server, make sure you regularly remove unused images with",
+        "fr":"Les images Docker peuvent prendre beaucoup de place, notoyez les régulièrement avec"
+    },
+    "building_for_cpu_types":{
+        "eng":"Building images for different CPU types",
+        "fr":"Construire des images pour des types de CPU différents"
+    },
+    "buildx_intro":{
+        "eng":"You can use docker buildx to build images for different CPU types, if you wish to run a docker image on something that doesn't use a normal CPU architecture, like a raspberry pi for example.",
+        "fr":"Vous pouvez utiliser docker buildx pour construire des images pour des types de CPU différents, si vous voullez lancer une image docker sur une machine qui n'utilise pas une architechture de CPU normalle, comme un raspberry pi par example."
+    },
+    "install_buildx":{
+        "eng":"You can install it by running",
+        "fr":"Vous pouvez l'installer en lançant"
+    },
+    "to_use_buildx":{
+        "eng":"And build and push the image with this command",
+        "fr":"Puis construire et pousser l'image avec cette commande"
     }
 }
 
@@ -86,54 +130,54 @@ function displayDocDocker() {
         &emsp;certs:\
     </p>\
     <h3>Docker</h3>\
-    <p>\
-        To build a docker image:\
+    <p>'
+    + docker_doc_map.to_build_docker_image[lang] + ':\
     </p>\
     <p class="doc_code_segment">\
         sudo docker build .\
     </p>\
-    <p>\
-        In the command above, <b>.</b> is the path to the dockerfile.\
-        Once built, docker will give you the image\'s ID that you can then run in a container with:\
+    <p>'
+    + docker_doc_map.build_image_aditional_info[lang] + "<br>"
+    + docker_doc_map.to_build_docker_image[lang] + ':\
     </p>\
     <p class="doc_code_segment">\
         sudo docker run IMAGE_ID\
     </p>\
-    <p>\
-        You can also get the ID and a lot more info running:\
+    <p>'
+    + docker_doc_map.to_docker_image_ls[lang] + ':\
     </p>\
     <p class="doc_code_segment">\
         sudo docker image ls\
     </p>\
-    <p>\
-        To kill a docker container, get it\'s container ID with:\
+    <p>'
+    + docker_doc_map.to_docker_ps[lang] + ':\
     </p>\
     <p class="doc_code_segment">\
         sudo docker ps\
     </p>\
-    <p>\
-        Then you can kill it with:\
+    <p>'
+    + docker_doc_map.to_docker_kill[lang] + ':\
     </p>\
     <p class="doc_code_segment">\
         sudo docker kill CONTAINER_ID\
     </p>\
-    <h3>Cleaning Up</h3>\
-    <p>\
-        Docker Images can take up a lot of space on a server, make sure you regularly remove unused images with:\
+    <h3>' + docker_doc_map.cleaning_up[lang] + '</h3>\
+    <p>'
+    + docker_doc_map.to_docker_image_prune[lang] + ':\
     </p>\
     <p class="doc_code_segment">\
         sudo docker image prune\
     </p>\
-    <h3>Building images for different CPU types</h3>\
-    <p>\
-        You can use docker buildx to build images for different CPU types, if you wish to run a docker image on something that doesn\'t use a normal CPU architecture, like a raspberry pi for example.\
-        You can install it by running:\
+    <h3>' + docker_doc_map.building_for_cpu_types[lang] + '</h3>\
+    <p>'
+    + docker_doc_map.buildx_intro[lang] + '<br>'
+    + docker_doc_map.install_buildx[lang] + ':\
     </p>\
     <p class="doc_code_segment">\
         sudo apt install docker-buildx\
     </p>\
-    <p>\
-        And build and push the image with this command:\
+    <p>'
+    + docker_doc_map.to_use_buildx[lang] + ':\
     </p>\
     <p class="doc_code_segment">\
         sudo docker buildx build -t <b>image name</b>  --progress plain --platform linux/amd64,linux/arm/v7,linux/arm64 --push .\
