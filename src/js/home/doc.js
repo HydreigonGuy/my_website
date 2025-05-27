@@ -1,18 +1,53 @@
 
+const docker_doc_map = {
+    "intro":{
+        "eng":"Docker is a tool to create, handle and run containers.",
+        "fr":"Docker est un outil pour créer, gérer, et lancer des conteneurs."
+    },
+    "docker_compose_intro":{
+        "eng":"Docker Compose is a tool to help easily handle docker images.",
+        "fr":"Docker Compose est un outil pour facilement gérer les images docker."
+    },
+    "to_build_image":{
+        "eng":"To build the image",
+        "fr":"Pour construire l'image"
+    },
+    "to_run_image":{
+        "eng":"To run the image",
+        "fr":"Pour lancer l'image"
+    },
+    "to_run_rebuilding":{
+        "eng":"To run the image while rebuilding the image (to update the files / dependencies)",
+        "fr":"Pour lancer l'image en reconstruisant l'image (pour mettre à jour les fichiers / dépendences)"
+    },
+    "docker_compose_file":{
+        "eng":"Docker Compose is controlled by the docker-compose.yaml file. Here is an example file",
+        "fr":"Docker Compose est controlé par un fichier docker-compose.yaml. Voici un example"
+    },
+    "docker_compose_file_existing_image":{
+        "eng":"Or you can use Docker Compose for an already existing image",
+        "fr":"Ou vous pouvez utiliser Docker Compose pour une image qui existe déjà"
+    },
+    "":{
+        "eng":"",
+        "fr":""
+    }
+}
+
 function displayDocDocker() {
     document.getElementById("doc_contents").innerHTML = '\
-    <h1>DevOps - Docker</h1>\
-    Docker is a tool to create, handle and run containers.\
-    <h3>Docker Compose</h3>\
-    Docker Compose is a tool to help easily handle docker images.\
-    <br>\
-    To build the image:\
-    <p class="doc_code_segment">sudo docker-compose build</p>\
-    To run the image:\
-    <p class="doc_code_segment">sudo docker-compose up</p>\
-    To run the image while rebuilding the image (to update the files / dependencies):\
-    <p class="doc_code_segment">sudo docker-compose up --build</p>\
-    Docker Compose is controlled by the docker-compose.yaml file. Here is an example file:\
+    <h1>DevOps - Docker</h1>'
+    + docker_doc_map.intro[lang]
+    + '<h3>Docker Compose</h3>'
+    + docker_doc_map.docker_compose_intro[lang]
+    + '<br>'
+    + docker_doc_map.to_build_image[lang] + ':\
+    <p class="doc_code_segment">sudo docker-compose build</p>'
+    + docker_doc_map.to_run_image[lang] + ':\
+    <p class="doc_code_segment">sudo docker-compose up</p>'
+    + docker_doc_map.to_run_rebuilding[lang] + ':\
+    <p class="doc_code_segment">sudo docker-compose up --build</p>'
+    + docker_doc_map.docker_compose_file[lang] + ':\
     <p class="doc_file_segment">\
         version: \'3\'<br/>\
         services:<br/>\
@@ -25,8 +60,8 @@ function displayDocDocker() {
         &emsp;&emsp;volumes:<br/>\
         &emsp;&emsp;&emsp;- ./src:/usr/src/app/\
     </p>\
-    <p>\
-        Or you can une Docker Compose for an already existing image:\
+    <p>'
+    + docker_doc_map.docker_compose_file_existing_image[lang] + ':\
     </p>\
     <p class="doc_file_segment">\
         version: \'3\'<br/>\
