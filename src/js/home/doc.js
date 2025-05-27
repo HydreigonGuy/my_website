@@ -403,3 +403,45 @@ function displayDocDB() {
             <a class="url" href="https://www.mongodb.com/" target="_blank">MongoDB official website</a>
     `
 }
+
+const gitlab_api_doc_map = {
+    "create_file":{
+        "eng":"Create file",
+        "fr":"Créer un fichier"
+    },
+    "update_file":{
+        "eng":"Update file",
+        "fr":"Mettre un fichier à jour"
+    },
+    "get_file":{
+        "eng":"Get file",
+        "fr":"Récupérer un fichier"
+    },
+    "create_branch":{
+        "eng":"Create branch",
+        "fr":"Créer une branche"
+    },
+    "launch_pipeline":{
+        "eng":"Launch pipeline",
+        "fr":"Lancer une pipeline"
+    }
+}
+
+function displayDocGitlabApi() {
+    document.getElementById("doc_contents").innerHTML = `
+            <h1>DevOps - Gitlab API</h1>
+            <h3>` + gitlab_api_doc_map.create_file[lang] + `</h3>
+            <p>POST {GITLAB_URL}/api/v4/projects/{PROJECT_ID}/repository/files/{FILENAME}</p>
+            <p>Data: {"branch": ... , "content": ... , "commit_message": ... }</p>
+            <h3>` + gitlab_api_doc_map.update_file[lang] + `</h3>
+            <p>PUT {GITLAB_URL}/api/v4/projects/{PROJECT_ID}/repository/files/{FILENAME}</p>
+            <p>Data: {"branch": ... , "content": ... , "commit_message": ... }</p>
+            <h3>` + gitlab_api_doc_map.get_file[lang] + `</h3>
+            <p>GET {GITLAB_URL}/api/v4/projects/{PROJECT_ID}/repository/files/{FILENAME}?ref={BRANCH_NAME}</p>
+            <h3>` + gitlab_api_doc_map.create_branch[lang] + `</h3>
+            <p>POST {GITLAB_URL}/api/v4/projects/{PROJECT_ID}/repository/branches?ref={REF_BRANCH}&branch={NEW_BRANCH}</p>
+            <h3>` + gitlab_api_doc_map.launch_pipeline[lang] + `</h3>
+            <p>POST {GITLAB_URL}/api/v4/projects/{PROJECT_ID}/trigger/pipeline</p>
+            <p>Data: {"token": ... , "ref": ... , "variables[{PIPELINE_VARIABLE}]": ... }</p>
+    `
+}

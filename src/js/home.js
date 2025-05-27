@@ -279,6 +279,7 @@ function getDocPage() {
             <button onclick="displayDocPrometheus()" class="doc_url">Prometheus</button>\
             <button onclick="displayDocCertbot()" class="doc_url">Certbot</button>\
             <button onclick="displayDocDB()" class="doc_url">DB admin</button>\
+            <button onclick="displayDocGitlabApi()" class="doc_url">Gitlab API</button>\
             <!--h3>' + doc_page_map.korean_title[lang] + '</h3-->\
         </div><div id="doc_contents" class="doc_contents">\
             <p>' + doc_page_map.description[lang] + '</p>\
