@@ -1,4 +1,11 @@
 
+const common_doc_map = {
+    "usefull_links":{
+        "eng":"Useful links",
+        "fr":"Liens utiles"
+    }
+}
+
 const docker_doc_map = {
     "intro":{
         "eng":"Docker is a tool to create, handle and run containers.",
@@ -131,7 +138,7 @@ function displayDocDocker() {
     <p class="doc_code_segment">\
         sudo docker buildx build -t <b>image name</b>  --progress plain --platform linux/amd64,linux/arm/v7,linux/arm64 --push .\
     </p>\
-    <h3>Useful links</h3>\
+    <h3>' + common_doc_map.usefull_links[lang] + '</h3>\
     <a href="https://www.docker.com/" target="_blank">Docker Website</a>\
     <a href="https://hub.docker.com/" target="_blank">Docker Hub</a>\
     ';
@@ -238,7 +245,7 @@ function displayDocTraefik() {
                 &emsp;web:<br/>
                 &emsp;&emsp;external: true
             </p>
-            <h3>Useful links</h3>
+            <h3>` + common_doc_map.usefull_links[lang] + `</h3>
             <a class="url" href="https://traefik.io/traefik/" target="_blank">Traefik Website</a>
             <a class="url" href="https://github.com/traefik/traefik" target="_blank">Traefik Github</a>
             <a class="url" href="https://www.youtube.com/watch?v=wLrmmh1eI94&ab_channel=ChristianLempa" target="_blank">Youtube Traefik Tutorial I like</a>
@@ -313,7 +320,7 @@ function displayDocPrometheus() {
             <p class='doc_code_segment'>
             sudo docker run -d --name=grafana -p 3456:3000 grafana/grafana
             </p>
-            <h3>Useful links</h3>
+            <h3>` + common_doc_map.usefull_links[lang] + `</h3>
             <a class="url" href="https://prometheus.io/" target="_blank">Prometheus official website</a>
             <a class="url" href="https://grafana.com/" target="_blank">Grafana official website</a>
             <a class="url" href="https://github.com/google/cadvisor" target="_blank">Cadvisor Github</a>
@@ -356,7 +363,7 @@ function displayDocCertbot() {
             <p class='doc_code_segment'>
             certbot renew
             </p>
-            <h3>Useful links</h3>
+            <h3>` + common_doc_map.usefull_links[lang] + `</h3>
             <a class="url" href="https://certbot.eff.org/" target="_blank">Certbot official website</a>
             <a class="url" href="https://letsencrypt.org/" target="_blank">Let's Encrypt official website</a>
     `
@@ -433,7 +440,7 @@ function displayDocDB() {
             <p class='doc_code_segment'>
             mongorestore -u username -p password $PATH_TO_BACKUP
             </p>
-            <h3>Useful links</h3>
+            <h3>` + common_doc_map.usefull_links[lang] + `</h3>
             <a class="url" href="https://www.postgresql.org/" target="_blank">Postgres official website</a>
             <a class="url" href="https://www.mongodb.com/" target="_blank">MongoDB official website</a>
     `
