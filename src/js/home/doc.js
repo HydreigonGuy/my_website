@@ -188,7 +188,6 @@ function displayDocDocker() {
     ';
 }
 
-
 const traefik_doc_map = {
     "info":{
         "eng":"Traefik is a tool for routing, load balancing, and ssl certificate handelling, amongst other things.",
@@ -217,23 +216,7 @@ const traefik_doc_map = {
     "to_service_docker_compose":{
         "eng":"Here is an example docker-compose.yaml file that automatically sets up your service with traefik:",
         "fr":"Voici un example de docker-compose.yaml pour lier votre service au traefik:"
-    },
-    "":{
-        "eng":"",
-        "fr":""
-    },
-    "":{
-        "eng":"",
-        "fr":""
-    },
-    "":{
-        "eng":"",
-        "fr":""
-    },
-    "":{
-        "eng":"",
-        "fr":""
-    },
+    }
 }
 
 function displayDocTraefik() {
@@ -335,23 +318,46 @@ function displayDocTraefik() {
     `;
 }
 
+const prometheus_doc_map = {
+    "info":{
+        "eng":"Prometheus is a monitoring tool, it helps you monitor your server(s). You can link it to grafana to see nice graphs to easily visualize everything.",
+        "fr":"Prometheus est un outil de monitoring qui surveille vos serveur(s). Vous pouvez le lier à grafana pour voir des graphiques pour plus facilement visualiser les informations."
+    },
+    "to_deploy":{
+        "eng":"Prometheus is very easy to deploy, just run:",
+        "fr":"Prometheus est très facile à déployer, il suffis de lancer:"
+    },
+    "to_pometheus_yaml":{
+        "eng":"You'll need to give it a <b>prometheus.yml</b> file to configure the prometheus. Here is an example prometheus.yml file:",
+        "fr":"Vous devrez donner un fichier <b>prometheus.yml</b> pour configurer prometheus. Voici un example de fichier promatheus.yaml:"
+    },
+    "services_info":{
+        "eng":"Prometheus by itself can't access anything, you need to configure it and hook it up to things it can track.",
+        "fr":"Prometheus n'accéde à rien tout seul, il faut le configurer et le lier à des processus qu'il peut traquer."
+    },
+    "to_node_exporter":{
+        "eng":"<b>Node exporter</b> is a tool to allow you to see a lot of usefull informations about your system. To launch it, just run:",
+        "fr":"<b>Node exporter</b> est un outil qui permets de retrouver plein d'informations à propos du systéme. Pour le faire tourner, lancez:"
+    },
+    "to_cadvisor":{
+        "eng":"<b>Cadvisor</b> allows you to track docker images and deployments. To launch it, just run:",
+        "fr":"<b>Cadvisor</b> nous permets de suivre les images docker de notre systéme. Pour le faire tourner, lancez:"
+    },
+    "to_grafana":{
+        "eng":"You can use Grafana to visualize the data that prometheus has collected, it's also very easy to deploy, just run:",
+        "fr":"Vous pouvez utiliser Grafana pour visualiser les données que prometheus à récupéré, c'est aussi facile à déployer:"
+    }
+}
+
 function displayDocPrometheus() {
     document.getElementById("doc_contents").innerHTML = `
             <h1>DevOps - Prometheus</h1>
-            <p>
-                Prometheus is a monitoring tool, it helps you monitor your server(s).
-                You can link it to grafana to see nice graphs to easily visualize everything.
-            </p>
-            <p>
-                Prometheus is very easy to deploy, just run:
-            </p>
+            <p>` + prometheus_doc_map.info[lang] + `</p>
+            <p>` + prometheus_doc_map.to_deploy[lang] + `</p>
             <p class='doc_code_segment'>
             sudo docker run -d --name prometheus -p 9090:9090 -v <b>PATH</b>/prometheus.yml:/etc/prometheus/prometheus.yml prom/prometheus
             </p>
-            <p>
-                You'll need to give it a <b>prometheus.yml</b> file to configure the prometheus.
-                Here is an example prometheus.yml file:
-            </p>
+            <p>` + prometheus_doc_map.to_pometheus_yaml[lang] + `</p>
             <p class='doc_file_segment'>
                 global:<br/>
                 &emsp;scrape_interval: 5s<br/>
@@ -368,19 +374,12 @@ function displayDocPrometheus() {
                 &emsp;&emsp;static_configs:<br/>
                 &emsp;&emsp;&emsp;- targets: ['192.168.1.124:9018']
             </p>
-            <p>
-                Prometheus by itself can't access anything, you need to configure it and hook it up to things it can track.
-            </p>
-            <p>
-                <b>Node exporter</b> is a tool to allow you to see a lot of usefull informations about your system.
-                To launch it, just run:
-            </p>
+            <p>` + prometheus_doc_map.services_info[lang] + `</p>
+            <p>` + prometheus_doc_map.to_node_exporter[lang] + `</p>
             <p class='doc_code_segment'>
             sudo docker run -d --net="host" --pid="host" -v "/:/host:ro,rslave" quay.io/prometheus/node-exporter:latest --path.rootfs=/host
             </p>
-            <p>
-                <b>Cadvisor</b> allows you to track docker images and deployments. To launch it, just run:
-            </p>
+            <p>` + prometheus_doc_map.to_cadvisor[lang] + `</p>
             <p class='doc_code_segment'>
             sudo docker run
             --volume=/:/rootfs:ro
@@ -396,9 +395,7 @@ function displayDocPrometheus() {
             gcr.io/cadvisor/cadvisor:v0.47.2
             </p>
             <h3>Grafana</h3>
-            <p>
-                You can use Grafana to visualize the data that prometheus has collected, it's also very easy to deploy, just run:
-            </p>
+            <p>` + prometheus_doc_map.to_grafana[lang] + `</p>
             <p class='doc_code_segment'>
             sudo docker run -d --name=grafana -p 3456:3000 grafana/grafana
             </p>
