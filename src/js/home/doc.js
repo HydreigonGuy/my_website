@@ -188,14 +188,60 @@ function displayDocDocker() {
     ';
 }
 
+
+const traefik_doc_map = {
+    "info":{
+        "eng":"Traefik is a tool for routing, load balancing, and ssl certificate handelling, amongst other things.",
+        "fr":"Traefik est un outil qui route, balance les charges, gére le ssl, et d'autres fonctionalitées."
+    },
+    "setup_info":{
+        "eng":"The easiest way to set it up is through docker.",
+        "fr":"La façon la plus facile de le metre en place est à travers docker."
+    },
+    "to_setup":{
+        "eng":"Create a <b>docker-compose.yaml</b> file with the following contents:",
+        "fr":"Créez un fichier <b>docker-compose.yaml</b> et remplissez le ainsi:"
+    },
+    "dashboard_note":{
+        "eng":"Note that here we expose the port 8080, this is to expose an unprotected dashboard, this is usefull for testing, but should not be used in a production environment.",
+        "fr":"Remarquez que nous exposons le port 8080, ceci expose un dashboard non-protégé qui est utile pour tester, mais ne devrais pas être exposé en production."
+    },
+    "to_traefik_yml":{
+        "eng":"You should replace \"PATH_TO_CONF_FOLDER\" with a path to a folder that will contain a <b>traefik.yaml</b> file with the following contents:",
+        "fr":"Vous devez remplacer \"PATH_TO_CONF_FOLDER\" par un fichier qui contiens un fichier <b>traefik.yaml</b> remplis ainsi:"
+    },
+    "running_note":{
+        "eng":"Once you ran the traefik docker-compose, it's running on your server, now you can set it up with your services.",
+        "fr":"Une fois le docker compose lancé, ça tourne sur votre serveur, vous pouvez maintenant le lier à vos services."
+    },
+    "to_service_docker_compose":{
+        "eng":"Here is an example docker-compose.yaml file that automatically sets up your service with traefik:",
+        "fr":"Voici un example de docker-compose.yaml pour lier votre service au traefik:"
+    },
+    "":{
+        "eng":"",
+        "fr":""
+    },
+    "":{
+        "eng":"",
+        "fr":""
+    },
+    "":{
+        "eng":"",
+        "fr":""
+    },
+    "":{
+        "eng":"",
+        "fr":""
+    },
+}
+
 function displayDocTraefik() {
     document.getElementById("doc_contents").innerHTML = `
             <h1>DevOps - Traefik</h1>
-            <p>
-            Traefik is a tool for routing, load balancing, and ssl certificate handelling, amongst other things.
-            </p>
-            <p>The easiest way to set it up is through docker.</p>
-            <p>Create a <b>docker-compose.yaml</b> file with the following contents:</p>
+            <p>` + traefik_doc_map.info[lang] + `</p>
+            <p>` + traefik_doc_map.setup_info[lang] + `</p>
+            <p>` + traefik_doc_map.to_setup[lang] + `</p>
             <p class='doc_file_segment'>
             version: '3'<br/>
             <br/>
@@ -222,12 +268,8 @@ function displayDocTraefik() {
             &emsp;web:<br/>
             &emsp;&emsp;external: true
             </p>
-            <p>
-                Note that here we expose the port 8080, this is to expose an unprotected dashboard, this is usefull for testing, but should not be used in a production environment.
-            </p>
-            <p>
-                You should replace "PATH_TO_CONF_FOLDER" with a path to a folder that will contain a <b>traefik.yaml</b> file with the following contents:
-            </p>
+            <p>` + traefik_doc_map.dashboard_note[lang] + `</p>
+            <p>` + traefik_doc_map.to_traefik_yml[lang] + `</p>
             <p class='doc_file_segment'>
                 global:<br/>
                 &emsp;checkNewVersion: true<br/>
@@ -262,12 +304,8 @@ function displayDocTraefik() {
                 &emsp;docker:<br/>
                 &emsp;&emsp;exposedByDefault: false
             </p>
-            <p>
-                Once you ran the traefik docker-compose, it's running on your server, now you can set it up with your services.
-            </p>
-            <p>
-                Here is an example docker-compose.yaml file that automatically sets up your service with traefik.
-            </p>
+            <p>` + traefik_doc_map.running_note[lang] + `</p>
+            <p>` + traefik_doc_map.to_service_docker_compose[lang] + `</p>
             <p class='doc_file_segment'>
                 version: '3'<br/>
                 <br/>
