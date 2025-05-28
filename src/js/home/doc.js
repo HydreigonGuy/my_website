@@ -407,38 +407,47 @@ function displayDocPrometheus() {
     `
 }
 
+const certbot_doc_map = {
+    "info":{
+        "eng":"Certbot is used to generate and handle SSL certificates. This can also be done automatically with traefik, it's recomended to uses it instead of this. You should only really use this if you want to know more about generation SSL certificates.",
+        "fr":"Certbot est utilisé pour générer et gérer des certificats SSL. Ceci est faisable automatiquement avec traefik, je conseil d'utiliser traefik plutot que ça. Cette méthode est utile pour comprendre le fonctionnement de la génération d'un certificat SSL."
+    },
+    "before_info":{
+        "eng":"This is for a service running with nginx. If you wish to use this with something other than NGINX, I advise against it but you can look at the documentation to see how to go about it. You need to have your service linked to a domain name, you cannot generate an SSL certificate for an IP addresse. Make sure your service is available when you try to generate the ssl certificate. Make sure the port 443 is exposed and available.",
+        "fr":"Ceci est un service nginx. Le service doit étre liée à un nom de domaine, on ne peux pas générer un certificat SSL pour une adresse IP. Assurez vous que le service est disponible quand vous générez le certificat SSL et que le port 443 est disponible."
+    },
+    "gen_ssl_cert":{
+        "eng":"Generate SSL Certificate",
+        "fr":"Générer un Certificat SSL"
+    },
+    "restart_nginx":{
+        "eng":"Restart NGINX",
+        "fr":"Redémarer NGINX"
+    },
+    "to_renew":{
+        "eng":"Now your certificate should be generated and your website should have automatically been changed to port 443. A certificate lasts about 3 months, and you'll need to renew it with this command:",
+        "fr":"Votre certificat devrait être généré et votre site web devrais maintenant touirner sur le port 443. Un certificat dure 3 mois, pour le renouveller, lancez cette commande:"
+    }
+}
 function displayDocCertbot() {
     document.getElementById("doc_contents").innerHTML = `
             <h1>DevOps - Certbot and Let's Encrypt</h1>
-            <p>
-                Certbot is used to generate and handle SSL certificates.
-                This can also be done automatically with <a class="url inline" href="/devops/traefik">traefik</a>, it's recomended to uses it instead of this.
-                You should only really use this if you want to know more about generation SSL certificates.
+            <p>` + certbot_doc_map.info[lang] + `
             </p>
-            <p>
-                This is for a service running with nginx.
-                If you wish to use this with something other than NGINX, I advise against it but you can look at the documentation to see how to go about it.
-                You need to have your service linked to a domain name,
-                you cannot generate an SSL certificate for an IP addresse.
-                Make sure your service is available when you try to generate the ssl certificate.
-                Make sure the port 443 is exposed and available.
-            </p>
+            <p>` + certbot_doc_map.before_info[lang] + `</p>
             <h3>Installation</h3>
             <p class='doc_code_segment'>
             sudo apt install certbot python3-certbot-nginx
             </p>
-            <h3>Generate SSL Certificate</h3>
+            <h3>`+ certbot_doc_map.gen_ssl_cert[lang] + `</h3>
             <p class='doc_code_segment'>
             certbot --nginx --agree-tos --no-eff-email -m <b>YOUR_EMAIL_ADDRESS</b> -d <b>YOUR_DOMAIN_NAME</b>
             </p>
-            <h3>Restart NGINX</h3>
+            <h3>` + certbot_doc_map.restart_nginx[lang] + `</h3>
             <p class='doc_code_segment'>
             nginx -t && nginx -s reload
             </p>
-            <p>
-                Now your certificate should be generated and your website should have automatically been changed to port 443.
-                A certificate lasts about 3 months, and you'll need to renew it with this command:
-            </p>
+            <p>` + certbot_doc_map.to_renew[lang] + `</p>
             <p class='doc_code_segment'>
             certbot renew
             </p>
