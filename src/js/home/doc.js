@@ -429,6 +429,7 @@ const certbot_doc_map = {
         "fr":"Votre certificat devrait être généré et votre site web devrais maintenant touirner sur le port 443. Un certificat dure 3 mois, pour le renouveller, lancez cette commande:"
     }
 }
+
 function displayDocCertbot() {
     document.getElementById("doc_contents").innerHTML = `
             <h1>DevOps - Certbot and Let's Encrypt</h1>
@@ -457,22 +458,45 @@ function displayDocCertbot() {
     `
 }
 
+const db_admin_doc_map = {
+    "info":{
+        "eng":"Databases are important when deploying services. Here are databases, how to deploy them, and usefull commands to know:",
+        "fr":"Les bases de données sont importantes en déployant des services. Voici des bases de données, comment les déployer, et des commandes à savoir:"
+    },
+    "postgres_body":{
+        "eng":"Postgres is an SQL based database, it's made for storing structured data and it does it really well. You should use this when you have structured data, and it's very effective for linking objects together. You should not use this with unstructured data. Everytime you want to change a data structure, you will have to migrate the database. When filling the database, it is faster to make few requests that each write / read a lot of data than a lot of small requests.",
+        "fr":"Postgres est une base de données SQL, faite pour stoquer des données structurées. Si vos données sont structurées, utilisez postgres, c'est très efficace à lier et retrouver les données stoquées. Si vos données ne sont pas structurées, une solution no-SQL est plus approprié. Après un changement dans la structure des données, il faut migrer la base de données. En remplissant ou récupérant des données de la base de donnée, c'est plus efficace de faire une requéte bulk plutot que plusieures requétes individuelles."
+    },
+    "to_postgres":{
+        "eng":"To launch, create a <b>docker-compose.yaml</b> with the following contents:",
+        "fr":"Pour lancer, créer un fichier <b>docker-compose.yaml</b> avec ces données:"
+    },
+    "mongodb_body":{
+        "eng":"MongoDB is not SQL based, so you don't need to structure data to store it. It stores data as JSON.",
+        "fr":"MongoDB n'est pas basé sur le SQL, donc ce n'est pas à utiliser pour stoquer des données structurées. Les données sont stoquées en tant qu'objets JSON."
+    },
+    "to_mongodb":{
+        "eng":"To launch, create a <b>docker-compose.yaml</b> with the following contents:",
+        "fr":"Pour lancer, créer un fichier <b>docker-compose.yaml</b> avec ces données:"
+    },
+    "to_backup":{
+        "eng":"To create a backup:",
+        "fr":"Pour créer une sauvegarde:"
+    },
+    "to_restore_backup":{
+        "eng":"To restore a backup:",
+        "fr":"Pour revenir à une sauvegarde:"
+    },
+}
+
 function displayDocDB() {
     document.getElementById("doc_contents").innerHTML = `
             <h1>DevOps - Databases</h1>
-            <p>
-                Databases are important when deploying servers.
-                Here are databases, how to deploy them, and usefull commands to know:
-            </p>
+            <p>` + db_admin_doc_map.info[lang] + `</p>
             <h3>Postgres</h3>
-            <p>
-                Postgres is an SQL based database, it's made for storing structured data and it does it really well.
-                You should use this when you have structured data, and it's very effective for linking objects together.
-                You should not use this with unstructured data.
-                Everytime you want to change a data structure, you will have to migrate the database.
-                When filling the database, it is faster to make few requests that each write / read a lot of data than a lot of small requests.
+            <p>` + db_admin_doc_map.postgres_body[lang] + `
             </p>
-            <p>To launch, create a <b>docker-compose.yaml</b> with the following contents:</p>
+            <p>` + db_admin_doc_map.to_postgres[lang] + `</p>
             <p class='doc_file_segment'>
                 version: '3.1'<br/>
                 services:<br/>
@@ -491,11 +515,8 @@ function displayDocDB() {
                 &emsp;&emsp;&emsp;- 8080:8080
             </p>
             <h3>MongoDB</h3>
-            <p>
-                MongoDB is not SQL based, so you don't need to structure data to store it.
-                It stores data as JSON.
-            </p>
-            <p>To launch, create a <b>docker-compose.yaml</b> with the following contents:</p>
+            <p>` + db_admin_doc_map.mongodb_body[lang] + `</p>
+            <p>` + db_admin_doc_map.to_mongodb[lang] + `</p>
             <p class='doc_file_segment'>
                 version: '3.1'<br/>
                 services:<br/>
@@ -518,13 +539,11 @@ function displayDocDB() {
                 &emsp;&emsp;&emsp;ME_CONFIG_MONGODB_ADMINPASSWORD: example<br/>
                 &emsp;&emsp;&emsp;ME_CONFIG_MONGODB_URL: mongodb://root:example@mongo:27017/
             </p>
-            <p>
-                To create a backup:
-            </p>
+            <p>` + db_admin_doc_map.to_backup[lang] + `</p>
             <p class='doc_code_segment'>
             mongodump -u username -p password -o outpath
             </p>
-            <p>To restore a backup:</p>
+            <p>` + db_admin_doc_map.to_restore_backup[lang] + `</p>
             <p class='doc_code_segment'>
             mongorestore -u username -p password $PATH_TO_BACKUP
             </p>
