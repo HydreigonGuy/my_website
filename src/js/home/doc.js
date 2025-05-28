@@ -1,18 +1,104 @@
 
+const common_doc_map = {
+    "usefull_links":{
+        "eng":"Useful links",
+        "fr":"Liens utiles"
+    }
+}
+
+const docker_doc_map = {
+    "intro":{
+        "eng":"Docker is a tool to create, handle and run containers.",
+        "fr":"Docker est un outil pour créer, gérer, et lancer des conteneurs."
+    },
+    "docker_compose_intro":{
+        "eng":"Docker Compose is a tool to help easily handle docker images.",
+        "fr":"Docker Compose est un outil pour facilement gérer les images docker."
+    },
+    "to_build_image":{
+        "eng":"To build the image",
+        "fr":"Pour construire l'image"
+    },
+    "to_run_image":{
+        "eng":"To run the image",
+        "fr":"Pour lancer l'image"
+    },
+    "to_run_rebuilding":{
+        "eng":"To run the image while rebuilding the image (to update the files / dependencies)",
+        "fr":"Pour lancer l'image en reconstruisant l'image (pour mettre à jour les fichiers / dépendences)"
+    },
+    "docker_compose_file":{
+        "eng":"Docker Compose is controlled by the docker-compose.yaml file. Here is an example file",
+        "fr":"Docker Compose est controlé par un fichier docker-compose.yaml. Voici un example"
+    },
+    "docker_compose_file_existing_image":{
+        "eng":"Or you can use Docker Compose for an already existing image",
+        "fr":"Ou vous pouvez utiliser Docker Compose pour une image qui existe déjà"
+    },
+    "to_build_docker_image":{
+        "eng":"To build a docker image",
+        "fr":"Pour construire une image docker"
+    },
+    "build_image_aditional_info":{
+        "eng":"In the command above, <b>.</b> is the path to the dockerfile.",
+        "fr":"Dans la commande ci dessus, <b>.</b> est le chemin vers le dockerfile."
+    },
+    "to_run_docker_image":{
+        "eng":"Once built, docker will give you the image's ID that you can then run in a container with",
+        "fr":"Une fois construite, docker vous montrera l'ID de l'image que vous pouvez lancer avec"
+    },
+    "to_docker_image_ls":{
+        "eng":"You can also get the ID and a lot more info running",
+        "fr":"Vous pouvez aussi récupérer l'ID et d'autres informations en lançant"
+    },
+    "to_docker_ps":{
+        "eng":"To kill a docker container, get it's container ID with",
+        "fr":"Pour tuer un conteneur, retrouvez son ID avec"
+    },
+    "to_docker_kill":{
+        "eng":"Then you can kill it with",
+        "fr":"Puis tuez le avec"
+    },
+    "cleaning_up":{
+        "eng":"Cleaning Up",
+        "fr":"Nettoyage"
+    },
+    "to_docker_image_prune":{
+        "eng":"Docker Images can take up a lot of space on a server, make sure you regularly remove unused images with",
+        "fr":"Les images Docker peuvent prendre beaucoup de place, notoyez les régulièrement avec"
+    },
+    "building_for_cpu_types":{
+        "eng":"Building images for different CPU types",
+        "fr":"Construire des images pour des types de CPU différents"
+    },
+    "buildx_intro":{
+        "eng":"You can use docker buildx to build images for different CPU types, if you wish to run a docker image on something that doesn't use a normal CPU architecture, like a raspberry pi for example.",
+        "fr":"Vous pouvez utiliser docker buildx pour construire des images pour des types de CPU différents, si vous voullez lancer une image docker sur une machine qui n'utilise pas une architechture de CPU normalle, comme un raspberry pi par example."
+    },
+    "install_buildx":{
+        "eng":"You can install it by running",
+        "fr":"Vous pouvez l'installer en lançant"
+    },
+    "to_use_buildx":{
+        "eng":"And build and push the image with this command",
+        "fr":"Puis construire et pousser l'image avec cette commande"
+    }
+}
+
 function displayDocDocker() {
     document.getElementById("doc_contents").innerHTML = '\
-    <h1>DevOps - Docker</h1>\
-    Docker is a tool to create, handle and run containers.\
-    <h3>Docker Compose</h3>\
-    Docker Compose is a tool to help easily handle docker images.\
-    <br>\
-    To build the image:\
-    <p class="doc_code_segment">sudo docker-compose build</p>\
-    To run the image:\
-    <p class="doc_code_segment">sudo docker-compose up</p>\
-    To run the image while rebuilding the image (to update the files / dependencies):\
-    <p class="doc_code_segment">sudo docker-compose up --build</p>\
-    Docker Compose is controlled by the docker-compose.yaml file. Here is an example file:\
+    <h1>DevOps - Docker</h1>'
+    + docker_doc_map.intro[lang]
+    + '<h3>Docker Compose</h3>'
+    + docker_doc_map.docker_compose_intro[lang]
+    + '<br>'
+    + docker_doc_map.to_build_image[lang] + ':\
+    <p class="doc_code_segment">sudo docker-compose build</p>'
+    + docker_doc_map.to_run_image[lang] + ':\
+    <p class="doc_code_segment">sudo docker-compose up</p>'
+    + docker_doc_map.to_run_rebuilding[lang] + ':\
+    <p class="doc_code_segment">sudo docker-compose up --build</p>'
+    + docker_doc_map.docker_compose_file[lang] + ':\
     <p class="doc_file_segment">\
         version: \'3\'<br/>\
         services:<br/>\
@@ -25,8 +111,8 @@ function displayDocDocker() {
         &emsp;&emsp;volumes:<br/>\
         &emsp;&emsp;&emsp;- ./src:/usr/src/app/\
     </p>\
-    <p>\
-        Or you can une Docker Compose for an already existing image:\
+    <p>'
+    + docker_doc_map.docker_compose_file_existing_image[lang] + ':\
     </p>\
     <p class="doc_file_segment">\
         version: \'3\'<br/>\
@@ -44,72 +130,101 @@ function displayDocDocker() {
         &emsp;certs:\
     </p>\
     <h3>Docker</h3>\
-    <p>\
-        To build a docker image:\
+    <p>'
+    + docker_doc_map.to_build_docker_image[lang] + ':\
     </p>\
     <p class="doc_code_segment">\
         sudo docker build .\
     </p>\
-    <p>\
-        In the command above, <b>.</b> is the path to the dockerfile.\
-        Once built, docker will give you the image\'s ID that you can then run in a container with:\
+    <p>'
+    + docker_doc_map.build_image_aditional_info[lang] + "<br>"
+    + docker_doc_map.to_build_docker_image[lang] + ':\
     </p>\
     <p class="doc_code_segment">\
         sudo docker run IMAGE_ID\
     </p>\
-    <p>\
-        You can also get the ID and a lot more info running:\
+    <p>'
+    + docker_doc_map.to_docker_image_ls[lang] + ':\
     </p>\
     <p class="doc_code_segment">\
         sudo docker image ls\
     </p>\
-    <p>\
-        To kill a docker container, get it\'s container ID with:\
+    <p>'
+    + docker_doc_map.to_docker_ps[lang] + ':\
     </p>\
     <p class="doc_code_segment">\
         sudo docker ps\
     </p>\
-    <p>\
-        Then you can kill it with:\
+    <p>'
+    + docker_doc_map.to_docker_kill[lang] + ':\
     </p>\
     <p class="doc_code_segment">\
         sudo docker kill CONTAINER_ID\
     </p>\
-    <h3>Cleaning Up</h3>\
-    <p>\
-        Docker Images can take up a lot of space on a server, make sure you regularly remove unused images with:\
+    <h3>' + docker_doc_map.cleaning_up[lang] + '</h3>\
+    <p>'
+    + docker_doc_map.to_docker_image_prune[lang] + ':\
     </p>\
     <p class="doc_code_segment">\
         sudo docker image prune\
     </p>\
-    <h3>Building images for different CPU types</h3>\
-    <p>\
-        You can use docker buildx to build images for different CPU types, if you wish to run a docker image on something that doesn\'t use a normal CPU architecture, like a raspberry pi for example.\
-        You can install it by running:\
+    <h3>' + docker_doc_map.building_for_cpu_types[lang] + '</h3>\
+    <p>'
+    + docker_doc_map.buildx_intro[lang] + '<br>'
+    + docker_doc_map.install_buildx[lang] + ':\
     </p>\
     <p class="doc_code_segment">\
         sudo apt install docker-buildx\
     </p>\
-    <p>\
-        And build and push the image with this command:\
+    <p>'
+    + docker_doc_map.to_use_buildx[lang] + ':\
     </p>\
     <p class="doc_code_segment">\
         sudo docker buildx build -t <b>image name</b>  --progress plain --platform linux/amd64,linux/arm/v7,linux/arm64 --push .\
     </p>\
-    <h3>Useful links</h3>\
+    <h3>' + common_doc_map.usefull_links[lang] + '</h3>\
     <a href="https://www.docker.com/" target="_blank">Docker Website</a>\
     <a href="https://hub.docker.com/" target="_blank">Docker Hub</a>\
     ';
 }
 
+const traefik_doc_map = {
+    "info":{
+        "eng":"Traefik is a tool for routing, load balancing, and ssl certificate handelling, amongst other things.",
+        "fr":"Traefik est un outil qui route, balance les charges, gére le ssl, et d'autres fonctionalitées."
+    },
+    "setup_info":{
+        "eng":"The easiest way to set it up is through docker.",
+        "fr":"La façon la plus facile de le metre en place est à travers docker."
+    },
+    "to_setup":{
+        "eng":"Create a <b>docker-compose.yaml</b> file with the following contents:",
+        "fr":"Créez un fichier <b>docker-compose.yaml</b> et remplissez le ainsi:"
+    },
+    "dashboard_note":{
+        "eng":"Note that here we expose the port 8080, this is to expose an unprotected dashboard, this is usefull for testing, but should not be used in a production environment.",
+        "fr":"Remarquez que nous exposons le port 8080, ceci expose un dashboard non-protégé qui est utile pour tester, mais ne devrais pas être exposé en production."
+    },
+    "to_traefik_yml":{
+        "eng":"You should replace \"PATH_TO_CONF_FOLDER\" with a path to a folder that will contain a <b>traefik.yaml</b> file with the following contents:",
+        "fr":"Vous devez remplacer \"PATH_TO_CONF_FOLDER\" par un fichier qui contiens un fichier <b>traefik.yaml</b> remplis ainsi:"
+    },
+    "running_note":{
+        "eng":"Once you ran the traefik docker-compose, it's running on your server, now you can set it up with your services.",
+        "fr":"Une fois le docker compose lancé, ça tourne sur votre serveur, vous pouvez maintenant le lier à vos services."
+    },
+    "to_service_docker_compose":{
+        "eng":"Here is an example docker-compose.yaml file that automatically sets up your service with traefik:",
+        "fr":"Voici un example de docker-compose.yaml pour lier votre service au traefik:"
+    }
+}
+
 function displayDocTraefik() {
     document.getElementById("doc_contents").innerHTML = `
             <h1>DevOps - Traefik</h1>
-            <p>
-            Traefik is a tool for routing, load balancing, and ssl certificate handelling, amongst other things.
-            </p>
-            <p>The easiest way to set it up is through docker.</p>
-            <p>Create a <b>docker-compose.yaml</b> file with the following contents:</p>
+            <p>` + traefik_doc_map.info[lang] + `</p>
+            <p>` + traefik_doc_map.setup_info[lang] + `</p>
+            <p>` + traefik_doc_map.to_setup[lang] + `</p>
             <p class='doc_file_segment'>
             version: '3'<br/>
             <br/>
@@ -136,12 +251,8 @@ function displayDocTraefik() {
             &emsp;web:<br/>
             &emsp;&emsp;external: true
             </p>
-            <p>
-                Note that here we expose the port 8080, this is to expose an unprotected dashboard, this is usefull for testing, but should not be used in a production environment.
-            </p>
-            <p>
-                You should replace "PATH_TO_CONF_FOLDER" with a path to a folder that will contain a <b>traefik.yaml</b> file with the following contents:
-            </p>
+            <p>` + traefik_doc_map.dashboard_note[lang] + `</p>
+            <p>` + traefik_doc_map.to_traefik_yml[lang] + `</p>
             <p class='doc_file_segment'>
                 global:<br/>
                 &emsp;checkNewVersion: true<br/>
@@ -176,12 +287,8 @@ function displayDocTraefik() {
                 &emsp;docker:<br/>
                 &emsp;&emsp;exposedByDefault: false
             </p>
-            <p>
-                Once you ran the traefik docker-compose, it's running on your server, now you can set it up with your services.
-            </p>
-            <p>
-                Here is an example docker-compose.yaml file that automatically sets up your service with traefik.
-            </p>
+            <p>` + traefik_doc_map.running_note[lang] + `</p>
+            <p>` + traefik_doc_map.to_service_docker_compose[lang] + `</p>
             <p class='doc_file_segment'>
                 version: '3'<br/>
                 <br/>
@@ -203,7 +310,7 @@ function displayDocTraefik() {
                 &emsp;web:<br/>
                 &emsp;&emsp;external: true
             </p>
-            <h3>Useful links</h3>
+            <h3>` + common_doc_map.usefull_links[lang] + `</h3>
             <a class="url" href="https://traefik.io/traefik/" target="_blank">Traefik Website</a>
             <a class="url" href="https://github.com/traefik/traefik" target="_blank">Traefik Github</a>
             <a class="url" href="https://www.youtube.com/watch?v=wLrmmh1eI94&ab_channel=ChristianLempa" target="_blank">Youtube Traefik Tutorial I like</a>
@@ -211,23 +318,46 @@ function displayDocTraefik() {
     `;
 }
 
+const prometheus_doc_map = {
+    "info":{
+        "eng":"Prometheus is a monitoring tool, it helps you monitor your server(s). You can link it to grafana to see nice graphs to easily visualize everything.",
+        "fr":"Prometheus est un outil de monitoring qui surveille vos serveur(s). Vous pouvez le lier à grafana pour voir des graphiques pour plus facilement visualiser les informations."
+    },
+    "to_deploy":{
+        "eng":"Prometheus is very easy to deploy, just run:",
+        "fr":"Prometheus est très facile à déployer, il suffis de lancer:"
+    },
+    "to_pometheus_yaml":{
+        "eng":"You'll need to give it a <b>prometheus.yml</b> file to configure the prometheus. Here is an example prometheus.yml file:",
+        "fr":"Vous devrez donner un fichier <b>prometheus.yml</b> pour configurer prometheus. Voici un example de fichier promatheus.yaml:"
+    },
+    "services_info":{
+        "eng":"Prometheus by itself can't access anything, you need to configure it and hook it up to things it can track.",
+        "fr":"Prometheus n'accéde à rien tout seul, il faut le configurer et le lier à des processus qu'il peut traquer."
+    },
+    "to_node_exporter":{
+        "eng":"<b>Node exporter</b> is a tool to allow you to see a lot of usefull informations about your system. To launch it, just run:",
+        "fr":"<b>Node exporter</b> est un outil qui permets de retrouver plein d'informations à propos du systéme. Pour le faire tourner, lancez:"
+    },
+    "to_cadvisor":{
+        "eng":"<b>Cadvisor</b> allows you to track docker images and deployments. To launch it, just run:",
+        "fr":"<b>Cadvisor</b> nous permets de suivre les images docker de notre systéme. Pour le faire tourner, lancez:"
+    },
+    "to_grafana":{
+        "eng":"You can use Grafana to visualize the data that prometheus has collected, it's also very easy to deploy, just run:",
+        "fr":"Vous pouvez utiliser Grafana pour visualiser les données que prometheus à récupéré, c'est aussi facile à déployer:"
+    }
+}
+
 function displayDocPrometheus() {
     document.getElementById("doc_contents").innerHTML = `
             <h1>DevOps - Prometheus</h1>
-            <p>
-                Prometheus is a monitoring tool, it helps you monitor your server(s).
-                You can link it to grafana to see nice graphs to easily visualize everything.
-            </p>
-            <p>
-                Prometheus is very easy to deploy, just run:
-            </p>
+            <p>` + prometheus_doc_map.info[lang] + `</p>
+            <p>` + prometheus_doc_map.to_deploy[lang] + `</p>
             <p class='doc_code_segment'>
             sudo docker run -d --name prometheus -p 9090:9090 -v <b>PATH</b>/prometheus.yml:/etc/prometheus/prometheus.yml prom/prometheus
             </p>
-            <p>
-                You'll need to give it a <b>prometheus.yml</b> file to configure the prometheus.
-                Here is an example prometheus.yml file:
-            </p>
+            <p>` + prometheus_doc_map.to_pometheus_yaml[lang] + `</p>
             <p class='doc_file_segment'>
                 global:<br/>
                 &emsp;scrape_interval: 5s<br/>
@@ -244,19 +374,12 @@ function displayDocPrometheus() {
                 &emsp;&emsp;static_configs:<br/>
                 &emsp;&emsp;&emsp;- targets: ['192.168.1.124:9018']
             </p>
-            <p>
-                Prometheus by itself can't access anything, you need to configure it and hook it up to things it can track.
-            </p>
-            <p>
-                <b>Node exporter</b> is a tool to allow you to see a lot of usefull informations about your system.
-                To launch it, just run:
-            </p>
+            <p>` + prometheus_doc_map.services_info[lang] + `</p>
+            <p>` + prometheus_doc_map.to_node_exporter[lang] + `</p>
             <p class='doc_code_segment'>
             sudo docker run -d --net="host" --pid="host" -v "/:/host:ro,rslave" quay.io/prometheus/node-exporter:latest --path.rootfs=/host
             </p>
-            <p>
-                <b>Cadvisor</b> allows you to track docker images and deployments. To launch it, just run:
-            </p>
+            <p>` + prometheus_doc_map.to_cadvisor[lang] + `</p>
             <p class='doc_code_segment'>
             sudo docker run
             --volume=/:/rootfs:ro
@@ -272,13 +395,11 @@ function displayDocPrometheus() {
             gcr.io/cadvisor/cadvisor:v0.47.2
             </p>
             <h3>Grafana</h3>
-            <p>
-                You can use Grafana to visualize the data that prometheus has collected, it's also very easy to deploy, just run:
-            </p>
+            <p>` + prometheus_doc_map.to_grafana[lang] + `</p>
             <p class='doc_code_segment'>
             sudo docker run -d --name=grafana -p 3456:3000 grafana/grafana
             </p>
-            <h3>Useful links</h3>
+            <h3>` + common_doc_map.usefull_links[lang] + `</h3>
             <a class="url" href="https://prometheus.io/" target="_blank">Prometheus official website</a>
             <a class="url" href="https://grafana.com/" target="_blank">Grafana official website</a>
             <a class="url" href="https://github.com/google/cadvisor" target="_blank">Cadvisor Github</a>
@@ -286,63 +407,96 @@ function displayDocPrometheus() {
     `
 }
 
+const certbot_doc_map = {
+    "info":{
+        "eng":"Certbot is used to generate and handle SSL certificates. This can also be done automatically with traefik, it's recomended to uses it instead of this. You should only really use this if you want to know more about generation SSL certificates.",
+        "fr":"Certbot est utilisé pour générer et gérer des certificats SSL. Ceci est faisable automatiquement avec traefik, je conseil d'utiliser traefik plutot que ça. Cette méthode est utile pour comprendre le fonctionnement de la génération d'un certificat SSL."
+    },
+    "before_info":{
+        "eng":"This is for a service running with nginx. If you wish to use this with something other than NGINX, I advise against it but you can look at the documentation to see how to go about it. You need to have your service linked to a domain name, you cannot generate an SSL certificate for an IP addresse. Make sure your service is available when you try to generate the ssl certificate. Make sure the port 443 is exposed and available.",
+        "fr":"Ceci est un service nginx. Le service doit étre liée à un nom de domaine, on ne peux pas générer un certificat SSL pour une adresse IP. Assurez vous que le service est disponible quand vous générez le certificat SSL et que le port 443 est disponible."
+    },
+    "gen_ssl_cert":{
+        "eng":"Generate SSL Certificate",
+        "fr":"Générer un Certificat SSL"
+    },
+    "restart_nginx":{
+        "eng":"Restart NGINX",
+        "fr":"Redémarer NGINX"
+    },
+    "to_renew":{
+        "eng":"Now your certificate should be generated and your website should have automatically been changed to port 443. A certificate lasts about 3 months, and you'll need to renew it with this command:",
+        "fr":"Votre certificat devrait être généré et votre site web devrais maintenant touirner sur le port 443. Un certificat dure 3 mois, pour le renouveller, lancez cette commande:"
+    }
+}
+
 function displayDocCertbot() {
     document.getElementById("doc_contents").innerHTML = `
             <h1>DevOps - Certbot and Let's Encrypt</h1>
-            <p>
-                Certbot is used to generate and handle SSL certificates.
-                This can also be done automatically with <a class="url inline" href="/devops/traefik">traefik</a>, it's recomended to uses it instead of this.
-                You should only really use this if you want to know more about generation SSL certificates.
+            <p>` + certbot_doc_map.info[lang] + `
             </p>
-            <p>
-                This is for a service running with nginx.
-                If you wish to use this with something other than NGINX, I advise against it but you can look at the documentation to see how to go about it.
-                You need to have your service linked to a domain name,
-                you cannot generate an SSL certificate for an IP addresse.
-                Make sure your service is available when you try to generate the ssl certificate.
-                Make sure the port 443 is exposed and available.
-            </p>
+            <p>` + certbot_doc_map.before_info[lang] + `</p>
             <h3>Installation</h3>
             <p class='doc_code_segment'>
             sudo apt install certbot python3-certbot-nginx
             </p>
-            <h3>Generate SSL Certificate</h3>
+            <h3>`+ certbot_doc_map.gen_ssl_cert[lang] + `</h3>
             <p class='doc_code_segment'>
             certbot --nginx --agree-tos --no-eff-email -m <b>YOUR_EMAIL_ADDRESS</b> -d <b>YOUR_DOMAIN_NAME</b>
             </p>
-            <h3>Restart NGINX</h3>
+            <h3>` + certbot_doc_map.restart_nginx[lang] + `</h3>
             <p class='doc_code_segment'>
             nginx -t && nginx -s reload
             </p>
-            <p>
-                Now your certificate should be generated and your website should have automatically been changed to port 443.
-                A certificate lasts about 3 months, and you'll need to renew it with this command:
-            </p>
+            <p>` + certbot_doc_map.to_renew[lang] + `</p>
             <p class='doc_code_segment'>
             certbot renew
             </p>
-            <h3>Useful links</h3>
+            <h3>` + common_doc_map.usefull_links[lang] + `</h3>
             <a class="url" href="https://certbot.eff.org/" target="_blank">Certbot official website</a>
             <a class="url" href="https://letsencrypt.org/" target="_blank">Let's Encrypt official website</a>
     `
 }
 
+const db_admin_doc_map = {
+    "info":{
+        "eng":"Databases are important when deploying services. Here are databases, how to deploy them, and usefull commands to know:",
+        "fr":"Les bases de données sont importantes en déployant des services. Voici des bases de données, comment les déployer, et des commandes à savoir:"
+    },
+    "postgres_body":{
+        "eng":"Postgres is an SQL based database, it's made for storing structured data and it does it really well. You should use this when you have structured data, and it's very effective for linking objects together. You should not use this with unstructured data. Everytime you want to change a data structure, you will have to migrate the database. When filling the database, it is faster to make few requests that each write / read a lot of data than a lot of small requests.",
+        "fr":"Postgres est une base de données SQL, faite pour stoquer des données structurées. Si vos données sont structurées, utilisez postgres, c'est très efficace à lier et retrouver les données stoquées. Si vos données ne sont pas structurées, une solution no-SQL est plus approprié. Après un changement dans la structure des données, il faut migrer la base de données. En remplissant ou récupérant des données de la base de donnée, c'est plus efficace de faire une requéte bulk plutot que plusieures requétes individuelles."
+    },
+    "to_postgres":{
+        "eng":"To launch, create a <b>docker-compose.yaml</b> with the following contents:",
+        "fr":"Pour lancer, créer un fichier <b>docker-compose.yaml</b> avec ces données:"
+    },
+    "mongodb_body":{
+        "eng":"MongoDB is not SQL based, so you don't need to structure data to store it. It stores data as JSON.",
+        "fr":"MongoDB n'est pas basé sur le SQL, donc ce n'est pas à utiliser pour stoquer des données structurées. Les données sont stoquées en tant qu'objets JSON."
+    },
+    "to_mongodb":{
+        "eng":"To launch, create a <b>docker-compose.yaml</b> with the following contents:",
+        "fr":"Pour lancer, créer un fichier <b>docker-compose.yaml</b> avec ces données:"
+    },
+    "to_backup":{
+        "eng":"To create a backup:",
+        "fr":"Pour créer une sauvegarde:"
+    },
+    "to_restore_backup":{
+        "eng":"To restore a backup:",
+        "fr":"Pour revenir à une sauvegarde:"
+    },
+}
+
 function displayDocDB() {
     document.getElementById("doc_contents").innerHTML = `
             <h1>DevOps - Databases</h1>
-            <p>
-                Databases are important when deploying servers.
-                Here are databases, how to deploy them, and usefull commands to know:
-            </p>
+            <p>` + db_admin_doc_map.info[lang] + `</p>
             <h3>Postgres</h3>
-            <p>
-                Postgres is an SQL based database, it's made for storing structured data and it does it really well.
-                You should use this when you have structured data, and it's very effective for linking objects together.
-                You should not use this with unstructured data.
-                Everytime you want to change a data structure, you will have to migrate the database.
-                When filling the database, it is faster to make few requests that each write / read a lot of data than a lot of small requests.
+            <p>` + db_admin_doc_map.postgres_body[lang] + `
             </p>
-            <p>To launch, create a <b>docker-compose.yaml</b> with the following contents:</p>
+            <p>` + db_admin_doc_map.to_postgres[lang] + `</p>
             <p class='doc_file_segment'>
                 version: '3.1'<br/>
                 services:<br/>
@@ -361,11 +515,8 @@ function displayDocDB() {
                 &emsp;&emsp;&emsp;- 8080:8080
             </p>
             <h3>MongoDB</h3>
-            <p>
-                MongoDB is not SQL based, so you don't need to structure data to store it.
-                It stores data as JSON.
-            </p>
-            <p>To launch, create a <b>docker-compose.yaml</b> with the following contents:</p>
+            <p>` + db_admin_doc_map.mongodb_body[lang] + `</p>
+            <p>` + db_admin_doc_map.to_mongodb[lang] + `</p>
             <p class='doc_file_segment'>
                 version: '3.1'<br/>
                 services:<br/>
@@ -388,18 +539,58 @@ function displayDocDB() {
                 &emsp;&emsp;&emsp;ME_CONFIG_MONGODB_ADMINPASSWORD: example<br/>
                 &emsp;&emsp;&emsp;ME_CONFIG_MONGODB_URL: mongodb://root:example@mongo:27017/
             </p>
-            <p>
-                To create a backup:
-            </p>
+            <p>` + db_admin_doc_map.to_backup[lang] + `</p>
             <p class='doc_code_segment'>
             mongodump -u username -p password -o outpath
             </p>
-            <p>To restore a backup:</p>
+            <p>` + db_admin_doc_map.to_restore_backup[lang] + `</p>
             <p class='doc_code_segment'>
             mongorestore -u username -p password $PATH_TO_BACKUP
             </p>
-            <h3>Useful links</h3>
+            <h3>` + common_doc_map.usefull_links[lang] + `</h3>
             <a class="url" href="https://www.postgresql.org/" target="_blank">Postgres official website</a>
             <a class="url" href="https://www.mongodb.com/" target="_blank">MongoDB official website</a>
+    `
+}
+
+const gitlab_api_doc_map = {
+    "create_file":{
+        "eng":"Create file",
+        "fr":"Créer un fichier"
+    },
+    "update_file":{
+        "eng":"Update file",
+        "fr":"Mettre un fichier à jour"
+    },
+    "get_file":{
+        "eng":"Get file",
+        "fr":"Récupérer un fichier"
+    },
+    "create_branch":{
+        "eng":"Create branch",
+        "fr":"Créer une branche"
+    },
+    "launch_pipeline":{
+        "eng":"Launch pipeline",
+        "fr":"Lancer une pipeline"
+    }
+}
+
+function displayDocGitlabApi() {
+    document.getElementById("doc_contents").innerHTML = `
+            <h1>DevOps - Gitlab API</h1>
+            <h3>` + gitlab_api_doc_map.create_file[lang] + `</h3>
+            <p>POST {GITLAB_URL}/api/v4/projects/{PROJECT_ID}/repository/files/{FILENAME}</p>
+            <p>Data: {"branch": ... , "content": ... , "commit_message": ... }</p>
+            <h3>` + gitlab_api_doc_map.update_file[lang] + `</h3>
+            <p>PUT {GITLAB_URL}/api/v4/projects/{PROJECT_ID}/repository/files/{FILENAME}</p>
+            <p>Data: {"branch": ... , "content": ... , "commit_message": ... }</p>
+            <h3>` + gitlab_api_doc_map.get_file[lang] + `</h3>
+            <p>GET {GITLAB_URL}/api/v4/projects/{PROJECT_ID}/repository/files/{FILENAME}?ref={BRANCH_NAME}</p>
+            <h3>` + gitlab_api_doc_map.create_branch[lang] + `</h3>
+            <p>POST {GITLAB_URL}/api/v4/projects/{PROJECT_ID}/repository/branches?ref={REF_BRANCH}&branch={NEW_BRANCH}</p>
+            <h3>` + gitlab_api_doc_map.launch_pipeline[lang] + `</h3>
+            <p>POST {GITLAB_URL}/api/v4/projects/{PROJECT_ID}/trigger/pipeline</p>
+            <p>Data: {"token": ... , "ref": ... , "variables[{PIPELINE_VARIABLE}]": ... }</p>
     `
 }
