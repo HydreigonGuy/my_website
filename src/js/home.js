@@ -168,6 +168,11 @@ const selected_page_class_map = {
         "cv":"cv_header_urls",
         "doc":"doc_header_urls"
     },
+    "header_url_option":{
+        "travel":"travels_header_url_option",
+        "cv":"",
+        "doc":"doc_header_url_option"
+    },
     "footer_link":{
         "travels":"travels_footer_link",
         "cv":"cv_footer_link"
@@ -175,15 +180,14 @@ const selected_page_class_map = {
 }
 
 function getHeaderContents() {
-    formated = '<div class="header_subcontainer">\
-            <h2 class="header_title">' + header_map.title[selected_page][lang] + '</h2>'
-    if (selected_page != 'travels')
-        formated += '<button class="header_urls ' + selected_page_class_map.header_url[selected_page] + '" href="" onclick="update_selected_page(\'travels\')">' + header_map.travels[lang] + '</button>'
-    // if (selected_page != 'cv')
-    //     formated += '<button class="header_urls ' + selected_page_class_map.header_url[selected_page] + '" href="" onclick="update_selected_page(\'cv\')">' + header_map.cv[lang] + '</button>'
-    if (selected_page != 'doc')
-        formated += '<button class="header_urls ' + selected_page_class_map.header_url[selected_page] + '" href="" onclick="update_selected_page(\'doc\')">' + header_map.doc[lang] + '</button>'
-    formated += '</div>';
+    formated = `
+    <div class="header_subcontainer">
+        <h2 class="header_title">${header_map.title[selected_page][lang]}</h2>
+        <select  class="header_urls ${selected_page_class_map.header_url[selected_page]}" id="page_selector" onchange="update_selected_page()">
+            <option class="${selected_page_class_map.header_url_option["travel"]}" value="travels" ${selected_page == 'travels' ? 'selected' : ''}>${header_map.travels[lang]}</option>
+            <option class="${selected_page_class_map.header_url_option["doc"]}" value="doc" ${selected_page == 'doc' ? 'selected' : ''}>${header_map.doc[lang]}</option>
+        </select>
+    </div>`;
     return formated
 }
 
@@ -330,8 +334,8 @@ function update_lang() {
     update_content();
 }
 
-function update_selected_page(new_page) {
-    selected_page = new_page;
+function update_selected_page() {
+    selected_page = document.getElementById("page_selector").value;
     document.cookie = "selected_page=" + selected_page;
     update_content();
 }
