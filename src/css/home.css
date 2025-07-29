@@ -71,22 +71,25 @@ body {
 }
 
 .header_urls {
+    position: absolute;
+    top: 22px;
+    right: calc(44px + 6vw);
     margin-left: 3vw;
-    font-size: 2.5vw;
-    background: none;
+    font-size: 1vw;
     border: none;
     border-radius: 30px;
-    padding: 1vw;
+    padding: 0.6vw;
+    text-align: center;
 }
 
 .travels_header_urls {
-    color: #1fea00;
     font-family: rubik_mono;
-}
-
-.travels_header_urls:hover {
     background-color: #1fea00;
     color: black;
+}
+
+.travels_header_url_option {
+    font-family: rubik_mono;
 }
 
 .cv_header_urls {
@@ -104,8 +107,8 @@ body {
     color: black;
 }
 
-.doc_header_urls:hover {
-    color: blue;
+.doc_header_url_option {
+    font-family: sometypemono;
 }
 
 .language_selector {
@@ -113,9 +116,11 @@ body {
     top: 22px;
     right: 30px;
     border: none;
-    padding: 1.3vw;
-    border-radius: 30px;
-    font-size: 2vw;
+    padding: 0.6vw;
+    border-radius: 15px;
+    font-size: 1vw;
+    text-align: center;
+    width: 6vw;
 }
 
 .travels_language_selector {
