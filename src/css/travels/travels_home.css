@@ -1,0 +1,36 @@
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.travel_page_body {
+    background-image: url('https://raw.githubusercontent.com/HydreigonGuy/my_website/refs/heads/images/images/travels/france/toulouse/IMG20240711104504.jpg');
+    background-color: rgba(0, 0, 0, 0.25);
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-position-x: 0;
+    background-position-y: 50%;
+    margin: 0;
+    height: 100vh;
+}
+
+.travel_page_title {
+    position: absolute;
+    top: 5vh;
+    left: 5%;
+    margin: 0;
+}
+
+.travel_page_lang_btn_container {
+    position: absolute;
+    top: 5vh;
+    right: 5%;
+    font-size: 20px;
+}
+
+.travel_page_lang_btn_container button {
+    background: none;
+    border: none;
+    font-size: 20px;
+}
