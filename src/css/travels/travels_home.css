@@ -1,7 +1,7 @@
 
 @font-face {
     font-family: dmserif;
-    src: url(/fonts/DM_Serif_Text/DMSerifTest-Regular.ttf);
+    src: url(/fonts/DM_Serif_Text/DMSerifText-Regular.ttf);
 }
 
 body {
@@ -69,4 +69,29 @@ body {
     padding-top: 10px;
     padding-bottom: 10px;
     font-weight: bold;
+}
+
+
+@media (max-width: 600px) {
+
+    .travel_page_body {
+        background-position-x: 100%;
+        background-position-y: 0;
+        padding-top: 50vh;
+        height: 100vh;
+    }
+
+    .travel_url {
+        margin: 3%;
+        width: 27.33%;
+    }
+
+    .travel_page_lang_btn_container {
+        background-color: rgba(250, 250, 250, 0.35);
+    }
+
+    .travel_page_title {
+        top: 10vh;
+    }
+
 }

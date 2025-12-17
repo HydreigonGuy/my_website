@@ -33,7 +33,7 @@ function formatTravelContents() {
     <div class="travel_page_body">
         <h2 class="travel_page_title">${travel_page_map["title"][lang]}</h2>
         <div class="travel_page_lang_btn_container">
-            <button>FR</button> | <button>ENG</button>
+            <button onclick="updateLang('fr')">FR</button> | <button onclick="updateLang('eng')">ENG</button>
         </div>
         <a class="travel_url" href="/france">
             <p>${travel_page_map.france[lang]}</p>
@@ -57,6 +57,11 @@ function formatTravelContents() {
 
 function updateContent() {
     document.getElementById("page_body").innerHTML = formatTravelContents();
+}
+
+function updateLang(newLang) {
+    setLang(newLang);
+    updateContent();
 }
 
 
