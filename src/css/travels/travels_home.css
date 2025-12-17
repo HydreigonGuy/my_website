@@ -10,7 +10,7 @@ body {
     background-blend-mode: overlay;
     background-size: cover;
     background-position-x: 0;
-    background-position-y: 50%;
+    background-position-y: 65%;
     margin: 0;
     height: 100vh;
 }
@@ -33,4 +33,33 @@ body {
     background: none;
     border: none;
     font-size: 20px;
+}
+
+.travel_url {
+    display: inline-block;
+    margin: 2%;
+    width: 16%;
+    text-align: center;
+    text-decoration: none;
+    position: relative;
+}
+
+.travel_url img {
+    width: 100%;
+}
+
+.travel_url p {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(12, 12, 12, 0.7);
+    top: 0;
+    color: #1fea00;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.travel_url_container {
+    padding-top: 45vh;
 }
