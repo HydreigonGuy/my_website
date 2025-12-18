@@ -51,6 +51,11 @@ function formatTravelContents() {
             <p>${travel_page_map.uk[lang]}</p>
             <img src="https://raw.githubusercontent.com/HydreigonGuy/my_website/refs/heads/images/images/travels/uk/york/IMG20241113162256.jpg" />
         </a>
+        <div class="footer_subcontainer">
+            <a class="footer_link" href="https://www.instagram.com/hydreigon_chad?igsh=MWxxcjM0cjZ0YnM2Nw==" target="_blank">Instagram</a>\
+            <a class="footer_link" href="https://github.com/HydreigonGuy" target="_blank">Github</a>\
+            <a class="footer_link" href="https://www.linkedin.com/in/adrien-thibault/" target="_blank">Linkedin</a>\
+        </div>
     </div>`
 }
 
