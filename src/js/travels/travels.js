@@ -28,6 +28,10 @@ const travel_page_map = {
     "singapore":{
         "fr":"Singapour",
         "eng":"Singapore"
+    },
+    "germany":{
+        "fr":"Allemagne",
+        "eng":"Germany"
     }
 }
 
@@ -57,6 +61,9 @@ function formatTravelContents() {
         </a><a class="travel_url" href="/japan">
             <p>${travel_page_map.japan[lang]}</p>
             <img src="https://raw.githubusercontent.com/HydreigonGuy/my_website/refs/heads/images/images/travels/japan/kyoto/IMG20240222094915.jpg" />
+        </a><a class="travel_url" href="/germany">
+            <p>${travel_page_map.germany[lang]}</p>
+            <img src="https://raw.githubusercontent.com/HydreigonGuy/my_website/refs/heads/images/images/travels/germany//IMG20250914184511.jpg" />
         </a>
         <div class="footer_subcontainer">
             <a class="footer_link" href="https://www.instagram.com/hydreigon_chad?igsh=MWxxcjM0cjZ0YnM2Nw==" target="_blank">Instagram</a>\
